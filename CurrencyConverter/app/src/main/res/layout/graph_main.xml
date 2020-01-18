@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/graphFragmentNestedScrollView"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+
+    <LinearLayout
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/bor2"
+        android:onClick="select_country"
+        android:weightSum="3">
+
+
+        <TextView
+            android:id="@+id/cur_name"
+            style="@style/TextAppearance.AppCompat.Body1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1.3"
+            android:paddingLeft="15dp"
+            android:text="CAD"
+            android:textSize="25dp" />
+
+
+        <ImageView
+            android:scaleType="fitEnd"
+            android:id="@+id/cur_image"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:src="@drawable/cad" />
+
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight=".7"
+            android:src="@drawable/drop_down_icon" />
+
+
+    </LinearLayout>
+
+
+
+
+    <TextView
+            android:id="@+id/current_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/graphFragmentDateTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/current_price" />
+
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/percent_change"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/graphFragmentDateTextView" />
+
+        <com.nex3z.togglebuttongroup.SingleSelectToggleGroup
+            android:id="@+id/chart_interval_button_grp"
+            android:layout_width="362dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/percent_change"
+            app:tbgCheckedButton="@+id/dayButton"
+            app:tbgChildSpacing="auto">
+
+
+            <com.nex3z.togglebuttongroup.button.CircularToggle
+                android:id="@+id/weekButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5d"
+                android:textSize="16sp"
+                app:tbgMarkerColor="@color/colorAccent" />
+
+            <com.nex3z.togglebuttongroup.button.CircularToggle
+                android:id="@+id/monthButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1M"
+
+                android:textSize="16sp"
+                app:tbgMarkerColor="@color/colorAccent" />
+
+               <com.nex3z.togglebuttongroup.button.CircularToggle
+                android:id="@+id/yearButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1y"
+
+                   android:textSize="16sp"
+                app:tbgMarkerColor="@color/colorAccent" />
+
+            <com.nex3z.togglebuttongroup.button.CircularToggle
+                android:id="@+id/fiveyearButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5y"
+
+                android:textSize="16sp"
+                app:tbgMarkerColor="@color/colorAccent" />
+
+        </com.nex3z.togglebuttongroup.SingleSelectToggleGroup>
+
+        <com.github.mikephil.charting.charts.LineChart
+            android:id="@+id/chart"
+            android:layout_width="match_parent"
+            android:layout_height="275dp"
+            android:layout_marginTop="8dp"
+            android:focusableInTouchMode="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/chart_interval_button_grp" />
+
+
+
+      <ProgressBar
+          android:layout_gravity="center_horizontal"
+            android:id="@+id/chartProgressSpinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:indeterminate="true"
+          />
+
+
+
+</LinearLayout>

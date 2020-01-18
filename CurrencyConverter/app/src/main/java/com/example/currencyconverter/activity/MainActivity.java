@@ -1,94 +1,120 @@
 package com.example.currencyconverter.activity;
 
+import android.app.Activity;
+import android.content.ActivityNotFoundException;
 import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.graphics.Bitmap;
+import android.graphics.Color;
 import android.graphics.drawable.BitmapDrawable;
 import android.net.ConnectivityManager;
+import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.view.WindowManager;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.EditText;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.annotation.Nullable;
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.lifecycle.Observer;
+import androidx.lifecycle.ViewModelProviders;
+import androidx.preference.PreferenceManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.airbnb.lottie.LottieAnimationView;
 import com.bumptech.glide.Glide;
-import com.example.currencyconverter.Network_Package.AppController;
 import com.example.currencyconverter.R;
+import com.example.currencyconverter.Viewmodal.Convert_Currency_VM;
 import com.example.currencyconverter.adapter.History_Adapter;
+import com.example.currencyconverter.adapter.Multiple_Currency_Adapter;
 import com.example.currencyconverter.modal.Country_Modal;
 import com.example.currencyconverter.modal.Data;
 import com.example.currencyconverter.modal.History;
+import com.example.currencyconverter.modal.Mul_Currency_Modal;
 import com.example.currencyconverter.room_db_package.repository.NoteRepository;
 import com.example.menu_library.FButton;
 import com.example.menu_library.animation.GuillotineAnimation;
 import com.example.menu_library.interfaces.GuillotineListener;
-import com.google.android.gms.ads.AdListener;
-import com.google.android.gms.ads.AdRequest;
-import com.google.android.gms.ads.AdView;
-import com.google.android.gms.ads.InterstitialAd;
+import com.google.android.material.dialog.MaterialAlertDialogBuilder;
 import com.google.android.material.snackbar.Snackbar;
+import com.hadiidbouk.charts.ChartProgressBar;
+import com.hadiidbouk.charts.OnBarClickedListener;
 
 import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.io.ByteArrayOutputStream;
-import java.io.IOException;
 import java.text.DecimalFormat;
 import java.util.ArrayList;
 import java.util.List;
-
-import okhttp3.Call;
-import okhttp3.Callback;
-import okhttp3.Request;
-import okhttp3.Response;
+import java.util.Map;
 
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements OnBarClickedListener {
 
     private static final long RIPPLE_DURATION = 100;
+
+    DecimalFormat df = new DecimalFormat("#.####");
+
     Toolbar toolbar;
     FrameLayout root;
+    LottieAnimationView loading_anim;
     View contentHamburger;
     LinearLayout first_selection;
-    LinearLayout clear_history, home,Abouts;
+    LinearLayout clear_history, home;
     History_Adapter adapter;
+    Multiple_Currency_Adapter mul_adapter;
     ArrayList<History> history_list = new ArrayList<>();
-    ImageView image1, image2;
+    ArrayList<Mul_Currency_Modal> mul_cur_list = new ArrayList<>();
+    ArrayList<JSONObject> response_list = new ArrayList<JSONObject>();
+    ImageView image1, image2, graph_icon;
     TextView name1, name2, hitory_title;
     List<Country_Modal> country_list = new ArrayList<>();
     String value = "";
     TextView result_box;
     FButton convert_button;
     GuillotineAnimation aniMenu;
-    private RecyclerView history_rv;
+
+    //flag data is used if two country data is converting again and again
+    //to set data again and again and prevent
+    boolean flag;
+    SharedPreferences shared = null;
+    SharedPreferences.Editor sp = null;
+    ArrayList<String> fvrt_list = new ArrayList<>();
+    View activity_view;
+    private RecyclerView history_rv, multiple_cur_rv;
     private EditText input_box;
-    private AppController appController;
     private NoteRepository noteRepository;
-    private String country_code_2lett_first;
-    private String country_code_2lett_second;
     private boolean isGuillotineOpened;
+    private ChartProgressBar mChart;
+    private Convert_Currency_VM Viewmodel;
 
-    private InterstitialAd mInterstitialAd;
-    private AdView adView;
+    public static void hideKeyboardFrom(Context context, View view) {
 
-    public static byte[] getPictureByteOfArray(Bitmap bitmap) {
-        ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
-        bitmap.compress(Bitmap.CompressFormat.PNG, 0, byteArrayOutputStream);
-        return byteArrayOutputStream.toByteArray();
+        try {
+            InputMethodManager imm = (InputMethodManager) context.getSystemService(Activity.INPUT_METHOD_SERVICE);
+            imm.hideSoftInputFromWindow(view.getWindowToken(), 0);
+        } catch (Exception e) {
+
+        }
+
+
     }
 
     @Override
@@ -96,41 +122,74 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity);
 
-        System.out.println("called");
-
-        initViews();
-        fetch_History_Record();
-        setMenus();
-        called_API(false);
-        setconvertButton_Listener();
-
-        loadInterStitialsAd();
-        loadBannerAdAd();
+        activity_view = getWindow().getDecorView().getRootView();
 
 
+        try {
+
+
+            initViews();
+            prepare_All_Favourite_LIst();
+            fetch_History_Record();
+            setMenus();
+            called_API(false);
+            setconvertButton_Listener();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
 
 
     }
 
+    private void prepare_All_Favourite_LIst() {
 
+        if (fvrt_list != null)
+            fvrt_list.clear();
+
+        Map<String, ?> prefsMap = shared.getAll();
+        for (Map.Entry<String, ?> entry : prefsMap.entrySet()) {
+            Log.v("SharedPreferences_key", entry.getKey() + ":" +
+                    entry.getValue().toString());
+
+
+            fvrt_list.add(entry.getValue().toString());
+        }
+
+        System.out.println("fvrt_list" + fvrt_list.size());
+
+    }
 
     private void setconvertButton_Listener() {
 
         convert_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                hideKeyboardFrom(getApplicationContext(), activity_view);
 
 
                 if (!isNetworkAvailable(getApplicationContext())) {
                     Snackbar snackbar = Snackbar
                             .make(findViewById(R.id.root), "Please check your internet connection!", Snackbar.LENGTH_SHORT);
                     snackbar.show();
-                } else
+                } else {
+
+
                     called_API(true);
+                }
 
 
             }
         });
+    }
+
+    private void visible_Loading_Animation(boolean value) {
+        if (value) {
+            loading_anim.setVisibility(View.VISIBLE);
+            loading_anim.playAnimation();
+        } else {
+            loading_anim.setVisibility(View.GONE);
+            loading_anim.pauseAnimation();
+        }
     }
 
     public boolean isNetworkAvailable(Context context)//check internet of device
@@ -148,16 +207,49 @@ public class MainActivity extends AppCompatActivity {
             }
 
             @Override
-            public void beforeTextChanged(CharSequence s, int start,
-                                          int count, int after) {
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
             }
 
             @Override
             public void onTextChanged(CharSequence s, int start,
                                       int before, int count) {
+
+
                 if (s.length() != 0) {
                     System.out.println("text_lenght" + s.length());
-                    convert_Currency_API_Called(name1.getText().toString(), name2.getText().toString());
+
+                    Viewmodel.convert_Currency("https://free.currconv.com/api/v7/convert?q=" + name1.getText().toString() + "_" + name2.getText().toString() + "&compact=ultra&apiKey=2464ad7b9dbb248f2661").observe(MainActivity.this, new Observer<JSONObject>() {
+                        @Override
+                        public void onChanged(JSONObject mainjson) {
+
+
+                            if (response_list != null)
+                                response_list.clear();
+
+                            if (flag == false) {
+
+                                // set_UP_Currency_Graph();
+
+                                convert_Multiple_Currency(name1.getText().toString(), "INR");
+                                convert_Multiple_Currency(name1.getText().toString(), "JPY");
+                                convert_Multiple_Currency(name1.getText().toString(), "KWD");
+                                convert_Multiple_Currency(name1.getText().toString(), "CNY");
+                                convert_Multiple_Currency(name1.getText().toString(), "LKR");
+
+                            }
+
+                            try {
+                                setResult(mainjson.getString(name1.getText().toString() + "_" + name2.getText().toString()));
+
+                            } catch (JSONException e) {
+                                e.printStackTrace();
+                            }
+
+
+                        }
+
+
+                    });
 
 
                 }
@@ -165,20 +257,51 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
-        //System.out.println("data_else_called");
+        //called after button click
+        if (value) {
+            Viewmodel.convert_Currency("https://free.currconv.com/api/v7/convert?q=" + name1.getText().toString() + "_" + name2.getText().toString() + "&compact=ultra&apiKey=2464ad7b9dbb248f2661").observe(MainActivity.this, new Observer<JSONObject>() {
+                @Override
+                public void onChanged(JSONObject mainjson) {
 
 
-        if (value)
-            convert_Currency_API_Called(name1.getText().toString(), name2.getText().toString());
-        // }
+                    if (response_list != null)
+                        response_list.clear();
+
+
+                    if (flag == false) {
+
+                        //set_UP_Currency_Graph();
+
+                        convert_Multiple_Currency(name1.getText().toString(), "INR");
+                        convert_Multiple_Currency(name1.getText().toString(), "JPY");
+                        convert_Multiple_Currency(name1.getText().toString(), "KWD");
+                        convert_Multiple_Currency(name1.getText().toString(), "CNY");
+                        convert_Multiple_Currency(name1.getText().toString(), "LKR");
+
+                    }
+
+                    try {
+                        System.out.println("first_res" + mainjson);
+
+                        setResult(mainjson.getString(name1.getText().toString() + "_" + name2.getText().toString()));
+
+                    } catch (JSONException e) {
+                        e.printStackTrace();
+                    }
+
+                }
+
+
+            });
+
+
+        }
+
     }
 
     @Override
     protected void onResume() {
-        if(adView!=null)
-            adView.resume();
         super.onResume();
-
 
 
         //set value from Show Country Class
@@ -190,8 +313,10 @@ public class MainActivity extends AppCompatActivity {
             System.out.println("country_code_2lett_second" + Data.country_code_2lett_first);
 
 
+            //data is coming from Show_Country_list class
             if (getIntent().getStringExtra("value").equals("first")) {
 
+                flag = false;
 
                 if (Data.name1 != null) {
                     name1.setText(Data.name1);
@@ -216,8 +341,11 @@ public class MainActivity extends AppCompatActivity {
 
 
             }
+
+            //data is coming from Show_Country_list class
             if (getIntent().getStringExtra("value").equals("second")) {
 
+                flag = false;
 
                 if (Data.name1 != null) {
                     name1.setText(Data.name1);
@@ -251,25 +379,12 @@ public class MainActivity extends AppCompatActivity {
         root.addView(guillotineMenu);
 
         clear_history = guillotineMenu.findViewById(R.id.clear_history);
-        Abouts = guillotineMenu.findViewById(R.id.about_us);
-
-        home = guillotineMenu.findViewById(R.id.home);
-        home.setBackgroundResource(R.color.selected);
         clear_history.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 clear_history();
             }
         });
-
-        Abouts.setOnClickListener(
-                new View.OnClickListener() {
-                    @Override
-                    public void onClick(View view) {
-                        startActivity(new Intent(MainActivity.this,AboutUs.class));
-                    }
-                }
-        );
 
         GuillotineAnimation.GuillotineBuilder guillotineBuilder = new GuillotineAnimation.GuillotineBuilder(guillotineMenu,
                 guillotineMenu.findViewById(R.id.guillotine_hamburger), contentHamburger);
@@ -294,11 +409,70 @@ public class MainActivity extends AppCompatActivity {
         aniMenu = guillotineBuilder.build();
 
 
-        guillotineMenu.findViewById(R.id.home).setBackgroundResource(R.color.selected);
+    }
+
+
+    public void rate_me(View view) {
+
+        close_Menu();
+        final MaterialAlertDialogBuilder builder = new MaterialAlertDialogBuilder(this, R.style.RoundShapeTheme);
+
+        final AlertDialog dialog = builder.create();
+        LayoutInflater inflater = getLayoutInflater();
+        final View dialogLayout = inflater.inflate(R.layout.rate_me_layout, null);
+        TextView rate_me = dialogLayout.findViewById(R.id.rate_me_text);
+        rate_me.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                dialog.dismiss();
+                goto_Playstore_for_rateMe();
+            }
+        });
+        dialog.setView(dialogLayout);
+        dialog.show();
+    }
+
+    public void goto_Playstore_for_rateMe() {
+
+        try {
+            startActivity(new Intent(Intent.ACTION_VIEW,
+                    Uri.parse("market://details?id=" + getPackageName())));
+        } catch (ActivityNotFoundException e) {
+            startActivity(new Intent(Intent.ACTION_VIEW,
+                    Uri.parse("http://play.google.com/store/apps/details?id=" + getPackageName())));
+        }
+    }
+
+    public void share(View view) {
+
+        close_Menu();
+
+        String post_link = "http://play.google.com/store/apps/details?id=" + getPackageName();
+        Intent intent = new Intent(Intent.ACTION_SEND);
+        intent.setType("text/plain");
+        String shareBodyText = "Share the app to your friends";
+        intent.putExtra(Intent.EXTRA_SUBJECT, "Currency Converter");
+        intent.putExtra(Intent.EXTRA_TEXT, post_link);
+        startActivity(Intent.createChooser(intent, "Choose sharing method"));
+    }
+
+    public void about_us(View view) {
+
+        close_Menu();
+        startActivity(new Intent(getApplicationContext(), About_us.class));
+
 
     }
 
     private void initViews() {
+
+
+        //hide keyboard
+        getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_ALWAYS_HIDDEN);
+
+        Viewmodel = ViewModelProviders.of(this).get(Convert_Currency_VM.class);
+        shared = PreferenceManager.getDefaultSharedPreferences(getApplicationContext());
+        sp = shared.edit();
 
 
         if (toolbar != null) {
@@ -309,9 +483,10 @@ public class MainActivity extends AppCompatActivity {
         noteRepository = new NoteRepository(getApplicationContext());
 
         toolbar = findViewById(R.id.toolbar);
+        graph_icon = findViewById(R.id.graph_icon);
+        loading_anim = findViewById(R.id.loading_anim);
         root = findViewById(R.id.root);
         contentHamburger = findViewById(R.id.content_hamburger);
-        appController = (AppController) getApplicationContext();
 
 
         name1 = findViewById(R.id.name1);
@@ -324,128 +499,193 @@ public class MainActivity extends AppCompatActivity {
         convert_button = findViewById(R.id.convert_button);
         hitory_title = findViewById(R.id.hitory_title);
 
+        //set convert multiple currency adapter
+        multiple_cur_rv = findViewById(R.id.multiple_cur_rv);
+        mul_adapter = new Multiple_Currency_Adapter(mul_cur_list, this);
+        multiple_cur_rv.setLayoutManager(new LinearLayoutManager(getApplicationContext(), RecyclerView.VERTICAL, false));
+        multiple_cur_rv.setAdapter(mul_adapter);
+
+
+        //set history adapter data
         history_rv = findViewById(R.id.history_rv);
-        adapter = new History_Adapter(this, history_list);
+        adapter = new History_Adapter(this, history_list, fvrt_list);
         history_rv.setLayoutManager(new LinearLayoutManager(getApplicationContext(), RecyclerView.VERTICAL, false));
         history_rv.setAdapter(adapter);
 
-        adView = findViewById(R.id.adView);
 
-
-    }
-
-    //adds
-
-    private void loadInterStitialsAd() {
-        mInterstitialAd = new InterstitialAd(this);
-        //mInterstitialAd.setAdUnitId("ca-app-pub-3940256099942544/1033173712"); //test adid
-        mInterstitialAd.setAdUnitId("ca-app-pub-3701953680756708/3487427448"); //live adid
-
-        mInterstitialAd.loadAd(new AdRequest.Builder().build());
-
-        mInterstitialAd.setAdListener(new AdListener() {
+        graph_icon.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onAdLoaded() {
-                // Code to be executed when an ad finishes loading.
+            public void onClick(View view) {
+                Animation rotation = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.rotate);
+                graph_icon.startAnimation(rotation);
 
-                if(mInterstitialAd!=null)
-                    mInterstitialAd.show();
-            }
 
-            @Override
-            public void onAdFailedToLoad(int errorCode) {
-                // Code to be executed when an ad request fails.
-
-                Toast.makeText(MainActivity.this, errorCode+" code", Toast.LENGTH_SHORT).show();
-            }
-
-            @Override
-            public void onAdOpened() {
-                // Code to be executed when the ad is displayed.
-            }
-
-            @Override
-            public void onAdClicked() {
-                // Code to be executed when the user clicks on an ad.
-            }
-
-            @Override
-            public void onAdLeftApplication() {
-                // Code to be executed when the user has left the app.
-            }
-
-            @Override
-            public void onAdClosed() {
-                // Code to be executed when the interstitial ad is closed.
+                gotoGraphActivity();
             }
         });
-    }
 
-    @Override
-    protected void onPause() {
-
-        if(adView != null)
-            adView.pause();
-
-        super.onPause();
 
     }
 
+    private void convert_Multiple_Currency(final String name11, final String name22) {
+
+        visible_Loading_Animation(true);
+        hideKeyboardFrom(getApplicationContext(), activity_view);
 
 
-    @Override
-    protected void onDestroy() {
-        if(adView!=null)
-            adView.destroy();
-        super.onDestroy();
-    }
-
-    private void loadBannerAdAd() {
-       /* AdView adView = new AdView(this);
-        adView.setAdSize(AdSize.BANNER);
-        adView.setAdUnitId("ca-app-pub-3940256099942544/6300978111");*/
-        AdRequest adRequest = new AdRequest.Builder().build();
-        adView.loadAd(adRequest);
-
-
-        adView.setAdListener(new AdListener() {
+        Viewmodel.convert_mul_Currency("https://free.currconv.com/api/v7/convert?q=" + name11 + "_" + name22 + "&compact=ultra&apiKey=2464ad7b9dbb248f2661").observe(MainActivity.this, new Observer<JSONObject>() {
             @Override
-            public void onAdLoaded() {
-                // Code to be executed when an ad finishes loading.
-            }
+            public void onChanged(JSONObject mainjson) {
 
-            @Override
-            public void onAdFailedToLoad(int errorCode) {
-                // Code to be executed when an ad request fails.
-                Toast.makeText(MainActivity.this, errorCode+" Banner code", Toast.LENGTH_SHORT).show();
+
+                response_list.add(mainjson);
+                System.out.println("response_size" + response_list.size());
+
+                visible_Loading_Animation(false);
+
+
+                if (response_list.size() == 5 && flag == false)
+                    set_multiple_currency_Data();
+
 
             }
 
-            @Override
-            public void onAdOpened() {
-                // Code to be executed when an ad opens an overlay that
-                // covers the screen.
-            }
 
-            @Override
-            public void onAdClicked() {
-                // Code to be executed when the user clicks on an ad.
-            }
-
-            @Override
-            public void onAdLeftApplication() {
-                // Code to be executed when the user has left the app.
-            }
-
-            @Override
-            public void onAdClosed() {
-                // Code to be executed when the user is about to return
-                // to the app after tapping on an ad.
-            }
         });
+
     }
 
+    private void set_multiple_currency_Data() {
 
+        if (mul_cur_list != null)
+            mul_cur_list.clear();
+
+        int inr_position = -1;
+        int jps_position = -1;
+        int kwd_position = -1;
+        int cny_position = -1;
+        int lkr_position = -1;
+
+
+        int same_cur_pos = -1;
+        boolean same_country = false;
+
+        for (int i = 0; i < response_list.size(); i++) {
+
+            if (response_list.get(i).toString().contains("INR"))
+                inr_position = i;
+            if (response_list.get(i).toString().contains("JPY"))
+                jps_position = i;
+            if (response_list.get(i).toString().contains("KWD"))
+                kwd_position = i;
+            if (response_list.get(i).toString().contains("CNY"))
+                cny_position = i;
+            if (response_list.get(i).toString().contains("LKR"))
+                lkr_position = i;
+
+
+            if (i == 4) {
+                try {
+
+                    Double input = 0.0;
+                    Double result = 0.0;
+                    String value = "";
+
+                    if (input_box.getText().toString().isEmpty())
+                        input = 1.0;
+                    else
+                        input = Double.parseDouble(input_box.getText().toString());
+
+                    if (!name1.getText().toString().equals("INR"))
+                        result = Double.parseDouble(response_list.get(inr_position).getString(name1.getText().toString() + "_" + "INR"));
+                    else
+                        result = 1.0;
+                    value = String.valueOf(df.format(result * input));
+
+
+                    mul_cur_list.add(new Mul_Currency_Modal(
+                            "https://www.countryflags.io/IN/flat/32.png",
+                            "India",
+                            "INR",
+                            value.equals("1") ? "1       " : value
+                    ));
+
+                    if (!name1.getText().toString().equals("JPY"))
+                        result = Double.parseDouble(response_list.get(jps_position).getString(name1.getText().toString() + "_" + "JPY"));
+                    else
+                        result = 1.0;
+
+                    value = String.valueOf(df.format(result * input));
+
+                    mul_cur_list.add(new Mul_Currency_Modal(
+                            "https://www.countryflags.io/JP/flat/32.png",
+                            "Japan",
+                            "JPY",
+                            value.equals("1") ? "1       " : value
+                    ));
+
+
+                    if (!name1.getText().toString().equals("KWD"))
+                        result = Double.parseDouble(response_list.get(kwd_position).getString(name1.getText().toString() + "_" + "KWD"));
+                    else
+                        result = 1.0;
+
+                    value = String.valueOf(df.format(result * input));
+                    mul_cur_list.add(new Mul_Currency_Modal("https://www.countryflags.io/KW/flat/32.png",
+                            "Kuwait", "KWD",
+                            value.equals("1") ? "1       " : value
+                    ));
+
+
+                    if (!name1.getText().toString().equals("CNY"))
+                        result = Double.parseDouble(response_list.get(cny_position).getString(name1.getText().toString() + "_" + "CNY"));
+                    else
+                        result = 1.0;
+
+                    value = String.valueOf(df.format(result * input));
+
+                    mul_cur_list.add(new Mul_Currency_Modal("https://www.countryflags.io/CN/flat/32.png",
+                            "China", "CNY",
+                            value.equals("1") ? "1       " : value
+                    ));
+
+                    if (!name1.getText().toString().equals("LKR"))
+                        result = Double.parseDouble(response_list.get(lkr_position).getString(name1.getText().toString() + "_" + "LKR"));
+                    else
+                        result = 1.0;
+
+                    value = String.valueOf(df.format(result * input));
+
+                    mul_cur_list.add(new Mul_Currency_Modal("https://www.countryflags.io/LK/flat/32.png",
+                            "Sri Lanka", "LKR",
+                            value.equals("1") ? "1       " : value
+                    ));
+
+
+                } catch (JSONException e) {
+                    e.printStackTrace();
+                }
+            }
+
+        }
+
+
+        if (MainActivity.this != null) {
+
+            MainActivity.this.runOnUiThread(new Runnable() {
+                @Override
+                public void run() {
+
+                    mul_adapter.notifyDataSetChanged();
+
+                    flag = true;
+
+
+                }
+            });
+        }
+
+    }
 
     public void select_country_first(View view) {
         startActivity(new Intent(getApplicationContext(), Show_Country_List.class).putExtra("value", "first"));
@@ -458,60 +698,8 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    public void convert_Currency_API_Called(final String name1, final String name2) {
-
-        System.out.println("calledddd" + name1 + "  " + name2);
-
-        Request request = new Request.Builder().
-                url("https://free.currconv.com/api/v7/convert?q=" + name1 + "_" + name2 + "&compact=ultra&apiKey=2464ad7b9dbb248f2661").
-                build();
-
-
-        appController.getOkHttpClient().newCall(request).enqueue(new Callback() {
-            @Override
-            public void onFailure(Call call, IOException e) {
-                System.out.println("Errorrrrr " + e.getMessage());
-            }
-
-            @Override
-            public void onResponse(Call call, Response response) throws IOException {
-                String myResponse = response.body().string();
-                try {
-
-
-                    final JSONObject mainjson = new JSONObject(myResponse);
-                    System.out.println("response" + mainjson);
-
-
-                    if (MainActivity.this != null) {
-                        runOnUiThread(new Runnable() {
-                            @Override
-                            public void run() {
-                                try {
-                                    System.out.println("result_Kaif" + mainjson.getString(name1 + "_" + name2));
-
-                                    setResult(mainjson.getString(name1 + "_" + name2));
-
-
-                                } catch (JSONException e) {
-                                    e.printStackTrace();
-                                }
-
-                            }
-                        });
-                    }
-
-
-                } catch (JSONException e) {
-                    e.printStackTrace();
-                }
-            }
-        });
-    }
-
     private void setResult(String value) {
 
-        DecimalFormat df = new DecimalFormat("#.####");
 
         if (input_box.getText().toString().isEmpty()) {
             Double result = Double.parseDouble(value);
@@ -647,6 +835,7 @@ public class MainActivity extends AppCompatActivity {
                                 @Override
                                 public void run() {
 
+
                                     System.out.println("sallu" + history_list.size());
                                     history_rv.getRecycledViewPool().clear();
                                     adapter.notifyDataSetChanged();
@@ -729,6 +918,8 @@ public class MainActivity extends AppCompatActivity {
 
     public void swap_data(View view) {
 
+        flag = false;
+
 
         String temp = "", a = name1.getText().toString(), b = name2.getText().toString();
 
@@ -764,9 +955,15 @@ public class MainActivity extends AppCompatActivity {
     public void clear_history() {
 
 
+        close_Menu();
+
         new AsyncTask<Void, Void, Void>() {
             @Override
             protected Void doInBackground(Void... voids) {
+
+                Data.country_code_2lett_first = "EU";
+                Data.country_code_2lett_second = "US";
+
                 noteRepository.Delete_ALL_History_Record();
                 startActivity(new Intent(getApplicationContext(), MainActivity.class).setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP));
                 overridePendingTransition(R.anim.slide_out_left, R.anim.slide_out_right);
@@ -779,12 +976,76 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public void onBackPressed() {
-
         System.out.println("check" + !isGuillotineOpened);
         if (!isGuillotineOpened) {
             super.onBackPressed();
-        }
-        aniMenu.close();
+        } else
+            close_Menu();
+    }
+
+    @Override
+    public void onBarClicked(int index) {
+        // Toast.makeText(this, String.valueOf(index), Toast.LENGTH_SHORT).show();
+    }
+
+    public void setting(View view) {
+        close_Menu();
+        startActivity(new Intent(getApplicationContext(), Setting.class));
+    }
+
+    public void close_Menu() {
+        if (MainActivity.this != null)
+            MainActivity.this.runOnUiThread(new Runnable() {
+                @Override
+                public void run() {
+                    aniMenu.close();
+                }
+            });
+    }
+
+    public void news(View view) {
+        close_Menu();
+
+        startActivity(new Intent(getApplicationContext(), News_List.class));
+    }
+
+    public void add_Favourite_Country(String country_name) {
+        Snackbar snackbar = Snackbar
+                .make(findViewById(R.id.root), country_name + " has been added to the favourite list.", Snackbar.LENGTH_SHORT);
+
+        View snackBarView = snackbar.getView();
+        snackBarView.setBackgroundColor(getApplicationContext().getResources().getColor(R.color.blue));
+        TextView textView = (TextView) snackBarView.findViewById(R.id.snackbar_text);
+        textView.setTextColor(Color.WHITE);
+        textView.setTextSize(16);
+        snackbar.show();
+
+
+        sp.putString(country_name.substring(0, 4), country_name);
+        sp.commit();
+
+        prepare_All_Favourite_LIst();
+
+
+    }
+
+    public void remove_Fvrt_From_SP(String key) {
+
+        System.out.println("remove_fvrt_" + key);
+        sp.remove(key);
+        sp.commit();
+
+        prepare_All_Favourite_LIst();
+    }
+
+    public void global_currency(View view) {
+        startActivity(new Intent(getApplicationContext(), Global_Currency.class));
+        overridePendingTransition(R.anim.slide_out_left, R.anim.slide_out_right);
+
+    }
+
+    public void gotoGraphActivity() {
+        startActivity(new Intent(getApplicationContext(), GraphActivity.class));
     }
 }
 

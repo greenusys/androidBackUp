@@ -1,15 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-         xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/bg"
     android:orientation="vertical">
 
+
     <androidx.appcompat.widget.Toolbar
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        style="@style/Toolbar"
         app:contentInsetStart="0dp">
 
         <ImageView
@@ -18,84 +17,175 @@
             android:src="@drawable/back_arrow" />
     </androidx.appcompat.widget.Toolbar>
 
-    <LinearLayout
-        android:layout_marginLeft="20dp"
-     android:layout_marginRight="20dp"
-        android:id="@+id/home"
-        style="@style/LinearLayout.GuillotineItem"
-        android:layout_marginTop="@dimen/guillotine_medium_margin">
-
-        <ImageView
-            style="@style/ImageView.GuillotineItem"
-            android:src="@drawable/ic_profile" />
-
-        <com.example.currencyconverter.widget.CanaroTextView
-            style="@style/TextView.GuillotineItem"
-            android:text="@string/home" />
-    </LinearLayout>
-    <LinearLayout
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:id="@+id/clear_history"
-        style="@style/LinearLayout.GuillotineItem">
-
-        <ImageView
-            android:layout_width="38dp"
-            android:layout_height="38dp"
-            style="@style/ImageView.GuillotineItem"
-            android:src="@drawable/clear_icon" />
-
-        <com.example.currencyconverter.widget.CanaroTextView
-            style="@style/TextView.GuillotineItem"
-            android:text="Clear History" />
-    </LinearLayout>
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
 
-
-    <LinearLayout
-        android:visibility="gone"
-        android:id="@+id/article"
-        style="@style/LinearLayout.GuillotineItem">
-
-        <ImageView
-            style="@style/ImageView.GuillotineItem"
-            android:src="@drawable/ic_feed" />
-
-        <com.example.currencyconverter.widget.CanaroTextView
-            style="@style/TextView.GuillotineItem"
-            android:text="@string/privacy_policy" />
-    </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
 
+            <LinearLayout
+                android:background="@color/fbutton_color_pomegranate"
+                android:id="@+id/home"
+                style="@style/LinearLayout.GuillotineItem"
+                android:layout_marginTop="30dp">
 
-    <LinearLayout
-        android:visibility="gone"
-        android:id="@+id/settings_group"
-        style="@style/LinearLayout.GuillotineItem">
+                <ImageView
+                    style="@style/ImageView.GuillotineItem"
+                    android:layout_width="50dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/house" />
 
-        <ImageView
-            style="@style/ImageView.GuillotineItem"
-            android:src="@drawable/ic_settings" />
+                <com.example.currencyconverter.widget.CanaroTextView
+                    style="@style/TextView.GuillotineItem"
+                    android:text="@string/home"
+                    android:textColor="@color/white" />
+            </LinearLayout>
 
-        <com.example.currencyconverter.widget.CanaroTextView
-            style="@style/TextView.GuillotineItem"
-            android:text="@string/termcond" />
-    </LinearLayout>
+            <LinearLayout
+                style="@style/LinearLayout.GuillotineItem"
+                android:layout_marginTop="@dimen/guillotine_medium_margin"
+                android:onClick="global_currency">
+
+                <ImageView
+                    android:tint="@color/progress_click"
+                    style="@style/ImageView.GuillotineItem"
+                    android:layout_width="50dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/globe_icon" />
+
+                <com.example.currencyconverter.widget.CanaroTextView
+                    style="@style/TextView.GuillotineItem"
+                    android:text="Global Currency"
+                    android:textColor="@color/white" />
+            </LinearLayout> <LinearLayout
+                style="@style/LinearLayout.GuillotineItem"
+                android:layout_marginTop="@dimen/guillotine_medium_margin"
+                android:onClick="news">
+
+                <ImageView
+                    style="@style/ImageView.GuillotineItem"
+                    android:layout_width="50dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/newspaper" />
+
+                <com.example.currencyconverter.widget.CanaroTextView
+                    style="@style/TextView.GuillotineItem"
+                    android:text="@string/news"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/clear_history"
+                style="@style/LinearLayout.GuillotineItem"
+                android:layout_marginTop="@dimen/guillotine_medium_margin"
+                android:onClick="clear_history">
+
+                <ImageView
+                    style="@style/ImageView.GuillotineItem"
+                    android:layout_width="50dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/clear" />
+
+                <com.example.currencyconverter.widget.CanaroTextView
+                    style="@style/TextView.GuillotineItem"
+                    android:text="@string/clear"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/LinearLayout.GuillotineItem"
+                android:layout_marginTop="@dimen/guillotine_medium_margin"
+                android:onClick="rate_me">
+
+                <ImageView
+                    style="@style/ImageView.GuillotineItem"
+                    android:layout_width="50dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/rate" />
+
+                <com.example.currencyconverter.widget.CanaroTextView
+                    style="@style/TextView.GuillotineItem"
+                    android:text="@string/rate"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/LinearLayout.GuillotineItem"
+                android:layout_marginTop="@dimen/guillotine_medium_margin"
+                android:onClick="share">
+
+                <ImageView
+                    style="@style/ImageView.GuillotineItem"
+                    android:layout_width="50dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/share" />
+
+                <com.example.currencyconverter.widget.CanaroTextView
+                    style="@style/TextView.GuillotineItem"
+                    android:text="@string/share"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+            <LinearLayout
+                style="@style/LinearLayout.GuillotineItem"
+                android:layout_marginTop="@dimen/guillotine_medium_margin"
+                android:onClick="setting">
+
+                <ImageView
+                    android:tint="@color/fbutton_color_sun_flower"
+                    style="@style/ImageView.GuillotineItem"
+                    android:layout_width="50dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/settings" />
+
+                <com.example.currencyconverter.widget.CanaroTextView
+                    style="@style/TextView.GuillotineItem"
+                    android:text="Setting"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+
+            <!--  <LinearLayout
+                  style="@style/LinearLayout.GuillotineItem"
+                  android:layout_marginTop="@dimen/guillotine_medium_margin"
+                  android:onClick="feedback">
+  
+                  <ImageView
+                      style="@style/ImageView.GuillotineItem"
+                      android:layout_width="50dp"
+                      android:layout_height="40dp"
+                      android:src="@drawable/feedback" />
+  
+                  <com.example.currencyconverter.widget.CanaroTextView
+                      style="@style/TextView.GuillotineItem"
+                      android:text="@string/feedback"
+                      android:textColor="@color/white" />
+              </LinearLayout>-->
+
+            <LinearLayout
+                android:layout_marginBottom="10dp"
+                style="@style/LinearLayout.GuillotineItem"
+                android:layout_marginTop="@dimen/guillotine_medium_margin"
+                android:onClick="about_us">
+
+                <ImageView
+                    style="@style/ImageView.GuillotineItem"
+                    android:layout_width="50dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/about_us" />
+
+                <com.example.currencyconverter.widget.CanaroTextView
+                    style="@style/TextView.GuillotineItem"
+                    android:text="@string/about"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+        </LinearLayout>
 
 
+    </androidx.core.widget.NestedScrollView>
 
-    <LinearLayout
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:id="@+id/about_us"
-        style="@style/LinearLayout.GuillotineItem">
 
-        <ImageView
-            style="@style/ImageView.GuillotineItem"
-            android:src="@drawable/ic_settings" />
-
-        <com.example.currencyconverter.widget.CanaroTextView
-            style="@style/TextView.GuillotineItem"
-            android:text="@string/about" />
-    </LinearLayout>
 </LinearLayout>

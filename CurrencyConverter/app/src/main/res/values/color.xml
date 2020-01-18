@@ -10,5 +10,29 @@
     <color name="dark_grey">#D2D1D1</color>
     <color name="green">#5FD163</color>
     <color name="selected">#F44308</color>
+    <color name="materialLightPurple">#B266FF</color>
+
+    <color name="materialLightRed">#FA5858</color>
+    <color name="darkRed">#FF0000</color>
+    <color name="percentNegativeRed">#FE2E2E</color>
+    <color name="materialLightGreen">#99FF99</color>
+    <color name="darkGreen">#009900</color>
+    <color name="materialLightBlue">#3399FF</color>
+    <color name="percentPositiveGreen">#52BE80</color>
+
+
+    <color name="empty">@android:color/transparent</color>
+    <color name="progress">#30d1d5</color>
+    <color name="progress_disable">#30d1d5</color>
+    <color name="progress_click">#F2912C</color>
+    <color name="pin_background">#E2335E</color>
+    <color name="pin_text">#ffffff</color>
+    <color name="bar_title_color">#B6BDD5</color>
+    <color name="bar_title_selected_color">#FFFFFF</color>
+
+    <!-- app palette -->
+    <color name="primary">#64B5F6</color> <!-- Blue 300 -->
+    <color name="secondary">#FFCC80</color> <!-- Orange 200 -->
+    <color name="error">#Ef9A9A</color> <!-- Red 200 -->
 
 </resources>

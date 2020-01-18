@@ -49,6 +49,13 @@ public class Splash_Screen extends AppCompatActivity {
         //rotate.setInterpolator(new LinearInterpolator());
        // mLogo.startAnimation(rotate);
 
+if(Splash_Screen.this!=null)
+        Splash_Screen.this.runOnUiThread(new Runnable() {
+            @Override
+            public void run() {
+
+            }
+        });
 
 
         Thread myThread = new Thread(){

@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.Product_Description">
+
+
+    <!-- main content layout-->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+
+        <!--content layout-->
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="sans-serif"
+            android:gravity="left"
+            android:text="HABIBS HAIR CONDITIONER (400 ML.)"
+            android:textAllCaps="true"
+            android:textColor="#000"
+            android:textSize="20dp" />
+
+
+     <!--   <ImageView
+            android:id="@+id/rv_pro_img_id"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_margin="10dp"
+            android:layout_marginTop="10dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/haircondition" />
+-->
+
+
+        <com.daimajia.slider.library.SliderLayout
+            android:id="@+id/product_slider_images"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_margin="10dp"
+            android:layout_marginTop="10dp"
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/box"
+            android:fontFamily="sans-serif"
+            android:gravity="left"
+            android:text="300.00 Rs"
+            android:textAllCaps="true"
+            android:textColor="#000"
+            android:textSize="24dp" />
+
+        <TextView
+            android:layout_marginRight="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="sans-serif"
+            android:gravity="left"
+            android:text="Conditioning emollient soften hair and eliminates tangles, static charge for easy manageability. Adds body and shine to hair &amp; rejuvenates it."
+            android:textColor="#000"
+            android:textSize="20dp" />
+
+
+        <!-- add to card layout-->
+        <LinearLayout
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <TextView
+                    android:id="@+id/dec_quantity"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:background="?attr/colorPrimary"
+                    android:gravity="center"
+                    android:text="-"
+                    android:textColor="#fff"
+                    android:textSize="25dp" />
+
+                <TextView
+                    android:id="@+id/total_product"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:background="#fff"
+                    android:gravity="center"
+                    android:text="1"
+                    android:textColor="#000"
+                    android:textSize="25dp" />
+
+                <TextView
+                    android:id="@+id/inc_quantity"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:background="?attr/colorPrimary"                    android:gravity="center"
+                    android:text="+"
+                    android:textColor="#fff"
+                    android:textSize="25dp" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+
+                android:layout_weight="1"
+                android:gravity="right"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <TextView
+              android:id="@+id/add_to_cart"
+                    android:layout_marginRight="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:background="?attr/colorPrimary"
+                    android:drawableLeft="@drawable/cart"
+                    android:gravity="center"
+                    android:text="ADD TO CART"
+                    android:textColor="#fff"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <!--add to card layout end-->
+
+
+
+
+
+
+    </LinearLayout>
+        <!--content end  layout-->
+
+
+    </LinearLayout>
+
+    <!--  main end layout-->
+
+</ScrollView>

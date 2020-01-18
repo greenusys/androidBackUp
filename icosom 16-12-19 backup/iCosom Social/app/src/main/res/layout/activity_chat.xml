@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_marginTop="28dp"
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:gravity="top|center"
+        android:text="Piyush Mohan SIngh"
+        android:textSize="22sp"
+        android:id="@+id/frnd_name"
+        android:textAllCaps="true"
+        android:textColor="#000"
+        android:layout_height="match_parent" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_marginTop="60dp"
+        tools:listitem="i"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_above="@+id/lnlayout"
+        android:id="@+id/messagedata"
+        />
+
+    <TextView
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:text="No Chat Found"
+        android:textSize="20sp"
+        android:id="@+id/no_frnd_text"
+        android:textColor="#000"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:id="@+id/lnlayout"
+        android:gravity="bottom"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10dp"
+        >
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="0dp"
+            android:layout_weight="1.5"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Message"
+
+                android:id="@+id/ed_M_message"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:text="Send"
+            android:id="@+id/bt_M_send"
+            />
+    </LinearLayout>
+
+
+</RelativeLayout>

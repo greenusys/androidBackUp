@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#fff"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_marginStart="17dp"
+            android:layout_marginEnd="17dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp"
+            android:layout_marginTop="20dp"
+            android:weightSum="2">
+
+            <LinearLayout
+                android:id="@+id/sample_paper"
+                android:layout_width="3dp"
+                android:layout_height="120dp"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:background="#EEEEEE"
+                android:backgroundTint="#EEEEEE"
+                android:orientation="vertical">
+
+
+
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="All Rally"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="25sp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginStart="23dp"
+                android:id="@+id/past_paper"
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_weight="1"
+                android:background="#EEEEEE"
+                android:backgroundTint="#EEEEEE"
+                android:orientation="vertical">
+
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Latest Notification"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="25sp" />
+
+            </LinearLayout>
+
+
+
+
+
+
+        </LinearLayout>
+
+
+
+        <!-- Second Row-->
+        <LinearLayout
+            android:layout_marginStart="17dp"
+            android:layout_marginEnd="17dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:weightSum="2"
+            >
+
+            <LinearLayout
+                android:id="@+id/eligibility"
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:background="#EEEEEE"
+                android:backgroundTint="#EEEEEE"
+                android:orientation="vertical">
+
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Admit Card"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="25sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginStart="23dp"
+                android:id="@+id/syllabus"
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_weight="1"
+                android:background="#EEEEEE"
+                android:backgroundTint="#EEEEEE"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+
+                    android:text="Result"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="25sp" />
+
+            </LinearLayout>
+
+
+
+
+
+
+
+
+        </LinearLayout>
+
+
+
+        <!-- Second Row-->
+        <LinearLayout
+            android:layout_marginStart="19dp"
+            android:layout_marginEnd="17dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:weightSum="2"
+            >
+
+            <LinearLayout
+                android:id="@+id/merit_result"
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:visibility="visible"
+                android:background="#EEEEEE"
+                android:backgroundTint="#EEEEEE"
+                android:orientation="vertical">
+
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Merit"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                   android:textStyle="bold"
+                    android:textSize="25sp" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:visibility="visible"
+                android:layout_marginStart="23dp"
+                android:id="@+id/syllsabus"
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_round"
+                android:backgroundTint="#fff "
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+
+                    android:text="Result"
+                    android:gravity="center"
+                    android:textColor="@color/colorWhite"
+                    android:textStyle="bold"
+                    android:textSize="25sp" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+</LinearLayout>

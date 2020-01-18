@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name"> MCI-IIT JEE</string>
+
+
+    <string name="nameerror">Enter Valid Name</string>
+    <string name="emailerror">Enter Valid Email</string>
+    <string name="passworderror">Enter Some Password</string>
+    <string name="password_description">password</string>
+    <string name="common_signin_button_text">Log in with Google</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="class_spinner_prompt">Class</string>
+
+    <!-- string for the intent extra to put in the intent to launch the full image view activity !-->
+
+    <string name="full_image_extra">full_image_extra</string>
+
+    <string name="newz_title">new_title</string>
+
+    <string name="newz_date">newz_date</string>
+
+    <string name="newz_descrition">newz_description</string>
+
+    <string name="user_name">user name</string>
+
+    <string name="is_logged_in">login_state</string>
+
+    <string name="default_user_name">none</string>
+
+    <string name="content_authority">com.example.personal.registrationapp</string>
+
+    <string name="offline_test_flag">Offline_test</string>
+
+    <string name="pdf_intent_extra">pdf_intent</string>
+
+
+</resources>

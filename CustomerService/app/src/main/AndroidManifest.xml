@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.greenusys.customerservice">
+
+    <!--
+        <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+    -->
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name=".utility.AppController"
+        android:allowBackup="true"
+        android:icon="@drawable/eye_logo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:allowBackup">
+        <activity
+            android:name=".activity.Loginactivity"
+            android:configChanges="orientation|screenSize"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.VideoActivity" />
+        <activity android:name=".activity.VideoListActivity" />
+        <activity
+            android:name=".activity.CustomerDashboard"
+            android:label="@string/title_activity_customer_dashboard"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.EnginerDashboard"
+            android:label="@string/title_activity_enginer_dashboard"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".activity.AddCallLock" />
+        <activity android:name=".activity.Pdf" />
+        <activity android:name=".activity.Registration" />
+        <activity android:name=".activity.Forget" />
+        <activity android:name=".activity.Customer_Single_call" />
+        <activity android:name=".activity.QrGenerator" />
+        <activity android:name=".activity.Eng_single_view" />
+        <activity android:name=".activity.Scanner" />
+        <activity
+            android:name=".activity.MainActivity"
+            android:configChanges="orientation|screenSize"
+            android:windowSoftInputMode="adjustPan|adjustResize" />
+        <activity android:name=".activity.Scan_Barcode" />
+
+        <meta-data
+            android:name="com.google.android.gms.vision.DEPENDENCIES"
+            android:value="barcode" />
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+        <activity android:name=".activity.Customer_Payu" />
+        <activity android:name=".activity.PMainActivity" />
+        <activity android:name=".activity.ServiceList" />
+        <activity android:name=".activity.QutactionMain" />
+        <activity android:name=".activity.Descripation" />
+        <activity android:name=".activity.Description" />
+        <activity android:name=".activity.PayNext" />
+        <activity android:name=".activity.Forgettpassword" />
+        <activity android:name=".activity.ViewAndUpdateCustomer" />
+        <activity android:name=".A_ImageUpload" />
+        <activity android:name=".activity.OTPverifaction" />
+        <activity android:name=".activity.PP" />
+        <activity android:name=".activity.View_Customer_Query"></activity>
+    </application>
+
+</manifest>

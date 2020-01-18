@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.greenusys.allen.vidyadashboard">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <!--
+      <application
+        android:allowBackup="true"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+    -->
+    <!--
+  <activity
+            android:name="com.greenusys.allen.vidyadashboard.MainActivity_Dash"
+            android:theme="@style/AppTheme.NoActionBar" />
+    -->
+    <!--
+ <activity
+            android:name="com.greenusys.allen.vidyadashboard.Splash_Dash"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    -->
+    <!--
+<activity
+            android:name="com.greenusys.allen.vidyadashboard.Login_Dash"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.greenusys.allen.vidyadashboard.Registration_Dash"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.greenusys.allen.vidyadashboard.Forgot"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+    -->
+    <!--
+  <activity android:name="com.greenusys.allen.vidyadashboard.MessageListActivity" />
+        <activity
+            android:name="com.greenusys.allen.vidyadashboard.AllenChat"
+            android:parentActivityName="com.greenusys.allen.vidyadashboard.MessageListActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name="com.greenusys.allen.vidyadashboard.Click" />
+        <activity android:name="com.greenusys.allen.vidyadashboard.ChooseVideo" />
+        <activity android:name="com.greenusys.allen.vidyadashboard.Doc" />
+        <activity android:name="com.greenusys.allen.vidyadashboard.Main2Activity" />
+        <activity android:name="com.greenusys.allen.vidyadashboard.Doc_Next" />
+        <activity android:name="com.greenusys.allen.vidyadashboard.Pdf" />
+        <activity
+            android:name="com.greenusys.allen.vidyadashboard.Main3Activity"
+            android:screenOrientation="landscape" />
+        <activity android:name="com.greenusys.allen.vidyadashboard.Queryy" />
+        <activity android:name="com.greenusys.allen.vidyadashboard.Profile" />
+        <activity android:name="com.greenusys.allen.vidyadashboard.Quizfinal" />
+        <activity android:name="com.greenusys.allen.vidyadashboard.ServerList" />
+        <activity android:name="com.greenusys.allen.vidyadashboard.Physics" />
+        <activity android:name="com.greenusys.allen.vidyadashboard.Physicstutorial" />
+        <activity android:name="com.greenusys.allen.vidyadashboard.Physicsformula" />
+        <activity android:name="com.greenusys.allen.vidyadashboard.PhysDici" />
+        <activity android:name="com.greenusys.allen.vidyadashboard.PhysicsQues" />
+        <activity android:name="com.greenusys.allen.vidyadashboard.Whiteboard" />
+        <activity android:name="com.greenusys.allen.vidyadashboard.Chemistry" />
+        <activity android:name="com.greenusys.allen.vidyadashboard.Chemistrytut" />
+        <activity android:name="com.greenusys.allen.vidyadashboard.ChemistryQues" />
+        <activity android:name="com.greenusys.allen.vidyadashboard.Chemistryformula" />
+        <activity android:name="com.greenusys.allen.vidyadashboard.Chemdici" />
+        <activity android:name="com.greenusys.allen.vidyadashboard.Maths" />
+        <activity android:name="com.greenusys.allen.vidyadashboard.Mathsformulas" />
+        <activity android:name="com.greenusys.allen.vidyadashboard.Mathsques" />
+        <activity android:name="com.greenusys.allen.vidyadashboard.Mathsdicii" />
+        <activity android:name="com.greenusys.allen.vidyadashboard.Biology" />
+        <activity android:name="com.greenusys.allen.vidyadashboard.Bioformula" />
+        <activity android:name="com.greenusys.allen.vidyadashboard.Bioques" />
+        <activity android:name="com.greenusys.allen.vidyadashboard.Biodici" />
+        <activity android:name="com.greenusys.allen.vidyadashboard.Terms" />
+        <activity android:name="com.greenusys.allen.vidyadashboard.Privacy" />
+        <activity android:name="com.greenusys.allen.vidyadashboard.Abttt"></activity>
+    -->
+    <!-- </application> -->
+   <!-- <application>
+        <activity android:name=".WhiteBoard_Dash"></activity>
+    </application>-->
+
+</manifest>

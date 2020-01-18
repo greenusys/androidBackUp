@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/chat_user_reply_background_color"
+            android:fontFamily="casual"
+            android:textAlignment="center"
+            android:text="Force"
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="30dp" />
+
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="sans-serif"
+            android:text=" A force is a push or a pull applied to an object as a result of the interaction of the object with another object. Every time there is in interaction involving two objects, there is always a force upon every one of the objects. The force between them ceases to exist when the interaction between them stops. Forces only occur as a result of interaction. Without interaction, there will be no force.\n\nIn summary forces are classified broadly into two.\n1.	Contact forces\n2 Resultant Forces as a result of a distance action\n\nContact forces-\nContact Forces are types of forces that exist between two interacting objects when they are in close contact with each other. The sub-types and examples of contact forces are listed below:\n\n
+ �Frictional forces\n
+
+�	Tensional forces\n
+
+�	Normal forces\n
+
+�	Air resistance forces and\n
+
+�	Applied forces"
+
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="20dp" />
+        <ImageView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/v11" />
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="20dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="sans-serif"
+            android:text=" Resultant Forces from a distance action-\nThese are those types of forces that occur when the two objects that are interacting do not have bodily contact with each other; still they are capable of putting forth a push or a pull in spite of their bodily separation. Examples of these types of forces are:\nElectric forces-\n
+
+        These are another example of resultant forces as a result of interactions from remote positions. Examples of electrical forces are the forces that exist between the protons in the nucleus of an atom and the electrons outside the nucleus of an atom. The proton and electron irrespective of the distance from each other exert an electrical force of attraction or pull towards each other.
+
+        Magnetic forces-\n
+
+        These are another example of resultant forces from a distance action. For instance, two magnets can put forth a magnetic pull against each other even when they are separated by a few centimeters distance."></TextView>
+      <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/chat_user_reply_background_color"
+            android:fontFamily="casual"
+            android:textAlignment="center"
+            android:text="Newton First law of motion."
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="30dp" />
+<TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="sans-serif"
+            android:text="Newton's first law of motion stated that every object in a state of uniform motion tends to remain in that state of motion unless an external force is applied to it\nBy simple explanation it means that an object at rest will always remain at rest expect it is acting by a nonzero external force.
+
+The idea of a nonzero force will bring us back to our previous topic in vector addition. We define a net force as the resultant force obtained when all the forces acting on an object are summed together. Nonzero force can also be regarded as net force.
+
+Newton's first law of motion is quite similar to inertia. Inertia is one of the fundamental concepts used in physics to describe motion of objects and how objects are affected by applied forces.
+
+Understanding inertia also will help you understand to meaning and implementation of Newton's first law of motion.
+
+Inertia is the resistance of any physical object to any change in its state of motion (including a change in direction). In other words, it is the tendency of objects to keep moving in a straight line at constant linear velocity. (Wikipedia)"
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="20dp" />
+
+        <ImageView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/v7" />
+  <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/chat_user_reply_background_color"
+            android:fontFamily="casual"
+            android:textAlignment="center"
+            android:text="Newton Second law of motion."
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="30dp" />
+<TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="sans-serif"
+            android:text="The fundamental concept of Newton's second law of motion deals with the relationship between an object mass, the force that acts on the object and its acceleration. It focuses on the velocity of an object when a force acts on an object.\nLet consider the relationship between the applied force on an object and the object itself. If the same amount of force is applied to the object but of different size, the small object will tend to accelerate faster than the bigger object.\n
+
+We can deduce so far that\n
+
+Force = mass x acceleration"
+android:textColor="@color/cardview_dark_background"
+            android:textSize="20dp"/>
+ <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/chat_user_reply_background_color"
+            android:fontFamily="casual"
+            android:textAlignment="center"
+            android:text="Newton Third law of motion."
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="30dp" />
+<TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="sans-serif"
+            android:text="Newton third law of motion stated that for every action there is an equal and opposite reaction. Although it sounds simple but we will dive into it and make it even much easier to understand.\nNewton's third law of motion emphasis that for every internal force that acts upon an object, there is an opposing force with the same magnitude but in opposite direction at also acts on the object. This implies that an object is not responsible to initiate its own motion. In this case there is no net force.
+
+Newton's third law is predominant in our everyday life."
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="20dp" />
+
+ 
+
+
+    </LinearLayout>
+</ScrollView>

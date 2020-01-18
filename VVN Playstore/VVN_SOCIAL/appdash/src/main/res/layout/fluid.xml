@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/chat_user_reply_background_color"
+            android:fontFamily="casual"
+            android:textAlignment="center"
+            android:text="Fluid and weight"
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="30dp" />
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="casual"
+            android:textAlignment="center"
+            android:text="Mass and weight"
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="30dp" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="sans-serif"
+            android:text="A mass of an object is the amount of matter contained by the object .The mass of an object does not change with the location for eg-if the mass of an object is 10kg in earth ,the object will have the same mass in moon\n\nThe symbol of mass is m while the standard unit of measurement is kilogram\n\nW=m*a(N) "
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="20dp" />
+
+        <ImageView
+
+            android:id="@+id/imageView4"
+            android:layout_marginLeft="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/v6" />
+
+        <TextView
+           
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="sans-serif"
+            android:text="weight=mass*acceleration of gravity "
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="20dp" />
+
+        <TextView
+            
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/chat_user_reply_background_color"
+            android:fontFamily="casual"
+            android:textAlignment="center"
+            android:text="Pressure"
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="30dp" />
+<TextView
+            
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="sans-serif"
+            android:text="Pressure can be defined as the measurement of a force per unit area.	In another words ,it is the force exerted by an object divided by the surface area on which the force is being acted upon.\n\n For now let us justa ssume that we are dealing with 2 solids .In this situtation,pressure can be calculated with the formula shown below.\n\nNote: here that the force is applied perpendicular to the area\n\nPressure=Force/Area(Pascal)
+\n\n The SI-unit of pressure is called Pascal,The simple diag. below shows taht pressure exerted on a solid surface.  "
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="20dp" />
+ <ImageView
+       
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/v8" />
+ <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="casual"
+            android:textAlignment="center"
+            android:text="Pressure Measurement Using Barometer"
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="30dp" />
+<TextView
+            
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="sans-serif"
+            android:text="Manometer is one of the instruments used to measure pressure.The mechanism by which the measurementoccurs is by exploting the relationship between pressure and depth there are open-tube manometer and close-tube manometer\n\nA typical ex of  close-tube manometeris a barometer.the diag shown below "
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="20dp" />
+ <ImageView
+       
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/v9" />
+
+<TextView
+            
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="sans-serif"
+            android:text="A tube with one sealed end is filled with mercury and open end side of the tube is inserted in open rectangle container that is filled with mercury.Since the top surface of the container is open pressure is exerted by the atmosphere "
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="20dp" />
+
+ <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="casual"
+            android:textAlignment="center"
+            android:text="Equilbrium of bodies"
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="30dp" />
+<TextView
+            
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="sans-serif"
+            android:text="It is a way to identify the forces acting on a body partially  or completely immersed in a fluid.\n\nIn simple eg,if an object of wt is dropped inside the cyclinder container filled with water,if wt of water displaced is less than the weight of the object,the object will sink otherwise it will float. "
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="20dp" />
+ <ImageView
+       
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/v10" />
+    </LinearLayout>
+</ScrollView>

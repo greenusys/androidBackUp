@@ -1,0 +1,67 @@
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:layout_marginTop="30dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginBottom="5dp"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.8"
+            android:background="@drawable/chat_box">
+
+
+            <EditText
+                android:background="@null"
+                android:id="@+id/textField"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:hint="Write a message"
+                android:inputType="textMultiLine"
+                android:paddingHorizontal="10dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="10dp"
+                android:text=""
+                android:textColor="@color/white"
+                android:textColorHint="@color/white" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_marginEnd="5dp"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:onClick="sendMessage"
+                android:src="@drawable/chat_attachment_icon" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:paddingTop="5dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".2">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/sendButton"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:onClick="sendMessage"
+                android:src="@drawable/chat_send_button" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

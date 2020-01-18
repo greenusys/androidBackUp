@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <!--<LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="0dp"
+            android:weightSum="1"
+            android:background="@color/colorGrapeFruit"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/colorBitterSweetDark"
+                android:text="Tech Syllabus Link"
+                android:textAlignment="center"
+                android:textColor="@color/colorWhite"
+                android:textSize="25sp" />
+        </LinearLayout>-->
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/rv_soldier_tech_syllabuslink"
+            >
+
+        </android.support.v7.widget.RecyclerView>
+
+    </LinearLayout>
+</LinearLayout>
+       <!-- <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp"
+            android:visibility="gone"
+            android:layout_marginTop="20dp"
+            android:weightSum="2">
+
+            <LinearLayout
+                android:id="@+id/past_paper1"
+                android:layout_width="3dp"
+                android:layout_height="130dp"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:background="@color/colorGrapeFruit"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:tint="@color/colorWhite" />
+
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    android:layout_marginTop="20dp"
+                    android:background="@color/colorBitterSweetDark"
+                    android:text="GD Past Paper 1-2018 (Demo)"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="18sp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/past_paper2_buy"
+                android:layout_width="0dp"
+                android:layout_height="130dp"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:background="@color/colorBitterSweet"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+
+                    android:tint="@color/colorWhite" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    android:layout_marginTop="30dp"
+                    android:background="@color/colorBitterSweetDark"
+                    android:text="GD Past Paper 2-2018 with solution (Buy)"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:weightSum="2"
+            >
+
+            <LinearLayout
+                android:id="@+id/past_paper3_buy"
+                android:layout_width="0dp"
+                android:layout_height="130dp"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:visibility="gone"
+                android:background="@color/colorGrass"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:tint="@color/colorWhite" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="24dp"
+                    android:background="@color/colorGrassDark"
+                    android:text="GD Past Paper 3-2017 with solution (Buy)"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>-->
+
+
+

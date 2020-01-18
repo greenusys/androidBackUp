@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fbutton="http://schemas.android.com/tools"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/guillotine_actionbar_background_view_height"
+        android:layout_gravity="top"
+        android:background="@color/guillotine_background" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <include layout="@layout/title_back_layout" />
+
+
+        <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/adView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            ads:adSize="SMART_BANNER"
+            ads:adUnitId="ca-app-pub-3701953680756708/6428451409"></com.google.android.gms.ads.AdView>
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <!--data layout-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="280dp"
+                    android:layout_margin="20dp"
+                    app:cardCornerRadius="10dp">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="vertical">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:layout_marginRight="10dp"
+                            android:gravity="right">
+
+                            <com.example.digitalforgeco.widget.CanaroTextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:text="Track Products"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/guillotine_item_text_size" />
+                        </LinearLayout>
+
+
+                        <!--first row-->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="50dp"
+                            android:layout_marginRight="20dp"
+                            android:background="@drawable/bor"
+                            android:orientation="horizontal"
+                            android:weightSum="2">
+
+
+                            <EditText
+                                android:id="@+id/tracking_input"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:backgroundTint="@color/light_grey"
+                                android:gravity="center"
+                                android:hint="Enter The Tracking Number"
+                                android:inputType="text"
+                                android:text="9405510205407083587151"
+                                android:textColor="@color/black"
+                                android:textColorHint="@color/black"
+                                android:textSize="20dp" />
+
+
+                        </LinearLayout>
+
+                        <!--first row-->
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:layout_marginTop="40dp"
+                            android:layout_marginRight="15dp"
+                            android:gravity="right"
+                            android:orientation="horizontal"
+                            android:weightSum="2">
+
+                            <com.airbnb.lottie.LottieAnimationView
+                                android:id="@+id/loading_anim"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:visibility="gone"
+                                app:lottie_autoPlay="true"
+                                app:lottie_loop="true"
+                                app:lottie_rawRes="@raw/loading" />
+
+
+                            <com.example.menu_library.FButton
+                                android:id="@+id/track"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="left|top"
+                                android:layout_margin="10dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/button_back"
+                                android:minWidth="120dp"
+                                android:minHeight="50dp"
+                                android:text="Track"
+                                android:textColor="@android:color/white"
+                                app:buttonColor="@color/guillotine_background"
+                                fbutton:shadowEnabled="true" />
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <include layout="@layout/tracking_details_layout" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/no_shipment_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-20dp"
+                    android:visibility="gone">
+
+
+                    <include
+                        layout="@layout/no_shipment_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/no_internet_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone">
+
+
+                    <include
+                        layout="@layout/no_internet_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <!--data layout-->
+
+
+        </androidx.core.widget.NestedScrollView>
+
+    </LinearLayout>
+</FrameLayout>

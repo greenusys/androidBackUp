@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:context="com.greenusys.allen.vidyadashboard.Dashboard"
+        tools:showIn="@layout/app_bar_main_dash">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:background="@drawable/bg_profile"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="200dp">
+
+                <LinearLayout
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:id="@+id/vidya"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/iv_profile"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/vidya" />
+
+                    <TextView
+                        android:textColor="#039BE5"
+                        android:paddingTop="10dp"
+                        android:layout_below="@+id/iv_profile"
+                        android:id="@+id/tv_username"
+                        android:text="status"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <LinearLayout
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#e6e6e6">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:cardUseCompatPadding="true"
+                    android:id="@+id/cv_exploreOptionA">
+
+
+                        <ImageView
+                            android:id="@+id/btnExploreA"
+                            android:background="@drawable/bg_physics_b"
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp" />
+
+                </android.support.v7.widget.CardView>
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:cardUseCompatPadding="true"
+                    android:id="@+id/cv_exploreOptionB">
+
+                        <ImageView
+                            android:id="@+id/btnExploreB"
+                            android:background="@drawable/bg_chemistry_b"
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp" />
+
+
+
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <android.support.v7.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:cardUseCompatPadding="true"
+                    android:id="@+id/cv_exploreOptionC">
+
+
+                        <ImageView
+                            android:id="@+id/btnExploreC"
+                            android:background="@drawable/bg_maths_b"
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp" />
+
+
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:cardUseCompatPadding="true"
+                    android:id="@+id/cv_exploreOptionD">
+
+
+                        <ImageView
+                            android:id="@+id/btnExploreD"
+                            android:background="@drawable/bg_bio_b"
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp" />
+
+
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <android.support.v7.widget.CardView
+            app:cardUseCompatPadding="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:scaleType="fitXY"
+                    android:id="@+id/bg_quiz"
+                    android:src="@drawable/bg_quiz"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:paddingStart="10dp"
+                        android:background="#fff"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+
+                           android:text="Quiz"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            android:textColor="#000"
+                            android:id="@+id/tv_textQuiz" />
+                        <TextView
+                            android:text="Play Quiz And Challenge peers across the world"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="14sp"
+                            android:padding="5dp"
+                            android:paddingStart="10dp"
+                            android:id="@+id/tv_quizDetail" />
+                        <TextView
+                            android:textAllCaps="true"
+                            android:text="play now"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="14sp"
+                            android:textColor="@color/colorPrimary"
+                            android:id="@+id/tv_clickQuiz" />
+
+                    </LinearLayout>
+
+
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            app:cardUseCompatPadding="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:background="#fff"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:scaleType="fitXY"
+                    android:src="@drawable/bg_chat"
+                    android:id="@+id/bg_chat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <android.support.v7.widget.CardView
+                    app:cardCornerRadius="2dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:paddingStart="10dp"
+                        android:background="#fff"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:text="Chat"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            android:textColor="#000"
+                            android:id="@+id/tv_textChat" />
+                        <TextView
+                            android:text="Chat with Experts and Resolve your Queries"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="16sp"
+                            android:padding="5dp"
+                            android:paddingStart="10dp"
+                            android:id="@+id/tv_chatDetails" />
+                        <TextView
+                            android:textAllCaps="true"
+                            android:text="chat now"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="14sp"
+                            android:textColor="@color/colorPrimary"
+                            android:id="@+id/tv_clickChat" />
+
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            app:cardUseCompatPadding="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:scaleType="fitXY"
+                    android:src="@drawable/bg_docs_a"
+                    android:id="@+id/bg_doc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="2dp">
+                    <LinearLayout
+                        android:paddingStart="10dp"
+                        android:background="#fff"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/ll_docs">
+
+                        <TextView
+                            android:text="Docs"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            android:textColor="#000"
+                            android:id="@+id/tv_textDocs" />
+                        <TextView
+                            android:text="Look through our Libraries and find the right material"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="16sp"
+                            android:padding="5dp"
+                            android:paddingStart="10dp"
+                            android:id="@+id/tv_docsDetails" />
+                        <TextView
+                            android:textAllCaps="true"
+                            android:text="play now"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="14sp"
+                            android:textColor="@color/colorPrimary"
+                            android:id="@+id/tv_clickDocs" />
+
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            app:cardUseCompatPadding="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:scaleType="fitXY"
+                    android:src="@drawable/bg_video"
+                    android:id="@+id/bg_video"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="2dp">
+                    <LinearLayout
+                        android:paddingStart="10dp"
+                        android:background="#fff"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:text="Video"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            android:textColor="#000"
+                            android:id="@+id/tv_textVideo" />
+                        <TextView
+                            android:text="Learn by watching the right material"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="16sp"
+                            android:padding="5dp"
+                            android:paddingStart="10dp"
+                            android:id="@+id/tv_videoDetails" />
+                        <TextView
+                            android:textAllCaps="true"
+                            android:text="watch now"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="14sp"
+                            android:textColor="@color/colorPrimary"
+                            android:id="@+id/tv_clickVideo" />
+
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+
+    </LinearLayout>
+
+
+</ScrollView>

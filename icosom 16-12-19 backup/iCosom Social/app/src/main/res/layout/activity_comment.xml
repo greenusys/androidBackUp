@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/background"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+
+            android:gravity="top">
+
+            <androidx.recyclerview.widget.RecyclerView
+                tools:listitem="@layout/item_comment_section"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/rvShowComments" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#ccc"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="bottom"
+            android:background="#fff"
+            android:gravity="bottom"
+            android:padding="8dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/ivProfileImageComment"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/placeholder"/>
+
+            <EditText
+                android:id="@+id/edt_comment"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"
+                android:maxHeight="100dp"
+                android:gravity="center_vertical"
+                android:hint="write a comment..."
+                android:padding="8dp"
+                android:textSize="13sp"
+                android:background="@drawable/shape_background_edit_text" />
+
+            <ImageView
+                android:id="@+id/iv_sendComment"
+                android:layout_width="55dp"
+                android:layout_height="35dp"
+                android:src="@drawable/ic_send"
+                android:clickable="true"
+                android:padding="5dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/shape_oval_dark_grey"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvCommentCountComment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0 comments"
+        android:textSize="8sp"
+        android:textColor="#000"
+        android:textAllCaps="true"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingBottom="3dp"
+        android:paddingTop="3dp"
+        android:layout_gravity="center|top"
+        android:layout_marginTop="55dp"
+        android:background="@drawable/shape_solid_rectangle"/>
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/custom_toolbar"
+        android:layout_margin="8dp"
+        app:popupTheme="@style/AppTheme.PopupOverlay">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:layout_marginRight="@dimen/activity_horizontal_margin">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:textSize="17sp"
+                android:textColor="#000"
+                android:letterSpacing="0.2"
+                android:textAllCaps="true"
+                android:text="Comments"/>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+
+            <ImageView
+                android:visibility="gone"
+                android:id="@+id/ivLikeComment"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_like"/>
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/tvCountLikeComment"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="18"
+                android:gravity="center"
+                android:textColor="#fff"
+                android:textSize="13sp"
+                android:layout_marginLeft="8dp"/>
+
+            <ImageView
+                android:visibility="gone"
+                android:id="@+id/ivDisLikeComment"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_dislike"
+                android:layout_marginLeft="8dp"/>
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/tvCountDisLikeComment"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="18"
+                android:gravity="center"
+                android:textColor="#fff"
+                android:textSize="13sp"
+                android:layout_marginLeft="8dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:visibility="gone"
+                android:src="@drawable/ic_right_arrow"
+                android:layout_marginLeft="8dp"/>
+
+        </LinearLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

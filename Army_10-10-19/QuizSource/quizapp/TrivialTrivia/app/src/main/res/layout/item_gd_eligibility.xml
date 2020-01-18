@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:orientation="vertical"
+    app:cardCornerRadius="10dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:weightSum="2">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="17dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="vertical"
+            android:weightSum="8">
+
+
+            <TextView
+                android:id="@+id/details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:text="10+2 with Physics and Maths"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+
+            <!--  <TextView
+
+                  android:id="@+id/percentage"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_gravity="center"
+                  android:layout_margin="5dp"
+                  android:layout_weight="1"
+                  android:drawableLeft="@drawable/bulls"
+                  android:foregroundGravity="center"
+
+                  android:gravity="left"
+
+                  android:text="Percentage- 50%"
+                  android:textColor="@color/black"
+                  android:textSize="18dp"
+                  android:textStyle="bold" />
+
+              <TextView
+                  android:id="@+id/min_percentage"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_gravity="center"
+                  android:layout_margin="5dp"
+                  android:layout_weight="1"
+                  android:drawableLeft="@drawable/bulls"
+                  android:foregroundGravity="center"
+
+                  android:gravity="left"
+
+                  android:text="Minumum 40% in all subjects"
+                  android:textColor="@color/black"
+                  android:textSize="18dp"
+                  android:textStyle="bold" />
+
+              <TextView
+                  android:id="@+id/a"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_gravity="center"
+                  android:layout_margin="5dp"
+                  android:layout_weight="1"
+                  android:drawableLeft="@drawable/bulls"
+                  android:foregroundGravity="center"
+                  android:gravity="left"
+
+                  android:text="asdfkasdlfksf"
+
+                  android:textColor="@color/black"
+                  android:textSize="18dp"
+                  android:textStyle="bold"
+                 />
+
+              <TextView
+                  android:id="@+id/b"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_gravity="center"
+                  android:layout_margin="5dp"
+                  android:layout_weight="1"
+                  android:drawableLeft="@drawable/bulls"
+                  android:foregroundGravity="center"
+                  android:gravity="left"
+                  android:text="asdfasdfasdf"
+
+                  android:textColor="@color/black"
+                  android:textSize="18dp"
+                  android:textStyle="bold"
+                 />
+
+              <TextView
+                  android:id="@+id/c"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_gravity="center"
+                  android:layout_margin="5dp"
+                  android:layout_weight="1"
+                  android:drawableLeft="@drawable/bulls"
+                  android:foregroundGravity="center"
+                  android:gravity="left"
+                  android:text="asdfsadf"
+
+                  android:textColor="@color/black"
+                  android:textSize="18dp"
+                  android:textStyle="bold"
+                  />
+               &lt;!&ndash;
+              <Button
+                  android:id="@+id/seemore"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_gravity="right"
+                  android:background="@color/colorBlueJeans"
+                  android:gravity="center"
+                  android:text="See More"
+                  android:textColor="@color/white"
+                  android:textStyle="bold" />&ndash;&gt;
+  -->
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</android.support.v7.widget.CardView>
+
+
+
+

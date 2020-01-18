@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <com.google.android.material.tabs.TabLayout
+        app:tabTextAppearance="@style/MyTabLayoutTextAppearance"
+        android:background="@color/colorPrimary"
+        app:tabTextColor="#fff"
+        app:tabSelectedTextColor="@color/yellow"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:id="@+id/tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_gravity="bottom"
+        app:tabGravity="fill"
+        app:tabIndicatorColor="@color/yellow"
+        app:tabIndicatorHeight="4dp"
+        app:tabMode="fixed">
+
+
+        <com.google.android.material.tabs.TabItem
+
+            android:text="Recent Chats"
+            android:layout_width="wrap_content"
+            android:backgroundTint="@color/colorPrimary"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:textAlignment="center"
+            android:icon="@drawable/chat_icon"
+            />
+        <!--android:icon="@drawable/ic_home"-->
+
+        <com.google.android.material.tabs.TabItem
+            android:text="Online Friends"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:icon="@drawable/chat_active_user_icon" />
+
+        <com.google.android.material.tabs.TabItem
+            android:text="Friends List"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:textAlignment="center"
+            android:icon="@drawable/chat_friend_icon"
+            />
+
+
+
+    </com.google.android.material.tabs.TabLayout>
+
+        <FrameLayout
+            android:layout_marginBottom="70dp"
+            android:id="@+id/fragment_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            app:layout_constraintBottom_toTopOf="@id/tabLayout"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

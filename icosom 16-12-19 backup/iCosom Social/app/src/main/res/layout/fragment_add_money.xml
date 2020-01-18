@@ -1,0 +1,110 @@
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:background="@drawable/home_background"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.3"
+        android:src="@drawable/log7"/>
+    <TextView
+        android:textStyle="bold"
+        android:letterSpacing="0.02"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20sp"
+        android:textAllCaps="true"
+        android:text="icosom"
+        android:layout_width="match_parent"
+        android:layout_height="30dp" />
+
+
+    <TextView
+        android:textStyle="bold"
+        android:layout_marginLeft="32dp"
+        android:gravity="center|top"
+        android:layout_marginTop="40dp"
+        android:textColor="@color/colorAccent"
+        android:textSize="12sp"
+        android:text="recharge"
+        android:layout_gravity="center|top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:focusableInTouchMode="true"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="com.icosom.social.Fragment.RechargeFragment">
+
+        <TextView
+            android:layout_marginBottom="32dp"
+            android:textStyle="bold"
+            android:letterSpacing="0.02"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:textColor="@color/colorPrimary"
+            android:textSize="20sp"
+            android:textAllCaps="true"
+            android:text="Add to wallet"
+            android:layout_width="match_parent"
+            android:layout_height="30dp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+
+                android:layout_margin="8dp"
+                android:padding="8dp"
+                android:textColor="#80000000"
+                android:text=""
+                android:id="@+id/etAmountAddMoney"
+                android:hint="Amount"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:background="@drawable/shape_rectangle_blue_color"
+            android:id="@+id/tvSubmitAddMoneyRecharge"
+            android:layout_marginTop="16dp"
+            android:layout_margin="16dp"
+            android:textColor="#FFFFFFFF"
+            android:padding="8dp"
+            android:textStyle="bold"
+            android:textAllCaps="true"
+            android:text="submit"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_width="100dp"
+            android:layout_height="50dp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:drawableStart="@drawable/ic_account_balance_wallet"
+        android:id="@+id/tvViewBalanceAddMoneyRechargesss"
+        android:layout_margin="16dp"
+        android:textColor="#FF606689"
+        android:padding="8dp"
+        android:textStyle="bold"
+        android:textAllCaps="true"
+        android:text="view balance"
+        android:gravity="center"
+        android:layout_gravity="bottom|end"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+

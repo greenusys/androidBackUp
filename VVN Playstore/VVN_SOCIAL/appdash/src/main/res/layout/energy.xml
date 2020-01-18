@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <TextView
+          
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/chat_user_reply_background_color"
+            android:fontFamily="casual"
+            android:textAlignment="center"
+            android:text="Energy"
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="30dp" />
+
+       
+
+        <TextView
+           
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="sans-serif"
+            android:text="Energy can be defined as the ability to do a particular work. A person or thing that is able to carry out a particular task or work is said to have energy.\nA farmer tilling his soil or planting seeds in his farm possess energy. Also, a horse ploughing the fields is said to have energy.
+
+The unit of measurement for Energy is the joule and it is the same with the unit of measurement for Work. Energy has many different forms and they are as follows;"
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="20dp" />
+ <TextView
+           
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/chat_user_reply_background_color"
+            android:fontFamily="casual"
+            android:textAlignment="center"
+            android:text="Mechanical Energy"
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="30dp" />
+  <TextView
+            
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="sans-serif"
+            android:text="This is the amount of energy possessed by an object due to its motion or position. Mechanical energy can be either kinetic energy which is energy of motion or potential energy which is stored energy of position."
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="20dp" />
+ <TextView
+           
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/chat_user_reply_background_color"
+            android:fontFamily="casual"
+            android:textAlignment="center"
+            android:text="Heat or Thermal Energy"
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="30dp" />
+  <TextView
+            
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="sans-serif"
+            android:text="Thermal energy is the part of the total potential energy and kinetic energy of an object or sample of matter that results in the system temperature. It is represented by the variable Q, and can be measured in Joules."
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="20dp" />
+<TextView
+           
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/chat_user_reply_background_color"
+            android:fontFamily="casual"
+            android:textAlignment="center"
+            android:text="Light Energy"
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="30dp" />
+  <TextView
+            
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="sans-serif"
+            android:text="Light energy can be described as the potential of work that is gotten from light. It is the energy in the form of light and is the only kind of energy that we can actually see with the naked eye.
+
+It can be converted into other types of energy, like chemical energy. This energy is carried in separate packets called photons.
+
+In living plants for example, the light energy is what splits organic molecules to make chemical energy in a process called photosynthesis."
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="20dp" />
+<TextView
+           
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/chat_user_reply_background_color"
+            android:fontFamily="casual"
+            android:textAlignment="center"
+            android:text="Chemical Energy"
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="30dp" />
+  <TextView
+            
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="sans-serif"
+            android:text="It is that part of the energy in a substance that can be released by a chemical reaction"
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="20dp" />
+<TextView
+           
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/chat_user_reply_background_color"
+            android:fontFamily="casual"
+            android:textAlignment="center"
+            android:text="Electrical Energy"
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="30dp" />
+  <TextView
+            
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="sans-serif"
+            android:text="Electrical energy results from the movement of an electrical charge, and is commonly referred to as simply electricity. Electrical energy is the result of the interaction of subatomic particles with this force.
+
+Electricity manifests itself in natural phenomena such as lightning and is essential to life at a fundamental level. The ability of humans to generate, transmit and store electricity is crucial to modern industry, technology and, in most countries, domestic life."
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="20dp" />
+<TextView
+           
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/chat_user_reply_background_color"
+            android:fontFamily="casual"
+            android:textAlignment="center"
+            android:text="Atomic energy "
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="30dp" />
+  <TextView
+            
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="sans-serif"
+            android:text="Atomic energy is the energy produced by atoms."
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="20dp" />
+<TextView
+           
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/chat_user_reply_background_color"
+            android:fontFamily="casual"
+            android:textAlignment="center"
+            android:text="solar energy "
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="30dp" />
+  <TextView
+            
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="sans-serif"
+            android:text="Solar power is energy from the sun and without its presence all life on earth would end."
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="20dp" />
+<TextView
+           
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/chat_user_reply_background_color"
+            android:fontFamily="casual"
+            android:textAlignment="center"
+            android:text="Measurement of energy "
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="30dp" />
+  <TextView
+            
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="sans-serif"
+            android:text="Energy can be measured in two ways;"
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="20dp" />
+<TextView
+           
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/chat_user_reply_background_color"
+            android:fontFamily="casual"
+            android:textAlignment="center"
+            android:text="Potential Energy (P.E) "
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="30dp" />
+ <TextView
+            
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="sans-serif"
+            android:text="Potential Energy is simply referred to as stored energy in a body when in a certain state or position. Such stored energy is used to do work when the body begins to move. Such energy can be seen in a stone sitting on a cliff. When it's rolled over and falls on the windscreen of a vehicle, it breaks the glass. That energy which the stone possesses while it is at rest is what is known as potential energy"
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="20dp" />
+ 
+<TextView
+           
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/chat_user_reply_background_color"
+            android:fontFamily="casual"
+            android:textAlignment="center"
+            android:text="Kinetic Energy (K.E) "
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="30dp" />
+ <TextView
+            
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="sans-serif"
+            android:text="Kinetic energy is the energy that is said to be possessed by a particular mass of thing or body when it is on the move or when it is in motion.
+
+An example of Kinetic energy is a student running to school. Also, in the example of a stone falling down from a cliff and breaking the glass of a vehicle, the energy possessed by the stone when it is in motion downwards to the vehicle is what is known as kinetic energy.
+
+Kinetic Energy depends only on the mass and velocity of the body. The formulae for the kinetic energy of a body in motion is given as
+
+K.E =  mv2
+
+Where m = mass, v = velocity
+
+Therefore, in a situation where two bodies in motion have the same mass, the faster of the two bodies is in possession of kinetic energy and where they have the same velocity, the body with the greater mass has a greater kinetic energy."
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="20dp" />
+
+      
+
+    </LinearLayout>
+</ScrollView>

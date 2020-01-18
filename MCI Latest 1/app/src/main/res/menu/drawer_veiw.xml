@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+
+        <item
+            android:id="@+id/home_nv"
+            android:icon="@drawable/home"
+            android:title="Home" />
+        <item
+            android:id="@+id/news_nv"
+            android:icon="@drawable/newspaper"
+            android:title="News"/>
+        <item
+            android:id="@+id/talk_to_md_nv"
+            android:icon="@drawable/message_text"
+            android:title="Talk to Md"/>
+        <item
+            android:id="@+id/student_zone_nv"
+            android:icon="@drawable/pencil"
+            android:title="Student Zone"/>
+
+
+    </group>
+
+</menu>

@@ -1,0 +1,35 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1">
+        <!--android:background="#DCDCDC"-->
+
+
+        <GridView
+            android:id="@+id/grid1"
+            android:layout_width="match_parent"
+            android:layout_height="459dp"
+            android:gravity="center"
+            android:horizontalSpacing="30dp"
+            android:numColumns="2"
+            android:layout_marginTop="20dp"
+            android:paddingLeft="20dp"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="10dp" />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

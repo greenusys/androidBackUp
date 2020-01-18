@@ -1,0 +1,85 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/search"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+
+        app:popupTheme="@style/AppTheme.PopupOverlay">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="Search"
+                android:id="@+id/edt_search"
+                android:gravity="center_vertical"
+                android:textSize="15sp"
+                android:drawableLeft="@drawable/ic_search"
+                android:drawablePadding="10dp"
+                android:paddingLeft="10dp"
+                android:textColorHint="#000"
+                android:textColor="#000"/>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+    <TextView
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:text="No Friends"
+        android:textSize="20sp"
+        android:id="@+id/no_frnd_text"
+        android:textColor="#000"
+        android:layout_height="match_parent" />
+
+
+
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_marginTop="50dp"
+        android:visibility="visible"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="40dp"
+        android:layout_height="match_parent"
+        android:id="@+id/rv_showFriendList"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="50dp"
+        android:id="@+id/rv_search" />
+
+    <android.support.v4.widget.ContentLoadingProgressBar
+        android:layout_width="50dp"
+        android:id="@+id/progress_bar"
+        android:layout_height="50dp"
+        style="?android:attr/progressBarStyleLarge"
+        android:foregroundGravity="center"
+        android:layout_gravity="center" />
+
+
+
+
+</FrameLayout>

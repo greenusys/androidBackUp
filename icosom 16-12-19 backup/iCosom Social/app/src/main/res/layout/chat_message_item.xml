@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clipToPadding="false"
+    android:orientation="vertical"
+    android:paddingVertical="10dp"
+    android:paddingLeft="15dp">
+
+
+
+    <TextView
+        android:visibility="gone"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/date"
+        android:layout_gravity="center"
+        android:background="@drawable/date_box"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingTop="5dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="5dp"
+        android:text="OCTOBER 19,2019"
+        android:textColor="@color/white"
+        android:textSize="16dp" />
+
+    <!--  friend layout-->
+    <LinearLayout
+        android:id="@+id/friend_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+
+
+
+        <LinearLayout
+            android:background="@drawable/chat_my_message2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/frnd_rel_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/chat_my_message2"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/message_body"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="5dp"
+                    android:paddingRight="10dp"
+                    android:paddingBottom="5dp"
+                    android:text="Hii       "
+                    android:textColor="@color/black"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:layout_marginTop="-5dp"
+                    android:paddingBottom="5dp"
+                    android:paddingRight="15dp"
+                    android:id="@+id/frnd_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/message_body"
+                    android:layout_alignEnd="@+id/message_body"
+                    android:layout_alignRight="@+id/message_body"
+                    android:text="4:50 AM"
+                    android:textColor="@color/black"
+                    android:textSize="10dp"
+                    android:textStyle="italic" />
+
+
+            </RelativeLayout>
+
+            <!-- image layout-->
+            <FrameLayout
+                android:visibility="gone"
+                android:layout_width="150dp"
+                android:layout_height="150dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/chat_frnd_image" />
+
+                <ProgressBar
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:visibility="gone" />
+
+            </FrameLayout>
+            <!-- image layout-->
+
+            <!-- video layout-->
+            <FrameLayout
+                android:visibility="gone"
+                android:layout_width="150dp"
+                android:layout_height="150dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/chat_video_test" />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/chat_ic_play_video" />
+
+                <ProgressBar
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:visibility="gone" />
+
+            </FrameLayout>
+            <!-- video layout-->
+
+            <TextView
+                android:visibility="gone"
+                style="@style/TextAppearance.AppCompat.Body1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/chat_my_message2"
+                android:drawableLeft="@drawable/chat_file_icon"
+                android:drawablePadding="5dp"
+                android:elevation="2dp"
+                android:gravity="left"
+                android:paddingVertical="12dp"
+                android:paddingLeft="15dp"
+                android:paddingEnd="10dp"
+                android:text="file102394234asdfsadfaasdfsd923482349234823.doc"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <!--  friend layout-->
+
+
+    <!--  self layout-->
+    <LinearLayout
+        android:id="@+id/self_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:orientation="vertical">
+
+
+
+
+
+        <RelativeLayout
+            android:layout_marginRight="5dp"
+            android:background="@drawable/chat_my_message"
+            android:id="@+id/self_rel_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_marginTop="-5dp"
+                android:elevation="2dp"
+                android:paddingHorizontal="16dp"
+                android:paddingVertical="12dp"
+                android:textColor="#fff"
+                android:textSize="18sp"
+                android:id="@+id/my_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="5dp"
+                android:text="Hii        " />
+
+            <TextView
+                android:textColor="#fff"
+                android:paddingBottom="5dp"
+                android:paddingRight="15dp"
+                android:id="@+id/self_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/my_message"
+                android:layout_alignEnd="@+id/my_message"
+                android:layout_alignRight="@+id/my_message"
+                android:text="04:50 AM"
+                android:textSize="10dp"
+                android:textStyle="italic" />
+
+        </RelativeLayout>
+
+
+        <!-- image layout-->
+        <FrameLayout
+            android:visibility="gone"
+            android:layout_width="150dp"
+            android:layout_height="150dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:backgroundTint="@color/colorPrimary"
+                android:scaleType="fitCenter"
+                android:src="@drawable/chat_frnd_image" />
+
+            <ProgressBar
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:visibility="gone" />
+
+        </FrameLayout>
+        <!-- image layout-->
+
+        <!-- video layout-->
+        <FrameLayout
+            android:visibility="gone"
+            android:layout_width="150dp"
+            android:layout_height="150dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:backgroundTint="@color/colorPrimary"
+                android:scaleType="fitCenter"
+                android:src="@drawable/chat_video_test" />
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:src="@drawable/chat_ic_play_video" />
+
+            <ProgressBar
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:visibility="gone" />
+
+        </FrameLayout>
+        <!-- video layout-->
+
+        <TextView
+            android:visibility="gone"
+            style="@style/TextAppearance.AppCompat.Body1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/chat_my_message2"
+            android:drawableLeft="@drawable/chat_file_icon"
+            android:drawablePadding="5dp"
+            android:elevation="2dp"
+            android:gravity="left"
+            android:paddingVertical="12dp"
+            android:paddingLeft="15dp"
+            android:paddingEnd="10dp"
+            android:text="file102394234asdfsadfaasdfsd923482349234823.doc"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+    <!--  self layout-->
+
+
+</LinearLayout>

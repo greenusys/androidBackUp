@@ -1,0 +1,62 @@
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="270dp"
+    android:background="@color/opt_round_card_view_shadow_end_color"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <com.github.captain_miao.optroundcardview.OptRoundCardView android:id="@+id/optRoundCardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:optRoundCardBackgroundColor="@color/colorPrimary"
+        android:outlineAmbientShadowColor="@color/colorPrimary"
+        android:outlineSpotShadowColor="@color/colorPrimary"
+        app:optRoundCardCornerRadius="50dp"
+        app:optRoundCardElevation="40dp"
+        app:optRoundCardLeftBottomCorner="false"
+        app:optRoundCardLeftTopCorner="true"
+        app:optRoundCardRightBottomCorner="false"
+        app:optRoundCardRightTopCorner="true"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:layout_marginTop="30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Button" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Button" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Button" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Button" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Button" />
+
+
+        </LinearLayout>
+
+
+    </com.github.captain_miao.optroundcardview.OptRoundCardView>
+
+
+</LinearLayout>

@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">PackChase</string>
+    <string name="home">Home</string>
+    <string name="tracking_history">Tracking History</string>
+    <string name="share">Share App</string>
+    <string name="about">About us</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="termcond">Terms &amp; Condition</string>
+</resources>

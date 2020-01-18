@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    tools:context=".Activities.logIn">
+
+    <LinearLayout
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="Nothing here"
+            android:textColor="@color/dark"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:id="@+id/product_image"
+            android:layout_width="250dp"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            android:layout_height="200dp"
+            app:lottie_rawRes="@raw/cart_anim"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="Checkout great products &amp; offers"
+            android:textColor="@color/dark"
+            android:textSize="25dp" />
+
+        <TextView
+            android:onClick="start_shopping"
+            android:textStyle="bold"
+            android:padding="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="?attr/colorPrimary"
+            android:gravity="center"
+            android:text="Continue Shopping"
+            android:textColor="#fff"
+            android:textSize="25dp" />
+
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/chat_user_reply_background_color"
+            android:fontFamily="casual"
+            android:textAlignment="center"
+            android:text="Specific Heat"
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+android:layout_marginLeft="20dp"
+            android:textSize="17dp"
+            android:text="The specific heat is the amount of heat per unit mass required to raise the temperature by one degree Celsius.”\nQ = mc∆T\nQ = heat energy (Joules, J)
+m = mass of a substance (kg)
+c = specific heat (units J/kg∙K)
+∆T = change in temperature (Kelvins, K)
+"
+            android:textColor="@color/cardview_dark_background" />
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/chat_user_reply_background_color"
+            android:fontFamily="casual"
+            android:textAlignment="center"
+            android:text="Specific latent heat"
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="20dp" />
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:textSize="17dp"
+            android:text="A specific latent heat (L) expresses the amount of energy in the form of heat (Q) required to completely effect a phase change of a unit of mass (m), usually 1kg, of a substance as an intensive property:\nQ=mL\n Q=heat Energy (J)\n
+m=mass(kg)\nL=specific  latent heat(j/kg)"
+            android:textColor="@color/cardview_dark_background" />
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/chat_user_reply_background_color"
+            android:fontFamily="casual"
+            android:textAlignment="center"
+            android:text="Temperature Conversion"
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="20dp" />
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:textSize="17dp"
+            android:text=""
+            android:textColor="@color/cardview_dark_background" />
+
+        <ImageView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/kkk" />
+
+    </LinearLayout>
+</ScrollView>

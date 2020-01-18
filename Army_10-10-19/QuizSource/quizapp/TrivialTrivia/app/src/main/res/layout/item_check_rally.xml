@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="8dp"
+        >
+        <LinearLayout
+            android:visibility="gone"
+            android:background="@color/colorPrimary"
+            android:id="@+id/sample_paper1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:weightSum="2"
+
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:text="Name"
+                android:textAlignment="center"
+
+                android:id="@+id/gd_name"
+                android:textColor="@color/colorWhite"
+                android:textSize="18sp"
+                android:tint="@color/colorWhite"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="50dp"
+
+                android:text="date"
+                android:id="@+id/gd_date"
+                android:textAlignment="center"
+                android:textColor="@color/colorWhite"
+                android:textSize="18sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/sample_paper11"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:weightSum="2"
+            android:background="@color/colorPrimary"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:text="state"
+                android:textAlignment="center"
+
+                android:id="@+id/gd_name_state"
+                android:textColor="@color/colorWhite"
+                android:textSize="18sp"
+                android:tint="@color/colorWhite"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="50dp"
+
+                android:text="Region"
+                android:id="@+id/gd_rallyRegin"
+                android:textAlignment="center"
+                android:textColor="@color/colorWhite"
+                android:textSize="18sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/districtss"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:weightSum="1"
+            android:background="@color/colorPrimary"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:text="District"
+                android:textAlignment="center"
+
+                android:id="@+id/district"
+                android:textColor="@color/colorWhite"
+                android:textSize="18sp"
+                android:tint="@color/colorWhite"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/sample_paper111"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:weightSum="1"
+
+            android:orientation="horizontal">
+           <!-- <TextView
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:text="link"
+                android:textAlignment="center"
+                android:background="@color/colorBitterSweetDark"
+                android:id="@+id/gd_link"
+                android:linksClickable="true"
+                android:autoLink="all"
+                android:textColorLink="@color/colorWhite"
+                android:textColor="@color/colorWhite"
+                android:textSize="18sp"
+                android:tint="@color/colorWhite"/>-->
+
+            <Button
+                android:layout_margin="20dp"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:text="Click to go for Link"
+                android:textAlignment="center"
+                android:background="@drawable/button"
+                android:id="@+id/gd_link"
+                android:linksClickable="true"
+                android:autoLink="all"
+                android:textColorLink="@color/colorWhite"
+                android:textColor="@color/colorWhite"
+                android:textSize="18sp"
+                android:tint="@color/colorWhite"/>
+
+
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
+
+
+
+

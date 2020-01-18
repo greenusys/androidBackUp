@@ -1,0 +1,159 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <TextView
+           
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/chat_user_reply_background_color"
+            android:fontFamily="casual"
+            android:textAlignment="center"
+            android:text="Quadrilaterals"
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="20dp" />
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:fontFamily="casual"
+
+            android:text="Square\n"
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="20dp" />
+
+        <ImageView
+
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/m6"
+            />
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:fontFamily="sans-serif"
+            android:textSize="20dp"
+            android:text="Square has equal sides and angle \na=length\n"
+            android:textColor="@color/cardview_dark_background" />
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:fontFamily="casual"
+
+            android:text="Area of Square"
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="20dp" />
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:fontFamily="sans-serif"
+            android:textSize="20dp"
+            android:text="A=a^2"
+            android:textColor="@color/cardview_dark_background" />
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:fontFamily="casual"
+
+            android:text="Perimeter of Square"
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="20dp" />
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:fontFamily="sans-serif"
+            android:textSize="20dp"
+            android:text="p=4a"
+            android:textColor="@color/cardview_dark_background" />
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:fontFamily="casual"
+
+            android:text="Rectangle\n"
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="20dp" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/m7"
+            />
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:fontFamily="sans-serif"
+            android:textSize="20dp"
+            android:text="w= width\nh=height"
+            android:textColor="@color/cardview_dark_background" />
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:fontFamily="casual"
+
+            android:text="Area of Rectangle"
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="20dp" />
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:fontFamily="sans-serif"
+            android:textSize="20dp"
+            android:text="A=w*h"
+            android:textColor="@color/cardview_dark_background" />
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:fontFamily="casual"
+
+            android:text="Perimeter of Rectangle"
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="20dp" />
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:fontFamily="sans-serif"
+            android:textSize="20dp"
+            android:text="p=2*(w+h)"
+            android:textColor="@color/cardview_dark_background" />
+    </LinearLayout>
+</ScrollView>

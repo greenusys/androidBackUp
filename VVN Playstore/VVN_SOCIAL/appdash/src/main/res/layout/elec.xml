@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/chat_user_reply_background_color"
+            android:fontFamily="casual"
+            android:textAlignment="center"
+            android:text="Electricity"
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="30dp" />
+
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="sans-serif"
+            android:text="Electricity is a set of physical processes associated with the presence and flow of electric charge. Electricity gives a wide variety of well-known effects, such as lightning, static electricity, electromagnetic induction and the flow of electrical current. In addition, electricity permits the creation and reception of electromagnetic radiation such as radio waves. In electricity, charges produce electromagnetic fields which act on other charges. Electricity occurs due to several types of physics:
+
+•	Electric charge: is a property of some subatomic particles, which determines their electromagnetic interactions. Electrically charged matter produces electromagnetic fields.
+
+•	Electric current: a movement or flow of electrically charged particles, typically measured in amperes.
+
+•	Electric field: This is a simple type of electromagnetic field which is produced by an electric charge even when there is no electric current. The electric field also produces a force on other charges that are within its own area of jurisdiction. Moving charges additionally produce a magnetic field.
+
+•	Electric potential: the capacity of an electric field to do work on an electric charge, typically measured in volts.
+
+•	Electromagnets: electrical currents generate magnetic fields, and changing magnetic fields generate electrical currents"
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="20dp" />
+
+
+
+
+        <TextView
+            
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/chat_user_reply_background_color"
+            android:fontFamily="casual"
+            android:textAlignment="center"
+            android:text="Uses of Electricity"
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="30dp" />
+<TextView
+            
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="sans-serif"
+            android:text="he use of electricity gives a very convenient way to transfer energy, and because of this it has been adapted to a huge, and growing, number of uses. The invention of a practical incandescent light bulb in the 1870s led to lighting becoming one of the first publicly available applications of electrical power. Although electrification came along with its own dangers, replacing the naked flames of gas lighting greatly reduced fire hazards within homes and factories. Public utilities were set up in many cities to target the growing market for electrical lighting.
+
+Through electricity, the light bulb although an early application of electricity, operates by Joule heating i.e the passage of current through resistance and thereby generating the required heat and light energy for the bulb to function.  "
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="20dp" />
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.personal.registrationapp.Forgot">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:scaleType="fitXY"
+        android:alpha=".1"
+        android:src="@drawable/cats"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+    <EditText
+        android:id="@+id/forgotEmailNew"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="72dp"
+        android:layout_marginRight="16dp"
+        android:inputType="textEmailAddress"
+        android:hint="Email" />
+
+    <Button
+        android:id="@+id/forgotButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="28dp"
+        android:text="Send"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:layout_below="@+id/forgotEmailNew"
+        android:background="@color/colorPrimary"/>
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

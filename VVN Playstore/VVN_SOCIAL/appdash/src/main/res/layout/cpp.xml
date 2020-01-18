@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/chat_user_reply_background_color"
+        android:fontFamily="casual"
+        android:textAlignment="center"
+        android:text="Perodic Chemistry"
+        android:textColor="@color/cardview_dark_background"
+        android:textSize="30dp" />
+
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:fontFamily="sans-serif"
+        android:textSize="20dp"
+        android:text="In the periodic table, elements that have related chemical properties and electronic structures are placed in vertical columns known as the groups.
+"
+        android:textColor="@color/cardview_dark_background" />
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/chat_user_reply_background_color"
+        android:fontFamily="casual"
+        android:textAlignment="center"
+        android:text="Periodicity of the element"
+        android:textColor="@color/cardview_dark_background"
+        android:textSize="30dp" />
+
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:fontFamily="sans-serif"
+        android:textSize="20dp"
+        android:text="Periodicity is one among the basic aspects of the elements in the periodic table.
+"
+        android:textColor="@color/cardview_dark_background" />
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/chat_user_reply_background_color"
+        android:fontFamily="casual"
+        android:textAlignment="center"
+        android:text="What is Periodicity"
+        android:textColor="@color/cardview_dark_background"
+        android:textSize="30dp" />
+
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:fontFamily="sans-serif"
+        android:textSize="20dp"
+        android:text="Periodicity of elements means the persistent trends that are visible in the properties of element. These trends that exist in the property of elements became noticeable to Mendeleev when he prearranged the elements in the periodic table order of increasing mass. From the properties that were displayed by the recognized elements, it was easy for Mendeleev to foretell where there were “breaks” in his table, or elements that were not yet discovered."
+        android:textColor="@color/cardview_dark_background" />
+
+
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/chat_user_reply_background_color"
+        android:fontFamily="casual"
+        android:textAlignment="center"
+        android:text="The Periodic Properties are enumerated below:"
+        android:textColor="@color/cardview_dark_background"
+        android:textSize="30dp" />
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:fontFamily="sans-serif"
+        android:textSize="20dp"
+        android:text="1.	Ionization energy – Ionization energy is energy needed to remove an electron from an ion or gaseous atom.\n2.	Atomic radius – Atomic radius is the distance between the centers of two atoms that are in close relationship with each other.\n3.	Electronegativity – This is a measure of the ability of an atom to form a chemical bond\n4.	Electron affinity –This is an ability of an atom to accept an electron
+"       android:textColor="@color/cardview_dark_background" />
+
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/chat_user_reply_background_color"
+        android:fontFamily="casual"
+        android:textAlignment="center"
+        android:text="The defination of periodic law"
+        android:textColor="@color/cardview_dark_background"
+        android:textSize="30dp" />
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:fontFamily="sans-serif"
+        android:textSize="20dp"
+        android:text="The Periodic Law states that the physical and chemical properties of elements in the periodic table reappear in a methodical and conventional way when the elements are prearranged in order of increasing atomic number.
+"
+        android:textColor="@color/cardview_dark_background" />
+
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/gg11" />
+
+
+</LinearLayout>
+</ScrollView>

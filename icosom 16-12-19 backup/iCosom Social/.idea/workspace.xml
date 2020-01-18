@@ -1,0 +1,1362 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AndroidLayouts">
+    <shared>
+      <config>
+        <device id="pixel_3a_xl" />
+        <device id="pixel" />
+        <device id="Nexus 6" />
+        <device id="Nexus 7" />
+        <device id="pixel_2_xl" />
+        <device id="pixel_2" />
+        <device id="pixel_3_xl" />
+        <device id="pixel_xl" />
+        <device id="pixel_c" />
+        <device id="pixel_3a" />
+      </config>
+    </shared>
+  </component>
+  <component name="AndroidLogFilters">
+    <option name="TOOL_WINDOW_LOG_LEVEL" value="error" />
+    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
+    <option name="TOOL_WINDOW_REGEXP_FILTER" value="false" />
+  </component>
+  <component name="AvailableLibraryUpdateStorage">
+    <library-updates>
+      <library-update>
+        <group-id>com.squareup.okhttp3</group-id>
+        <name>okhttp</name>
+        <version>4.0.0</version>
+        <repository>JCenter,Maven Central</repository>
+      </library-update>
+      <library-update>
+        <group-id>de.hdodenhof</group-id>
+        <name>circleimageview</name>
+        <version>3.0.0</version>
+        <repository>JCenter,Maven Central</repository>
+      </library-update>
+      <library-update>
+        <group-id>com.google.gms</group-id>
+        <name>google-services</name>
+        <version>4.2.0</version>
+        <repository>Google,Maven Central</repository>
+      </library-update>
+      <library-update>
+        <group-id>com.felipecsl</group-id>
+        <name>gifimageview</name>
+        <version>2.2.0</version>
+        <repository>JCenter,Maven Central</repository>
+      </library-update>
+    </library-updates>
+  </component>
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/app/src/main/java/com/icosom/social/activity/AddFeedActivity.java" line="445" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="a1aa3201-bda5-47ff-973d-51ae8a170a79" name="Default" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="isMigrated" value="true" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="Nexus_5X_API_29_x86" />
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <PATH>
+              <PATH_ELEMENT>
+                <option name="myItemId" value="" />
+                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.ExternalProjectsStructure$RootNode" />
+              </PATH_ELEMENT>
+              <PATH_ELEMENT>
+                <option name="myItemId" value="iCosom Social" />
+                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.ProjectNode" />
+              </PATH_ELEMENT>
+            </PATH>
+            <PATH>
+              <PATH_ELEMENT>
+                <option name="myItemId" value="" />
+                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.ExternalProjectsStructure$RootNode" />
+              </PATH_ELEMENT>
+              <PATH_ELEMENT>
+                <option name="myItemId" value="iCosom Social" />
+                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.ProjectNode" />
+              </PATH_ELEMENT>
+              <PATH_ELEMENT>
+                <option name="myItemId" value="iCosom Social" />
+                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.ModuleNode" />
+              </PATH_ELEMENT>
+            </PATH>
+            <PATH>
+              <PATH_ELEMENT>
+                <option name="myItemId" value="" />
+                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.ExternalProjectsStructure$RootNode" />
+              </PATH_ELEMENT>
+              <PATH_ELEMENT>
+                <option name="myItemId" value="iCosom Social" />
+                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.ProjectNode" />
+              </PATH_ELEMENT>
+              <PATH_ELEMENT>
+                <option name="myItemId" value="iCosom Social" />
+                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.ModuleNode" />
+              </PATH_ELEMENT>
+              <PATH_ELEMENT>
+                <option name="myItemId" value="Tasks" />
+                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.TasksNode" />
+              </PATH_ELEMENT>
+            </PATH>
+            <PATH>
+              <PATH_ELEMENT>
+                <option name="myItemId" value="" />
+                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.ExternalProjectsStructure$RootNode" />
+              </PATH_ELEMENT>
+              <PATH_ELEMENT>
+                <option name="myItemId" value="iCosom Social" />
+                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.ProjectNode" />
+              </PATH_ELEMENT>
+              <PATH_ELEMENT>
+                <option name="myItemId" value="iCosom Social" />
+                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.ModuleNode" />
+              </PATH_ELEMENT>
+              <PATH_ELEMENT>
+                <option name="myItemId" value="Tasks" />
+                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.TasksNode" />
+              </PATH_ELEMENT>
+              <PATH_ELEMENT>
+                <option name="myItemId" value="android" />
+                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.TasksNode$1" />
+              </PATH_ELEMENT>
+            </PATH>
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="iCosom Social" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/icosom/social/Talent_Show_Package/Adapter/Singing_Adapter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="137">
+              <caret line="521" column="50" lean-forward="true" selection-start-line="521" selection-start-column="50" selection-end-line="521" selection-end-column="50" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#20725#21676#0" expanded="true" />
+                <element signature="e#21675#21676#0" expanded="true" />
+                <element signature="e#38487#38488#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/icosom/social/Talent_Show_Package/Activity/Talent_Add_Voice.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="538">
+              <caret line="148" column="5" lean-forward="true" selection-start-line="148" selection-start-column="5" selection-end-line="148" selection-end-column="5" />
+              <folding>
+                <element signature="e#3293#4666#0" expanded="true" />
+                <element signature="e#4665#4666#0" expanded="true" />
+                <element signature="e#5186#5216#0" expanded="true" />
+                <element signature="e#11045#11377#0" expanded="true" />
+                <element signature="e#11376#11377#0" expanded="true" />
+                <element signature="e#11623#12765#0" expanded="true" />
+                <element signature="e#12212#12565#0" expanded="true" />
+                <element signature="e#12564#12565#0" expanded="true" />
+                <element signature="e#12764#12765#0" expanded="true" />
+                <element signature="e#13105#13663#0" expanded="true" />
+                <element signature="e#13662#13663#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/icosom/social/Talent_Show_Package/Activity/GK_Add_Image.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="396">
+              <caret line="94" lean-forward="true" selection-start-line="83" selection-start-column="3" selection-end-line="94" />
+              <folding>
+                <element signature="e#4103#4133#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_gk__add__image.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="220">
+              <caret line="64" column="29" selection-start-line="64" selection-start-column="29" selection-end-line="64" selection-end-column="29" />
+            </state>
+          </provider>
+          <provider editor-type-id="android-designer2" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/icosom/social/Talent_Show_Package/Activity/Talent_Add_Video.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="208">
+              <caret line="144" column="16" selection-start-line="144" selection-start-column="16" selection-end-line="144" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="layoutResourceFile_vertical" />
+        <option value="Interface" />
+        <option value="resourceFile" />
+        <option value="layoutResourceFile" />
+        <option value="Class" />
+        <option value="valueResourceFile" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>extention</find>
+      <find>destroy_rv</find>
+      <find>on_back_called_play_audio</find>
+      <find>destroy_called</find>
+      <find>LOG_TAG</find>
+      <find>destroy_called_audio</find>
+      <find>kat_height</find>
+      <find>Width</find>
+      <find>1000</find>
+      <find>height</find>
+      <find>kat_widht</find>
+      <find>voicepath_size</find>
+      <find>file_kaif</find>
+      <find>audio_file_name</find>
+      <find>feed</find>
+      <find>loading_icon2</find>
+      <find>sallllu1</find>
+      <find>more</find>
+      <find>popu</find>
+      <find>more_icon</find>
+      <find>katrina_data</find>
+      <find>glide</find>
+      <find>set_Success_Glide_Data</find>
+      <find>post_link</find>
+      <find>sallu</find>
+      <find>salluu_failed</find>
+      <find>salluu</find>
+      <find>john</find>
+      <find>Toast</find>
+      <find>onactivity_voice</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>ListOfPlan.this</replace>
+      <replace>planModels</replace>
+      <replace>PlanModel</replace>
+      <replace>ListOfPlan</replace>
+      <replace>14</replace>
+      <replace>Confirm</replace>
+      <replace>getContext()</replace>
+      <replace>#</replace>
+      <replace>@color/colorPrimary</replace>
+      <replace>Electricity.this</replace>
+      <replace>state</replace>
+      <replace>arrayListStateName</replace>
+      <replace>board</replace>
+      <replace>arrayListStateCode</replace>
+      <replace>arrayListboard</replace>
+      <replace>stateAdapter</replace>
+      <replace>boardAdapter</replace>
+      <replace>getState()</replace>
+      <replace>BoardSpinnerAdapter</replace>
+      <replace>DthRecharge</replace>
+      <replace>QrPayment</replace>
+      <replace>ThemeRecyclerAdapter</replace>
+      <replace>ffffff</replace>
+      <replace>https</replace>
+      <replace>app:srcCompat</replace>
+      <replace>no_frnd_text</replace>
+      <replace>loading_icon</replace>
+      <replace>loading_iconA</replace>
+      <replace>loading_iconE</replace>
+      <replace>500</replace>
+    </replaceStrings>
+  </component>
+  <component name="GenerateSignedApkSettings">
+    <option name="KEY_STORE_PATH" value="C:\Users\Safder Ali\Desktop\android downloaded\icosom_greenusys.jks" />
+    <option name="KEY_ALIAS" value="MyAndoidKey" />
+    <option name="REMEMBER_PASSWORDS" value="true" />
+    <option name="BUILD_TARGET_KEY" value="apk" />
+  </component>
+  <component name="GotoFileConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="AIDL" />
+      <filtered-out-file-type name="APK" />
+      <filtered-out-file-type name="ARCHIVE" />
+      <filtered-out-file-type name="Adobe Photoshop" />
+      <filtered-out-file-type name="Allocations" />
+      <filtered-out-file-type name="Android Nine-Patch" />
+      <filtered-out-file-type name="Android RenderScript" />
+      <filtered-out-file-type name="Android Room SQL" />
+      <filtered-out-file-type name="AndroidDataBinding" />
+      <filtered-out-file-type name="AspectJ" />
+      <filtered-out-file-type name="Assembly file" />
+      <filtered-out-file-type name="C#" />
+      <filtered-out-file-type name="C++" />
+      <filtered-out-file-type name="CLASS" />
+      <filtered-out-file-type name="CSS" />
+      <filtered-out-file-type name="DTD" />
+      <filtered-out-file-type name="Doxygen file" />
+      <filtered-out-file-type name="Enforced Plain Text" />
+      <filtered-out-file-type name="Erlang" />
+      <filtered-out-file-type name="Font" />
+      <filtered-out-file-type name="GDBCommands" />
+      <filtered-out-file-type name="Groovy" />
+      <filtered-out-file-type name="HTML" />
+      <filtered-out-file-type name="Haskell" />
+      <filtered-out-file-type name="Hprof" />
+      <filtered-out-file-type name="IDEA_MODULE" />
+      <filtered-out-file-type name="IDEA_PROJECT" />
+      <filtered-out-file-type name="IDEA_WORKSPACE" />
+      <filtered-out-file-type name="IDL" />
+      <filtered-out-file-type name="Images" />
+      <filtered-out-file-type name="JAVA" />
+      <filtered-out-file-type name="JQL" />
+      <filtered-out-file-type name="JSON" />
+      <filtered-out-file-type name="JSON Schema" />
+      <filtered-out-file-type name="JSP" />
+      <filtered-out-file-type name="JavaFX" />
+      <filtered-out-file-type name="JavaScript" />
+      <filtered-out-file-type name="KJSM" />
+      <filtered-out-file-type name="Kotlin" />
+      <filtered-out-file-type name="LLDBCommands" />
+      <filtered-out-file-type name="Layout Inspector" />
+      <filtered-out-file-type name="Manifest" />
+      <filtered-out-file-type name="ModuleMap" />
+      <filtered-out-file-type name="Native" />
+      <filtered-out-file-type name="ObjectiveC" />
+      <filtered-out-file-type name="PATCH" />
+      <filtered-out-file-type name="PHP" />
+      <filtered-out-file-type name="PLAIN_TEXT" />
+      <filtered-out-file-type name="Perl" />
+      <filtered-out-file-type name="ProGuard File" />
+      <filtered-out-file-type name="Properties" />
+      <filtered-out-file-type name="RNG Compact" />
+      <filtered-out-file-type name="RegExp" />
+      <filtered-out-file-type name="ResourceBundle" />
+      <filtered-out-file-type name="SPI" />
+      <filtered-out-file-type name="SQL" />
+      <filtered-out-file-type name="Scratch" />
+      <filtered-out-file-type name="Smali" />
+      <filtered-out-file-type name="UNKNOWN" />
+      <filtered-out-file-type name="VmTrace" />
+      <filtered-out-file-type name="XHTML" />
+      <filtered-out-file-type name="XML" />
+      <filtered-out-file-type name="YAML" />
+      <filtered-out-file-type name="YouTrack" />
+      <filtered-out-file-type name="kotlin_builtins" />
+      <filtered-out-file-type name="kotlin_module" />
+    </file-type-list>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/app/src/main/java/com/icosom/social/Icosom_Chat_Package/activity/Notification/Not_kaif.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/icosom/social/Icosom_Chat_Package/activity/Retrofit/ApiClient.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/icosom/social/Icosom_Chat_Package/activity/Retrofit/ApiClient.java" />
+        <option value="$PROJECT_DIR$/app/src/main/assets/index.html" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_talent__show__single__post.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/icosom/social/Talent_Show_Package/View_Model/Fetch_Talent_Single_Post_VM.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/icosom/social/Icosom_Chat_Package/activity/Retrofit/ApiInterface.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/icosom/social/Talent_Show_Package/Activity/Talent_Plan.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/drawable/ring.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/more_options_sheet_layout_other.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/more_options_sheet_layout_me.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_talent.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/icosom/social/Talent_Show_Package/Activity/Talent.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/icosom/social/Icosom_Chat_Package/activity/Chat_Activity/ChatActivity.java" />
+        <option value="$PROJECT_DIR$/app/build.gradle" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/icosom/social/Talent_Show_Package/Modal/Singing_Model.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/icosom/social/Talent_Show_Package/Modal/Recording_Model.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_play__audio_.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/audio_item.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_gk__add__images.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/icosom/social/Talent_Show_Package/Activity/General_knowledge.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/icosom/social/Talent_Show_Package/Adapter/Play_Audio_Adapter.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/icosom/social/Talent_Show_Package/Activity/Play_Audio_Activity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/icosom/social/Talent_Show_Package/Activity/Talent_Add_Video.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/icosom/social/Talent_Show_Package/Activity/GK_Add_Image.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/gk_item.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/feed_process_item.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/icosom/social/recycler_adapter/HomeRecyclerAdapter.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/icosom/social/recycler_adapter/ShowMyFeedsRecyclerAdapter.java" />
+        <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/icosom/social/activity/MainActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/icosom/social/Talent_Show_Package/Activity/Talent_Show_Single_Post.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/menu/talent_menu.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/menu/message_menu.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/values/color.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_login.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/icosom/social/Confirm.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/icosom/social/fragment/HomeFragment.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/icosom/social/Talent_Show_Package/Adapter/Singing_Adapter_backup_16_12.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/icosom/social/Talent_Show_Package/Adapter/GK_Adapter_backup_16_12.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/icosom/social/activity/ProfileActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/singing_activity.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/singing_item.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/icosom/social/Talent_Show_Package/Adapter/GK_Adapter.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_talent__add__video.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_gk__add__image.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_talent__add__voice.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/icosom/social/Talent_Show_Package/Activity/Singing_And_Dancing_Activity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/icosom/social/Talent_Show_Package/Adapter/Singing_Adapter.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/icosom/social/activity/LoginActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/icosom/social/Talent_Show_Package/Activity/Talent_Add_Voice.java" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="27" />
+    <option name="y" value="104" />
+    <option name="width" value="1378" />
+    <option name="height" value="733" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="AndroidView">
+        <subPane>
+          <expand>
+            <path>
+              <item name="iCosom Social" type="1abcf292:AndroidViewProjectNode" />
+              <item name="Gradle Scripts" type="ae0cef3a:AndroidBuildScriptsGroupNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="iCosom Social" type="b2602c69:ProjectViewProjectNode" />
+              <item name="iCosom Social" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="iCosom Social" type="b2602c69:ProjectViewProjectNode" />
+              <item name="iCosom Social" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="iCosom Social" type="b2602c69:ProjectViewProjectNode" />
+              <item name="iCosom Social" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="iCosom Social" type="b2602c69:ProjectViewProjectNode" />
+              <item name="iCosom Social" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="iCosom Social" type="b2602c69:ProjectViewProjectNode" />
+              <item name="iCosom Social" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="res" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="iCosom Social" type="b2602c69:ProjectViewProjectNode" />
+              <item name="iCosom Social" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="res" type="462c0819:PsiDirectoryNode" />
+              <item name="menu" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="iCosom Social" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
+            <path>
+              <item name="iCosom Social" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Gradle: com.github.nkzawa:socket.io-client:0.5.0@jar" type="70bed36:NamedLibraryElementNode" />
+            </path>
+            <path>
+              <item name="iCosom Social" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Gradle: com.github.nkzawa:socket.io-client:0.5.0@jar" type="70bed36:NamedLibraryElementNode" />
+              <item name="socket.io-client-0.5.0.jar" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="iCosom Social" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Gradle: com.github.nkzawa:socket.io-client:0.5.0@jar" type="70bed36:NamedLibraryElementNode" />
+              <item name="socket.io-client-0.5.0.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="META-INF" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="iCosom Social" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Gradle: com.github.nkzawa:socket.io-client:0.5.0@jar" type="70bed36:NamedLibraryElementNode" />
+              <item name="socket.io-client-0.5.0.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="META-INF" type="462c0819:PsiDirectoryNode" />
+              <item name="socket.io-client" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DEBUGGABLE_DEVICE" value="iball_slide-brisk_4g2-0123456789ABCDEF" />
+    <property name="DEBUGGABLE_PROCESS" value="com.icosom.social" />
+    <property name="DEBUGGER_ID" value="Auto" />
+    <property name="DeviceAndSnapshotComboBoxAction.selectedDevice" value="0123456789ABCDEF" />
+    <property name="DeviceAndSnapshotComboBoxAction.selectionTime" value="2019-12-16T10:21:59.214Z" />
+    <property name="ExportApk.ApkPath" value="F:\24-8-2019\icosom 28-8\iCosom Social\app" />
+    <property name="ExportApk.BuildType" value="release" />
+    <property name="ExportApk.BuildVariants" value="release" />
+    <property name="ExportApk.Flavors" value="" />
+    <property name="ExportApk.SignV1" value="true" />
+    <property name="ExportApk.SignV2" value="true" />
+    <property name="SHOW_ALL_PROCESSES" value="false" />
+    <property name="SearchEverywhereHistoryKey" value="Login&#9;PSI&#9;JAVA://com.icosom.social.activity.LoginActivity&#10;Noti&#9;PSI&#9;JAVA://com.icosom.social.recycler_adapter.NotificationRecyclerAdapter&#10;ShowF&#9;FILE&#9;file://F:/2-7-2019 data/2.7.2019/icosom playstore 1-7-19/iCosom Social/app/src/main/java/com/icosom/social/fragment/Show_Friend_List_Chat.java&#10;Main&#9;FILE&#9;file://F:/2-7-2019 data/2.7.2019/icosom playstore 1-7-19/iCosom Social/app/src/main/java/com/icosom/social/activity/MainActivity.java&#10;Home&#9;PSI&#9;JAVA://com.icosom.social.recycler_adapter.HomeRecyclerAdapter&#10;sharepost&#9;PSI&#9;JAVA://com.icosom.social.activity.AddFeedActivity#sharePost&#10;add&#9;FILE&#9;file://E:/2-7-2019/2.7.2019/icosom playstore 1-7-19/iCosom Social/app/src/main/java/com/icosom/social/activity/AddFeedActivity.java&#10;foot&#9;FILE&#9;file://E:/2-7-2019/2.7.2019/icosom playstore 1-7-19/iCosom Social/app/src/main/res/layout/feed_bottom_footer.xml&#10;home&#9;FILE&#9;file://E:/2-7-2019/2.7.2019/icosom playstore 1-7-19/iCosom Social/app/src/main/res/layout/fragment_home.xml&#10;HOme&#9;FILE&#9;file://E:/2-7-2019/2.7.2019/icosom playstore 1-7-19/iCosom Social/app/src/main/java/com/icosom/social/fragment/HomeFragment.java&#10;Single&#9;PSI&#9;JAVA://com.icosom.social.activity.SinglePostActivity&#10;feed&#9;FILE&#9;file://E:/2-7-2019/2.7.2019/icosom playstore 1-7-19/iCosom Social/app/src/main/res/layout/feed_process_item.xml&#10;show&#9;FILE&#9;file://E:/2-7-2019/2.7.2019/icosom playstore 1-7-19/iCosom Social/app/src/main/java/com/icosom/social/fragment/Show_Friend_List_Chat.java&#10;Hom&#9;FILE&#9;file://E:/2-7-2019/2.7.2019/icosom playstore 1-7-19/iCosom Social/app/src/main/java/com/icosom/social/fragment/HomeFragment.java&#10;Prof&#9;FILE&#9;file://E:/2-7-2019/2.7.2019/icosom playstore 1-7-19/iCosom Social/app/src/main/java/com/icosom/social/activity/ProfileActivity.java&#10;Edit&#9;PSI&#9;JAVA://com.icosom.social.activity.EditProfileActivity&#10;Profil&#9;FILE&#9;file://E:/2-7-2019/2.7.2019/icosom playstore 1-7-19/iCosom Social/app/src/main/java/com/icosom/social/activity/ProfileActivity.java&#10;Show&#9;FILE&#9;file://E:/2-7-2019/2.7.2019/icosom playstore 1-7-19/iCosom Social/app/src/main/java/com/icosom/social/fragment/Show_Friend_List_Chat.java&#10;colo&#9;FILE&#9;file://E:/2-7-2019/2.7.2019/icosom playstore 1-7-19/iCosom Social/app/src/main/res/values/color.xml&#10;color&#9;PSI&#9;JAVA://com.viewpagerindicator.R.color&#10;Com&#9;PSI&#9;JAVA://com.icosom.social.recycler_adapter.CommentRecyclerAdapter&#10;SHowF&#9;FILE&#9;file://E:/2-7-2019/2.7.2019/icosom playstore 1-7-19/iCosom Social/app/src/main/res/layout/show_friend_list_layout_item.xml&#10;SHow&#9;FILE&#9;file://E:/2-7-2019/2.7.2019/icosom playstore 1-7-19/iCosom Social/app/src/main/java/com/icosom/social/fragment/Show_Friend_List_Chat.java&#10;Chat&#9;FILE&#9;file://E:/2-7-2019/2.7.2019/icosom playstore 1-7-19/iCosom Social/app/src/main/java/com/icosom/social/activity/ChatActivity.java&#10;Sear&#9;FILE&#9;file://E:/2-7-2019/2.7.2019/icosom playstore 1-7-19/iCosom Social/app/src/main/java/com/icosom/social/activity/SearchActivity.java&#10;Singl&#9;PSI&#9;JAVA://com.icosom.social.activity.SinglePostActivity&#10;Comm&#9;FILE&#9;file://E:/2-7-2019/2.7.2019/icosom playstore 1-7-19/iCosom Social/app/src/main/java/com/icosom/social/utility/CommonFunctions.java&#10;ChatA&#9;FILE&#9;file://E:/2-7-2019/2.7.2019/icosom playstore 1-7-19/iCosom Social/app/src/main/java/com/icosom/social/activity/ChatActivity.java&#10;Fr&#9;FILE&#9;file://E:/2-7-2019/2.7.2019/icosom playstore 1-7-19/iCosom Social/app/src/main/java/com/icosom/social/Adapter/ShowFriendListRecyclerAdapter.java&#10;Search&#9;FILE&#9;file://E:/2-7-2019/2.7.2019/icosom playstore 1-7-19/iCosom Social/app/src/main/java/com/icosom/social/Adapter/SearchAdapter.java&#10;Dash&#9;PSI&#9;JAVA://com.icosom.social.activity.DashboardRecharge&#10;Dash0&#9;null&#9;null&#10;Pay_&#9;PSI&#9;JAVA://com.icosom.social.Pay_Friend_Activity&#10;Profi&#9;PSI&#9;JAVA://com.icosom.social.activity.ProfileActivity&#10;fee&#9;FILE&#9;file://E:/2-7-2019/2.7.2019/icosom playstore 1-7-19/iCosom Social/app/src/main/res/layout/feed_process_item.xml&#10;AddF&#9;FILE&#9;file://E:/icosom playstore 1-7-19/iCosom Social/app/src/main/java/com/icosom/social/activity/AddFeedActivity.java&#10;Ho&#9;FILE&#9;file://E:/icosom playstore 1-7-19/iCosom Social/app/src/main/res/layout/fragment_home.xml&#10;Pro&#9;FILE&#9;file://E:/icosom playstore 1-7-19/iCosom Social/app/src/main/java/com/icosom/social/activity/ProfileActivity.java&#10;Not&#9;FILE&#9;file://E:/icosom playstore 1-7-19/iCosom Social/app/src/main/java/com/icosom/social/fragment/NotificationFragment.java&#10;Tal&#9;PSI&#9;JAVA://com.icosom.social.activity.Talent&#10;Tale&#9;FILE&#9;file://E:/icosom playstore 1-7-19/iCosom Social/app/src/main/java/com/icosom/social/Talent_List.java&#10;Pay_Co&#9;PSI&#9;JAVA://com.icosom.social.Pay_Comfirmation_Activity&#10;dash&#9;FILE&#9;file://E:/icosom playstore 1-7-19/iCosom Social/app/src/main/res/layout/activity_dashboard_recharge.xml&#10;Comme&#9;FILE&#9;file://E:/icosom playstore 1-7-19/iCosom Social/app/src/main/java/com/icosom/social/activity/CommentActivity.java&#10;Edi&#9;FILE&#9;file://E:/icosom playstore 1-7-19/iCosom Social/app/src/main/java/com/icosom/social/activity/EditProfileActivity.java&#10;Wall&#9;FILE&#9;file://E:/icosom playstore 1-7-19/iCosom Social/app/src/main/java/com/icosom/social/fragment/WalletFragment.java&#10;Wal&#9;FILE&#9;file://E:/icosom playstore 1-7-19/iCosom Social/app/src/main/java/com/icosom/social/activity/WalletPin.java&#10;Das&#9;FILE&#9;file://E:/icosom Playstore/iCosom Social/app/src/main/java/com/icosom/social/activity/DashboardRecharge.java&#10;Car&#9;FILE&#9;file://E:/icosom Playstore/iCosom Social/app/src/main/java/com/icosom/social/Card.java&#10;Ne&#9;FILE&#9;file://E:/icosom_play_store/iCosom Social/app/src/main/java/com/icosom/social/Net.java" />
+    <property name="VectorAssetImportPath" value="C:\Users" />
+    <property name="algorithm" value="Scalr" />
+    <property name="android.profiler.active" value="true" />
+    <property name="android.project.structure.last.selected" value="app" />
+    <property name="android.project.structure.proportion" value="0.15" />
+    <property name="android.sdk.path" value="D:/sdk" />
+    <property name="asset" value="rO0ABXNyADxkZS5tcHJlbmdlbWFubi5pbnRlbGxpai5wbHVnaW4uYW5kcm9pZGljb25zLm1vZGVsLkltYWdlQXNzZXQl990GqIfF7gIABkwACGNhdGVnb3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAGY29sb3JzdAAQTGphdmEvdXRpbC9MaXN0O0wABG5hbWVxAH4AAUwABHBhY2txAH4AAUwAC3Jlc29sdXRpb25zcQB+AAJMAAVzaXplc3EAfgACeHB0AA1jb21tdW5pY2F0aW9uc3IAE2phdmEudXRpbC5BcnJheUxpc3R4gdIdmcdhnQMAAUkABHNpemV4cAAAAAJ3BAAAAAJ0AAVibGFja3QABXdoaXRleHQADGljX2xpdmVfaGVscHQADm1hdGVyaWFsX2ljb25zc3EAfgAFAAAABncEAAAABn5yADxkZS5tcHJlbmdlbWFubi5pbnRlbGxpai5wbHVnaW4uYW5kcm9pZGljb25zLm1vZGVsLlJlc29sdXRpb24AAAAAAAAAABIAAHhyAA5qYXZhLmxhbmcuRW51bQAAAAAAAAAAEgAAeHB0AAZBTllEUEl+cQB+AAx0AARIRFBJfnEAfgAMdAAETURQSX5xAH4ADHQABVhIRFBJfnEAfgAMdAAGWFhIRFBJfnEAfgAMdAAHWFhYSERQSXhzcQB+AAUAAAAEdwQAAAAEdAAEMThkcHQABDI0ZHB0AAQzNmRwdAAENDhkcHg=" />
+    <property name="com.developerphil.adbidea.selecteddevices" value="ZY22282T4C" />
+    <property name="device.picker.selection" value="Nexus_5_API_28" />
+    <property name="format" value="PNG" />
+    <property name="lastFolderRoot" value="$USER_HOME$/Desktop/bgicosom008.png" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/app/src/main/res/drawable" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/bgicosom008.png" />
+    <property name="method" value="Automatic" />
+    <property name="project.structure.last.edited" value="Suggestions" />
+    <property name="project.structure.proportion" value="0.17" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="resolutions" value="XXXHDPI&#10;MDPI&#10;XHDPI&#10;HDPI&#10;XXHDPI&#10;LDPI" />
+    <property name="resourcesRoot" value="file://F:\kaif_today_project\icosom 7-12-19\iCosom Social\app\src\main\res" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="sourceResolution" value="XHDPI" />
+    <property name="sync.plugin.last.upgrade.timestamp" value="1561738140315" />
+  </component>
+  <component name="PsdUISettings">
+    <option name="MODULE_TAB" value="Signing Configs" />
+    <option name="LAST_EDITED_SIGNING_CONFIG" value="debug" />
+    <option name="LAST_EDITED_BUILD_TYPE" value="debug" />
+  </component>
+  <component name="RecentsManager">
+    <key name="android.template.parentActivityClass">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.icosom.social.activity" />
+    </key>
+    <key name="android.template.packageName">
+      <recent name="com.icosom.social.Talent_Show_Package.Activity" />
+      <recent name="com.icosom.social" />
+      <recent name="com.icosom.social.activity" />
+      <recent name="com.icosom.social.Icosom_Chat_Package.activity.Notification" />
+      <recent name="com.example.chat_lib" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\2-7-2019 data\2.7.2019\icosom playstore 1-7-19\iCosom Social\app\src\main\res\mipmap-xxhdpi" />
+      <recent name="E:\uploaded android projects\iCosom Social\app\src\main\res\anim" />
+      <recent name="E:\13-5-2019ali\kaif icosom 8-5-19\icosom 5-4-19\icosom\iCosom Social\app\src\main\res\drawable" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.icosom.social" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.icosom.social.Talent_Show_Package.Adapter" />
+      <recent name="com.icosom.social.Talent_Show_Package.View_Model" />
+      <recent name="com.icosom.social.Talent_Show_Package.Modal" />
+      <recent name="com.icosom.social.model" />
+      <recent name="com.icosom.social.Adapter" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\kaif_today_project\icosom 6-11-19\iCosom Social\app\src\main\res\menu" />
+      <recent name="F:\kaif_today_project\icosom 6-11-19\iCosom Social\app\src\main\res\drawable" />
+      <recent name="E:\kaif_today_project\icosom 25-10-19 original\iCosom Social\app\src\main\res\drawable" />
+      <recent name="E:\kaif_today_project\icosom 25-10-19 original\iCosom Social\app\src\main\res\drawable-v24" />
+      <recent name="E:\kaif_today_project\icosom 25-10-19 original\iCosom Social\app\src\main\res\drawable-v21" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.icosom.social.activity" />
+      <recent name="com.icosom.social.fragment" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Android App.app">
+    <configuration name="&lt;template&gt;" type="JUnit" default="true" selected="false">
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+    </configuration>
+    <configuration name="&lt;template&gt;" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" default="true" selected="false">
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+    </configuration>
+    <configuration default="true" type="AndroidJUnit" factoryName="Android JUnit">
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android App">
+      <option name="DEPLOY" value="true" />
+      <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
+      <option name="DEPLOY_AS_INSTANT" value="false" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="DYNAMIC_FEATURES_DISABLED_LIST" value="" />
+      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
+      <option name="DEBUGGER_TYPE" value="Auto" />
+      <Auto>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Auto>
+      <Hybrid>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Hybrid>
+      <Java />
+      <Native>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Native>
+      <Profilers>
+        <option name="ADVANCED_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Sample Java Methods" />
+      </Profilers>
+      <option name="DEEP_LINK" value="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1567142756474" />
+      </method>
+    </configuration>
+    <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
+      <module name="app" />
+      <option name="DEPLOY" value="true" />
+      <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
+      <option name="DEPLOY_AS_INSTANT" value="false" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="DYNAMIC_FEATURES_DISABLED_LIST" value="" />
+      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="true" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
+      <option name="DEBUGGER_TYPE" value="Auto" />
+      <Auto>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Auto>
+      <Hybrid>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Hybrid>
+      <Java />
+      <Native>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Native>
+      <Profilers>
+        <option name="ADVANCED_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Sample Java Methods" />
+      </Profilers>
+      <option name="DEEP_LINK" value="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Instrumented Tests">
+      <option name="TESTING_TYPE" value="0" />
+      <option name="INSTRUMENTATION_RUNNER_CLASS" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="EXTRA_OPTIONS" value="" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
+      <option name="DEBUGGER_TYPE" value="Auto" />
+      <Auto>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Auto>
+      <Hybrid>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Hybrid>
+      <Java />
+      <Native>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Native>
+      <Profilers>
+        <option name="ADVANCED_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Sample Java Methods" />
+      </Profilers>
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1567142756474" />
+      </method>
+    </configuration>
+    <configuration default="true" type="Applet">
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="iCosom Social [signingReport]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="signingReport" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
+      <module name="libraryMobilePaymentSDK" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType" factoryName="Kotlin script">
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <module name="" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="false" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" />
+      <option name="HOST" />
+      <option name="PORT" />
+      <option name="AUTO_RESTART" value="false" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="TestNG">
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Android App.app" />
+      <item itemvalue="Gradle.iCosom Social [signingReport]" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.iCosom Social [signingReport]" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a1aa3201-bda5-47ff-973d-51ae8a170a79" name="Default" comment="" />
+      <created>1521437064539</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1521437064539</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="TodoView" selected-index="1">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.29792747" />
+      <window_info id="Structure" order="1" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Build Variants" order="3" side_tool="true" />
+      <window_info id="Image Layers" order="4" />
+      <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info id="Captures" order="6" side_tool="true" />
+      <window_info id="Capture Tool" order="7" />
+      <window_info id="Resources Explorer" order="8" weight="0.32949308" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32846716" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.496114" weight="0.5591241" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3991228" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Gradle Console" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.503886" side_tool="true" weight="0.6437956" />
+      <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Messages" order="9" />
+      <window_info anchor="bottom" id="Android Profiler" order="10" weight="0.63357663" />
+      <window_info anchor="bottom" id="TODO" order="11" weight="0.32846716" />
+      <window_info anchor="bottom" id="Terminal" order="12" weight="0.32551318" />
+      <window_info anchor="bottom" id="Logcat" order="13" weight="0.72554743" />
+      <window_info anchor="bottom" id="Build" order="14" weight="0.6919708" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Capture Analysis" order="3" />
+      <window_info anchor="right" id="Preview" order="4" weight="0.32512954" />
+      <window_info anchor="right" id="Gradle" order="5" />
+      <window_info anchor="right" id="Palette&#9;" order="6" />
+      <window_info anchor="right" id="Theme Preview" order="7" />
+      <window_info anchor="right" id="Device File Explorer" order="8" weight="0.3279431" />
+      <window_info anchor="right" id="Assistant" order="9" weight="0.32966322" />
+      <window_info anchor="right" id="Android WiFi ADB" order="10" weight="0.43588084" />
+    </layout>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/icosom/social/activity/SinglePostActivity.java</url>
+          <line>1163</line>
+          <properties />
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/icosom/social/activity/EditProfileActivity.java</url>
+          <line>171</line>
+          <properties />
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/icosom/social/activity/ProfileActivity.java</url>
+          <line>2244</line>
+          <properties />
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/loading_icon2.webp">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/gk_item.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="240" column="32" lean-forward="true" selection-start-line="240" selection-start-column="32" selection-end-line="240" selection-end-column="32" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/icosom/social/Talent_Show_Package/Activity/Talent_Show_Single_Post.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="660">
+          <caret line="59" selection-start-line="59" selection-end-line="59" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/icosom/social/Talent_Show_Package/View_Model/Fetch_Talent_Single_Post_VM.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="27" column="65" selection-start-line="27" selection-start-column="65" selection-end-line="27" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/feed_process_item.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3080">
+          <caret line="140" column="38" selection-start-line="140" selection-start-column="38" selection-end-line="140" selection-end-column="38" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+      <provider editor-type-id="android-manifest" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="968">
+          <caret line="44" column="49" selection-start-line="44" selection-start-column="49" selection-end-line="44" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="6" column="23" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/ic_account_balance_wallet.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/ic_account_balance.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/confirm_request_drawable.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/icosom/social/Talent_Show_Package/Activity/General_knowledge.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="217">
+          <caret line="229" column="22" selection-start-line="229" selection-start-column="22" selection-end-line="229" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/menu/talent_menu.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="1" column="7" selection-start-line="1" selection-start-column="7" selection-end-line="1" selection-end-column="7" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/menu/main.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/menu/activity_main_drawer.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="506">
+          <caret line="23" column="12" lean-forward="true" selection-start-line="23" selection-start-column="12" selection-end-line="23" selection-end-column="12" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/menu/message_menu.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/arrays.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/color.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="13" column="49" lean-forward="true" selection-start-line="13" selection-start-column="49" selection-end-line="13" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_splash.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="7" column="36" lean-forward="true" selection-start-line="7" selection-start-column="36" selection-end-line="7" selection-end-column="36" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/icosom/social/activity/SplashActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="28" column="41" lean-forward="true" selection-start-line="28" selection-start-column="41" selection-end-line="28" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/bgicosom008.webp" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/bgicosom008.png" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable-xxxhdpi/bgicosom008.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/bgicosom008.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable-xhdpi/bgicosom008.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable-mdpi/bgicosom008.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable-ldpi/bgicosom008.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable-hdpi/bgicosom008.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_login.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="309">
+          <caret line="190" selection-start-line="190" selection-end-line="190" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/icosom/social/Confirm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="87" column="30" selection-start-line="87" selection-start-column="30" selection-end-line="87" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/colors.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="19" column="40" selection-start-line="19" selection-start-column="40" selection-end-line="19" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/icosom/social/activity/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="41" column="27" selection-start-line="41" selection-start-column="22" selection-end-line="41" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/AppData/Local/Android/Sdk/platforms/android-28/android.jar!/android/content/Intent.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="679">
+          <caret line="692" column="18" selection-start-line="692" selection-start-column="18" selection-end-line="692" selection-end-column="18" />
+          <folding>
+            <element signature="e#36044#36045#0" expanded="true" />
+            <element signature="e#36095#36096#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/icosom/social/Talent_Show_Package/Adapter/Show_Video_Adapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-800">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/icosom/social/fragment/HomeFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="172">
+          <caret line="843" column="59" lean-forward="true" selection-start-line="843" selection-start-column="59" selection-end-line="843" selection-end-column="59" />
+          <folding>
+            <element signature="e#1627#1638#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/icosom/social/utility/CommonFunctions.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="217">
+          <caret line="35" column="60" lean-forward="true" selection-start-line="35" selection-start-column="60" selection-end-line="35" selection-end-column="101" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/icosom/social/activity/ProfileActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="301">
+          <caret line="2172" column="59" lean-forward="true" selection-start-line="2172" selection-start-column="59" selection-end-line="2172" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/icosom/social/Talent_Show_Package/Adapter/Singing_Adapter_backup_16_12.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7455">
+          <caret line="1252" column="38" selection-start-line="1252" selection-end-line="1253" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/icosom/social/Talent_Show_Package/Adapter/GK_Adapter_backup_16_12.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-20450">
+          <caret line="49" column="13" selection-start-line="49" selection-start-column="13" selection-end-line="49" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/singing_activity.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="463">
+          <caret line="84" column="31" selection-start-line="84" selection-start-column="31" selection-end-line="84" selection-end-column="31" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/singing_item.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="135" column="63" selection-start-line="135" selection-start-column="63" selection-end-line="135" selection-end-column="63" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/icosom/social/Talent_Show_Package/Adapter/GK_Adapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="556" selection-start-line="556" selection-end-line="556" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/icosom/social/Talent_Show_Package/Activity/Singing_And_Dancing_Activity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="175" column="30" selection-start-line="175" selection-start-column="30" selection-end-line="175" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_talent__add__video.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="44" column="20" selection-start-line="44" selection-start-column="20" selection-end-line="44" selection-end-column="20" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/icosom/social/activity/ShowSubMediaActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/icosom/social/activity/LoginActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="279">
+          <caret line="325" column="37" selection-start-line="325" selection-start-column="37" selection-end-line="325" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/icosom/social/Talent_Show_Package/Adapter/Singing_Adapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="137">
+          <caret line="521" column="50" lean-forward="true" selection-start-line="521" selection-start-column="50" selection-end-line="521" selection-end-column="50" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#20725#21676#0" expanded="true" />
+            <element signature="e#21675#21676#0" expanded="true" />
+            <element signature="e#38487#38488#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_talent__add__voice.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="258" column="24" lean-forward="true" selection-start-line="258" selection-start-column="24" selection-end-line="258" selection-end-column="24" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/icosom/social/Talent_Show_Package/Activity/Talent_Add_Video.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="144" column="16" selection-start-line="144" selection-start-column="16" selection-end-line="144" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_gk__add__image.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="64" column="29" selection-start-line="64" selection-start-column="29" selection-end-line="64" selection-end-column="29" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/icosom/social/Talent_Show_Package/Activity/GK_Add_Image.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="94" lean-forward="true" selection-start-line="83" selection-start-column="3" selection-end-line="94" />
+          <folding>
+            <element signature="e#4103#4133#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/icosom/social/Talent_Show_Package/Activity/Talent_Add_Voice.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="538">
+          <caret line="148" column="5" lean-forward="true" selection-start-line="148" selection-start-column="5" selection-end-line="148" selection-end-column="5" />
+          <folding>
+            <element signature="e#3293#4666#0" expanded="true" />
+            <element signature="e#4665#4666#0" expanded="true" />
+            <element signature="e#5186#5216#0" expanded="true" />
+            <element signature="e#11045#11377#0" expanded="true" />
+            <element signature="e#11376#11377#0" expanded="true" />
+            <element signature="e#11623#12765#0" expanded="true" />
+            <element signature="e#12212#12565#0" expanded="true" />
+            <element signature="e#12564#12565#0" expanded="true" />
+            <element signature="e#12764#12765#0" expanded="true" />
+            <element signature="e#13105#13663#0" expanded="true" />
+            <element signature="e#13662#13663#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

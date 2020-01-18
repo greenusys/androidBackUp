@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context="com.greenusys.allen.vidyadashboard.Mathsdicii">
+
+    <TextView
+        android:id="@+id/tvchoose"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/chat_user_reply_background_color"
+        android:fontFamily="casual"
+        android:text=" Maths Dicitonary"
+        android:textColor="@color/cardview_dark_background"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <ExpandableListView
+        android:id="@+id/lvExp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

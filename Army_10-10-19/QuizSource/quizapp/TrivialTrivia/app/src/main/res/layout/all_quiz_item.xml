@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="18dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginEnd="18dp"
+    android:orientation="vertical"
+
+
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+        >
+
+
+        <LinearLayout
+            android:id="@+id/sample_paper11"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:backgroundTint="@color/light_color4"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+
+            <Button
+                android:id="@+id/gd_link"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_gravity="left"
+                android:layout_weight="0.80"
+                android:autoLink="all"
+                android:background="@drawable/button_round2"
+                android:gravity="center"
+                android:linksClickable="true"
+                android:text="Topics "
+                android:textColor="@color/black"
+                android:textColorLink="@color/black"
+                android:textSize="14sp" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
+
+
+
+

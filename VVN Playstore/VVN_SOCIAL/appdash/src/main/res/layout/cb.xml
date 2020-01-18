@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/chat_user_reply_background_color"
+        android:fontFamily="casual"
+        android:textAlignment="center"
+        android:text="Chemical Bonding"
+        android:textColor="@color/cardview_dark_background"
+        android:textSize="30dp" />
+
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:fontFamily="sans-serif"
+        android:textSize="20dp"
+        android:text="Chemical bonding is a means through which atoms unite to form molecules. Chemical bond exists between two atoms or groups of atoms when the forces acting between them are physically powerful enough to result to the formation of an aggregate with adequate stability to be termed an autonomous species. The no of bonds an atom forms matches up to the number of electron at its outer shell. Bond energy is the quantity of energy necessary to break a bond and create neutral atoms. In line with Coulomb’s law every bond as a result of attraction that exist between unlike charges. On the other hand, the manner this force is manifested varies depending on the atoms concerned. The main types of chemical bond are the ionic, covalent, metallic, and hydrogen bonds. The ionic and covalent bonds are ideal forms but the majority of the bond types are of an intermediary type."
+        android:textColor="@color/cardview_dark_background" />
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/chat_user_reply_background_color"
+        android:fontFamily="casual"
+        android:textAlignment="center"
+        android:text="Bonding Energy between two atoms"
+        android:textColor="@color/cardview_dark_background"
+        android:textSize="30dp" />
+
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:fontFamily="sans-serif"
+        android:textSize="20dp"
+        android:text="The interaction energy between two atoms at equilibrium is referred to as the bonding energy between the two atoms. To break the bond, this energy must be supplied from outside. Breaking the bond means that the two atoms become infinitely separated. In real substances that are made up of varieties of atoms, bonding is calculated by stating the bonding energy of the entire substances in terms of the disjointing distances among all atoms. There are different types of bonding:•	Primary bonding: Ionic (involves transfer of outermost electrons)\n•	Covalent (involves sharing of outermost electrons, directional)\n•	Metallic (involves delocalization of valence electrons)\n•	Secondary or van der Waals Bonding:(widespread, but less strong than primary bonding)\n•	Dipole-dipole\n•	H-bonds\n•	Polar molecule-induced dipole\n•	Variable dipole (the most weak bond)"
+        android:textColor="@color/cardview_dark_background" />
+
+
+</LinearLayout>
+</ScrollView>

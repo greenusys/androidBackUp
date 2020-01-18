@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/nav_hair"
+            android:icon="@drawable/hair"
+            android:title="Hair" />
+        <item
+            android:id="@+id/nav_face"
+            android:icon="@drawable/face"
+            android:title="Face" />
+        <item
+            android:id="@+id/nav_body"
+            android:icon="@drawable/body"
+            android:title="Body" />
+        <item
+            android:id="@+id/nav_org"
+            android:icon="@drawable/organicproduct"
+            android:title="Organic Product" />
+
+        <item
+            android:id="@+id/nav_makeup"
+            android:icon="@drawable/makeup"
+            android:title="Make Up" />
+        <item
+            android:id="@+id/nav_cart"
+            android:icon="@drawable/cart"
+            android:title="Cart" />
+
+        <item android:title="Communicate">
+        <menu>
+        <item
+            android:id="@+id/navigation_care"
+            android:icon="@drawable/support"
+            android:title="Contact Us" />
+        <item
+            android:id="@+id/navigation_locate"
+            android:icon="@drawable/placeholder"
+            android:title="About Us" />
+        </menu>
+        </item>
+
+    </group>
+
+    <item android:title="More">
+        <menu>
+            <item
+                android:id="@+id/nav_tools"
+                android:icon="@drawable/ic_menu_manage"
+                android:title="Setting" />
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="@string/menu_share" />
+
+        </menu>
+    </item>
+    <item android:title="account">
+        <menu>
+            <item
+                android:id="@+id/nav_login"
+                android:icon="@drawable/login"
+                android:title="Log in" />
+        </menu>
+    </item>
+</menu>

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:id="@+id/sample_paper1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="3"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_margin="10dp"
+            android:id="@+id/sample_paper21"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1"
+            android:orientation="vertical">
+
+
+        <TextView
+            android:fontFamily="sans-serif"
+            android:id="@+id/heading"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="25dp"
+            android:text="Date"/>
+
+        </LinearLayout>
+
+        <View
+            android:background="#000"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"></View>
+
+
+        <LinearLayout
+            android:visibility="gone"
+            android:layout_gravity="right"
+            android:layout_margin="10dp"
+            android:id="@+id/sample_paper221"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1"
+            android:orientation="vertical">
+
+
+        <TextView
+        android:layout_marginTop="30dp"
+            android:id="@+id/date"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_gravity="right"
+            android:gravity="right"
+            android:textSize="18dp"
+            android:text="Date"/>
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:visibility="gone"
+            android:layout_gravity="left"
+            android:layout_margin="10dp"
+            android:id="@+id/sample_psaper21"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1"
+            android:orientation="vertical">
+
+        <TextView
+            android:linksClickable="true"
+            android:autoLink="all"
+            android:textColorLink="@color/colorBlueJeans"
+
+            android:id="@+id/link"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_gravity="left"
+            android:gravity="left"
+            android:textSize="18dp"
+            android:text="Link"/>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+    <ScrollView
+        android:scrollbars="none"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:weightSum="1"
+        android:orientation="horizontal">
+        <TextView
+
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:id="@+id/description"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:textSize="18dp"
+            android:text="description"/>
+
+    </LinearLayout>
+
+    </ScrollView>
+
+
+
+
+
+</LinearLayout>
+
+
+
+

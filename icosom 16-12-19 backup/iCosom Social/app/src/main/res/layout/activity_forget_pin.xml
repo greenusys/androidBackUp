@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:background="@drawable/blackbackgr">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center|top"
+        android:layout_marginTop="50dp"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/logointe"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:textSize="17sp"
+                android:textColor="@color/colorPrimary"
+                android:letterSpacing="0.2"
+                android:textAllCaps="true"
+                android:text="iCosom "/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:textSize="17sp"
+                android:textColor="#fff"
+                android:letterSpacing="0.2"
+                android:textAllCaps="true"
+                android:text="Wallet"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:orientation="vertical">
+
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/edt_pin_reset"
+                android:hint=" New Pin"
+                android:drawableLeft="@drawable/ic_password"
+                android:drawableRight="@drawable/ic_visibility"
+                android:drawablePadding="10dp"
+                android:inputType="numberPassword"
+                android:background="@null"
+                android:textSize="14sp"
+                android:paddingTop="15dp"
+                android:paddingRight="15dp"
+                android:paddingLeft="15dp"
+                android:paddingBottom="10dp"
+                android:maxLength="4"
+
+                android:textColor="#fff"
+                android:textColorHint="#afffffff"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#fff"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/edt_pin_confirm_reset"
+                android:hint="Confirm New Pin"
+                android:drawableLeft="@drawable/ic_password"
+                android:drawableRight="@drawable/ic_visibility"
+                android:drawablePadding="10dp"
+                android:inputType="numberPassword"
+                android:background="@null"
+                android:textSize="14sp"
+                android:paddingTop="15dp"
+                android:paddingRight="15dp"
+                android:paddingLeft="15dp"
+                android:paddingBottom="10dp"
+                android:maxLength="4"
+
+                android:textColor="#fff"
+                android:textColorHint="#afffffff"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#fff"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Password should be aleast 6 digit long."
+                android:textColor="#fff"
+                android:textSize="8sp"
+                android:visibility="gone"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="15dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/button_wallet_submit_reset"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/login_button_drawable"
+            android:gravity="center"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:id="@+id/txt_wallet_submit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="RESET PIN  "
+                android:textAllCaps="true"
+                android:textColor="#000"
+                android:textSize="13sp" />
+
+            <ProgressBar
+                android:id="@+id/pb_login_reset"
+                style="?android:progressBarStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:indeterminate="true"
+                android:visibility="gone"
+                android:indeterminateTint="#000"
+                android:indeterminateTintMode="src_atop" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp">
+
+            <CheckBox
+                android:id="@+id/cb_remember_me"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Remember me"
+                android:scaleX="0.8"
+                android:scaleY="0.8"
+                android:visibility="gone"
+                android:buttonTint="#fff"
+                android:textColor="#fff" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1"/>
+
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+
+
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

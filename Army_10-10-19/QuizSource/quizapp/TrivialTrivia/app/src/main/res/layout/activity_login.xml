@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/admin_liner"
+        android:orientation="vertical"
+        android:layout_marginTop="50dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_margin="4dp"
+            >
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/buyer_ed_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/et_seller_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:ems="100"
+                    android:hint="Email Address" />
+
+            </android.support.design.widget.TextInputLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="4dp"
+            android:weightSum="2"
+            >
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/buyer_ed_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                >
+
+                <EditText
+                    android:id="@+id/et_seller_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:ems="10"
+                    android:hint="Password"
+                    android:inputType="textPassword" />
+
+
+            </android.support.design.widget.TextInputLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="8dp"
+            android:weightSum="2"
+            >
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:text="SignIn"
+                android:padding="2dp"
+                android:layout_margin="1dp"
+                android:textSize="20dp"
+                android:layout_weight="2"
+
+                android:textStyle="bold"
+                android:id="@+id/seller_signin"
+                android:textAllCaps="true"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="8dp"
+            android:weightSum="2"
+            >
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_margin="3dp"
+                android:id="@+id/seller_newuser"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="New User"
+                    android:id="@+id/buyer_newUser"
+                    android:textSize="18sp"
+                    android:textColor="@color/colorbg"
+                    />
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="2dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@color/colorbg" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_margin="3dp"
+                android:id="@+id/seller_forgetpassword"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ForgetPassword?"
+                    android:textSize="18sp"
+                    android:id="@+id/buyer_f_pass"
+                    android:textColor="@color/colorbg"
+                    />
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="2dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@color/colorbg" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content">
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content">
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

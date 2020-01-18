@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.avinashdavid.trivialtrivia.Quiz_Subject_List">
+
+    <RelativeLayout
+        android:id="@+id/anim_layout"
+        android:visibility="gone"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_width="200dp"
+        android:layout_height="200dp">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_width="match_parent"
+            app:lottie_rawRes="@raw/loading_anim"
+            android:layout_height="match_parent"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            android:id="@+id/lotti"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/data_layout"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+
+    <!--<TextView
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:id="@+id/name"
+        android:fontFamily="sans-serif"
+        android:textColor="#000"
+        android:gravity="center"/>-->
+
+    <android.support.v7.widget.RecyclerView
+     android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:listitem="@layout/all_quiz_item"
+        android:id="@+id/rv" />
+    </LinearLayout>
+
+
+
+</RelativeLayout>

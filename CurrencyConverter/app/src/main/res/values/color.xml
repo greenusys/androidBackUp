@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="selected_item_color">#30d1d5</color>
+    <color name="guillotine_background">#5921B0</color>
+    <color name="guillotine_background_dark">#5921B0</color>
+    <color name="colorAccent">#5921B0</color>
+    <color name="black">#000</color>
+    <color name="white">#fff</color>
+    <color name="light_grey">#F3F3F3</color>
+    <color name="dark_grey">#D2D1D1</color>
+    <color name="green">#5FD163</color>
+    <color name="selected">#F44308</color>
+
+</resources>

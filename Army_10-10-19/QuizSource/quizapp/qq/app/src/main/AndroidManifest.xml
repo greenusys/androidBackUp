@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.ali.qq">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/an"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.Example.Widget">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".HomeScreen"
+            android:label="@string/app_name"></activity>
+        <activity
+            android:name=".LoginScreen"
+            android:label="@string/app_name"></activity>
+        <activity
+            android:name=".GameStart"
+            android:label="@string/app_name"></activity>
+        <activity
+            android:name=".QuizActivity"
+            android:label="@string/app_name"></activity>
+        <activity
+            android:name=".FinalActivity"
+            android:label="@string/app_name"></activity>
+        <activity
+            android:name=".HighScores"
+            android:label="@string/app_name"></activity>
+        <activity android:name=".Main2Activity"></activity>
+    </application>
+
+</manifest>

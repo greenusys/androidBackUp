@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@drawable/background2"
+    tools:context="com.icosom.social.activity.PassbookRecharge">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/app_bar_passbook"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:fitsSystemWindows="true"
+        android:theme="@style/AppTheme.NoActionBar.AppBarOverlay">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:id="@+id/toolbar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            app:contentScrim="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            app:toolbarId="@+id/toolbar">
+
+            <LinearLayout
+
+                android:padding="@dimen/dimen_10dp"
+                android:background="@drawable/background2"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:gravity="center"
+                    android:textColor="#C0000000"
+                    android:textSize="12sp"
+                    android:text="Total Balance"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/tvBalance"
+                    android:layout_marginBottom="16dp"
+                    android:gravity="center"
+                    android:textColor="#C0000000"
+                    android:textSize="20sp"
+                    android:text="₹ 0.0"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <LinearLayout
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <View
+                        android:layout_width="16dp"
+                        android:layout_height="match_parent"/>
+
+                    <TextView
+                        android:gravity="center"
+                        android:id="@+id/tvSendMoney"
+                        android:drawablePadding="5dp"
+                        android:drawableLeft="@drawable/ic_wc"
+                        android:padding="8dp"
+                        android:background="@drawable/shape_rectangle_abc_color"
+                        android:textColor="#C0000000"
+                        android:textSize="16sp"
+                        android:text="Send money to friend"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content" />
+
+                    <View
+                        android:layout_width="16dp"
+                        android:layout_height="match_parent"/>
+
+                    <TextView
+                        android:gravity="center"
+                        android:padding="8dp"
+                        android:id="@+id/tvAddMoney"
+                        android:drawablePadding="5dp"
+                        android:drawableLeft="@drawable/ic_account_balance"
+                        android:layout_gravity="center"
+                        android:background="@drawable/shape_rectangle_abc_color"
+                        android:textColor="#C0000000"
+                        android:textSize="16sp"
+                        android:text=" Add money to wallet"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content" />
+
+                    <View
+                        android:layout_width="16dp"
+                        android:layout_height="match_parent"/>
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <include layout="@layout/content_passbook_recharge" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

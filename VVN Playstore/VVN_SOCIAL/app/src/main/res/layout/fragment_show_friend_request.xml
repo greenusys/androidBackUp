@@ -1,0 +1,54 @@
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:paddingLeft="20dp"
+        android:background="@color/light_grey"
+        android:layout_width="match_parent"
+        android:gravity="top"
+        android:text="Friend Request"
+        android:textSize="16sp"
+        android:id="@+id/count_request"
+        android:textColor="#000"
+        android:layout_height="wrap_content" />
+
+
+    <android.support.v4.widget.ContentLoadingProgressBar
+        android:layout_width="50dp"
+        android:id="@+id/progress_bar"
+        android:layout_height="50dp"
+        style="?android:attr/progressBarStyleLarge"
+        android:foregroundGravity="center"
+        android:layout_gravity="center" />
+
+    <TextView
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="No Friend Requests"
+        android:gravity="center"
+        android:textAllCaps="true"
+        android:textColor="#000"
+        android:textSize="16sp"
+        android:id="@+id/txt_noFriendRequest"/>
+
+<!--    <android.support.v4.widget.SwipeRefreshLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/srl_showFriendRequest">-->
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="40dp"
+        android:layout_height="match_parent"
+            android:id="@+id/rv_showFriendRequest"/>
+
+   <!-- </android.support.v4.widget.SwipeRefreshLayout>-->
+
+</FrameLayout>

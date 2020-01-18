@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/chat_user_reply_background_color"
+            android:fontFamily="casual"
+            android:textAlignment="center"
+            android:text="Kinematics"
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="30dp" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:fontFamily="sans-serif"
+            android:text="The concept of kinematics is the study of motion without the force causing them and the mass of the body .suppose a body of mass 2kg is pulled a distance of 10 m bya force of 5N;Kinematics studies only the movement in a giving direction without concern on the 5N force or the 2 kg mass of the body.\n\nThe motion of a bodycan either be in any of these forms:\n1->Random:Eg-is gasesous particles,\n2->Translational:eg:is a moving car,\n3->Rotational:Eg-is a celing fan,\n4->Oscillatory:eg-is swinging pendulum."
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="20dp" />
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/chat_user_reply_background_color"
+            android:fontFamily="casual"
+            android:textAlignment="center"
+            android:text="Straight Line Motion(SLM)"
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="30dp" />
+
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="sans-serif"
+            android:layout_marginLeft="20dp"
+            android:text=" this is the moton of a body in a straight line. There are 4 parameters involved in the study of this motion of a body in a straight line.They are displacement or distance,velocity,acceleration and time"
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="20dp" />
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/chat_user_reply_background_color"
+            android:fontFamily="casual"
+            android:textAlignment="center"
+            android:text="Displacement"
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="30dp" />
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="sans-serif"
+            android:layout_marginLeft="20dp"
+            android:text=" Displacement is the length and direction of a line from a fixed reference point.\nIn Kinematics it is represented with(s) and is mathematically related to velocity thus::
+\ns=vt\n Where s=displacement\nv=velocity\nt=time\n\nthe unit of displacement is meter(m)"
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="20dp" />
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/chat_user_reply_background_color"
+            android:fontFamily="casual"
+            android:textAlignment="center"
+            android:text="Velocity"
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="30dp" />
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="sans-serif"
+            android:layout_marginLeft="20dp"
+            android:text="It is speed measured in a specified direction.it is vector quantity(i.e.it has both magnitude and direction,while speed is scalar quantity\n\nExample:: A train moves at a high velocity. Velocity is the rate of motion, speed or action. An example of velocity is a car driving at 75 miles per hour.\n\nVelocity(v)=s\nwhere s=displacement,t=time.\n\n
+Average Velocity(aV): is total distance travelled (stotal)divided by the total time\naV=stotal/ttotal\n\nUniform velocity:when the ration(s/t)is constant-unchanging"
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="20dp" />
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/chat_user_reply_background_color"
+            android:fontFamily="casual"
+            android:textAlignment="center"
+            android:text="Acceleration "
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="30dp" />
+
+        <TextView
+
+            android:id="@+id/textView6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="sans-serif"
+            android:text="is rate of change velocity with time.The unit is metere per second squared(m/s2)"
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="20dp" />
+
+        <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/lll" />
+  <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="sans-serif"
+      android:layout_marginLeft="20dp"
+            android:text="\nMathematically  Acceleration(a) is:\na=vt \nwhere v=velocity, t=time.\nUniform velocity:if the rate of change of velocity is constant ,the acceleration is said to be uniform\na=v/t=constant."
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="20dp" />
+    </LinearLayout>
+</ScrollView>

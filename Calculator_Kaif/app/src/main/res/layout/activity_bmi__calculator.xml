@@ -1,0 +1,457 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fbutton="http://schemas.android.com/tools"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/guillotine_background"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/guillotine_actionbar_background_view_height"
+        android:layout_gravity="top"
+        android:background="@color/guillotine_background" />
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <androidx.appcompat.widget.Toolbar
+                    style="@style/Toolbar"
+                    app:contentInsetStart="0dp">
+
+                    <ImageView
+                        android:id="@+id/content_hamburger"
+                        style="@style/ImageView.Hamburger"
+                        android:src="@drawable/back_arrow" />
+
+                    <com.example.digitalforgeco.widget.CanaroTextView
+                       android:layout_marginLeft="50dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/slide_7_title"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/guillotine_item_text_size" />
+
+
+                </androidx.appcompat.widget.Toolbar>
+
+
+
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:layout_gravity="center"
+                   android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    app:cardCornerRadius="40dp">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+
+                            <com.example.digitalforgeco.widget.CanaroTextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:text="Height"
+                                android:textColor="@color/guillotine_background"
+                                android:textSize="20dp" />
+
+                        <!--first row-->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="80dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="15dp"
+                            android:orientation="horizontal"
+                            android:weightSum="2">
+
+
+                            <LinearLayout
+                                android:weightSum="2"
+                                android:orientation="vertical"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1">
+
+                                <com.example.digitalforgeco.widget.CanaroTextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="1"
+                                    android:layout_gravity="center"
+                                    android:gravity="center"
+                                    android:text="Feet"
+                                    android:textColor="@color/guillotine_background"
+                                    android:textSize="20dp" />
+
+                                <EditText
+                                    android:id="@+id/feet"
+                                    android:textSize="22dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/bor"
+                                    android:inputType="numberDecimal"
+                                    android:paddingLeft="5dp"
+                                    android:textColor="@color/selected_item_color"
+                                    android:textColorHint="@color/selected_item_color" />
+
+
+
+
+                            </LinearLayout>
+
+
+
+                            <LinearLayout
+                                android:layout_marginLeft="10dp"
+                                android:orientation="vertical"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1">
+                                <com.example.digitalforgeco.widget.CanaroTextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="1"
+                                    android:layout_gravity="center"
+                                    android:gravity="center"
+                                    android:text="Inches"
+                                    android:textColor="@color/guillotine_background"
+                                    android:textSize="20dp" />
+
+                                <EditText
+                                    android:id="@+id/inches"
+                                    android:textSize="22dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/bor"
+                                    android:inputType="numberDecimal"
+                                    android:paddingLeft="5dp"
+                                    android:textColor="@color/selected_item_color"
+                                    android:textColorHint="@color/selected_item_color" />
+
+
+
+
+                            </LinearLayout>
+
+
+
+                        </LinearLayout>
+                        <!--first row-->
+
+                        <com.example.digitalforgeco.widget.CanaroTextView
+                           android:layout_marginTop="5dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:text="or"
+                            android:textColor="@color/guillotine_background"
+                            android:textSize="20dp" />
+
+
+                        <LinearLayout
+                            android:layout_marginTop="5dp"
+                            android:weightSum="2"
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="80dp"
+                            android:layout_weight="1">
+
+                            <com.example.digitalforgeco.widget.CanaroTextView
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:text="Cm"
+                                android:textColor="@color/guillotine_background"
+                                android:textSize="20dp" />
+
+                            <EditText
+                                android:id="@+id/cm"
+                                android:layout_gravity="center"
+                                android:textSize="22dp"
+                                android:layout_width="140dp"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/bor"
+                                android:inputType="numberDecimal"
+                                android:paddingLeft="5dp"
+                                android:textColor="@color/selected_item_color"
+                                android:textColorHint="@color/selected_item_color" />
+
+
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    app:cardCornerRadius="40dp">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+
+                        <com.example.digitalforgeco.widget.CanaroTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:text="Weight"
+                            android:textColor="@color/guillotine_background"
+                            android:textSize="20dp" />
+
+                        <!--first row-->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="80dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="15dp"
+                            android:orientation="horizontal"
+                            android:weightSum="2">
+
+
+                            <LinearLayout
+                                android:weightSum="2"
+                                android:orientation="vertical"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1">
+
+                                <com.example.digitalforgeco.widget.CanaroTextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="1"
+                                    android:layout_gravity="center"
+                                    android:gravity="center"
+                                    android:text="Stone"
+                                    android:textColor="@color/guillotine_background"
+                                    android:textSize="20dp" />
+
+                                <EditText
+                                    android:id="@+id/stone"
+                                    android:textSize="22dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/bor"
+                                    android:inputType="numberDecimal"
+                                    android:paddingLeft="5dp"
+                                    android:textColor="@color/selected_item_color"
+                                    android:textColorHint="@color/selected_item_color" />
+
+
+
+
+                            </LinearLayout>
+
+
+
+                            <LinearLayout
+                                android:layout_marginLeft="10dp"
+                                android:orientation="vertical"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1">
+                                <com.example.digitalforgeco.widget.CanaroTextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="1"
+                                    android:layout_gravity="center"
+                                    android:gravity="center"
+                                    android:text="Lbs"
+                                    android:textColor="@color/guillotine_background"
+                                    android:textSize="20dp" />
+
+                                <EditText
+                                    android:id="@+id/lbs"
+                                    android:textSize="22dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/bor"
+                                    android:inputType="numberDecimal"
+                                    android:paddingLeft="5dp"
+                                    android:textColor="@color/selected_item_color"
+                                    android:textColorHint="@color/selected_item_color" />
+
+
+
+
+                            </LinearLayout>
+
+
+
+                        </LinearLayout>
+                        <!--first row-->
+
+                        <com.example.digitalforgeco.widget.CanaroTextView
+                            android:layout_marginTop="5dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:text="or"
+                            android:textColor="@color/guillotine_background"
+                            android:textSize="20dp" />
+
+
+                        <LinearLayout
+                            android:layout_marginTop="5dp"
+                            android:weightSum="2"
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="80dp"
+                            android:layout_weight="1">
+
+                            <com.example.digitalforgeco.widget.CanaroTextView
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:text="Kg"
+                                android:textColor="@color/guillotine_background"
+                                android:textSize="20dp" />
+
+                            <EditText
+                                android:id="@+id/kg"
+                                android:layout_gravity="center"
+                                android:textSize="22dp"
+                                android:layout_width="140dp"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/bor"
+                                android:inputType="numberDecimal"
+                                android:paddingLeft="5dp"
+                                android:textColor="@color/selected_item_color"
+                                android:textColorHint="@color/selected_item_color" />
+
+
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="20dp"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <com.example.menu_library.FButton
+                            android:id="@+id/calculate"
+                            app:buttonColor="@color/selected_item_color_2"
+                            android:layout_width="match_parent"
+                            android:layout_weight="1"
+                            android:layout_height="40dp"
+                            android:layout_gravity="left|top"
+                            android:textSize="20dp"
+                            android:text="Calculate"
+                            android:textAllCaps="false"
+                            android:textColor="@android:color/white"
+                            fbutton:shadowEnabled="true" />
+
+                    </LinearLayout>
+
+
+
+                    <LinearLayout
+                        android:gravity="left"
+                        android:layout_gravity="left"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        >
+
+
+                        <com.example.digitalforgeco.widget.CanaroTextView
+                          android:id="@+id/result"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="20dp"
+                            android:gravity="left|center"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="left"
+                            android:text=""
+                            android:textColor="@color/box_8"
+                            android:textSize="25dp" />
+
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+</FrameLayout>

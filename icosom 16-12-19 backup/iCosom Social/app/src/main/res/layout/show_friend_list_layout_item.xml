@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#fff">
+
+
+    <LinearLayout
+        android:id="@+id/main_layout"
+        android:layout_margin="5dp"
+        android:weightSum="2"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_weight=".5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/ic_home_profile"
+                android:id="@+id/iv_profile"
+                android:scaleType="centerCrop"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:paddingBottom="24dp"
+            android:orientation="vertical"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_weight="1.4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+             android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textSize="18dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="XYZ"
+                    android:textStyle="bold"
+                    android:id="@+id/txt_name"
+                    android:gravity="left"
+                    android:textColor="#000"/>
+                <TextView
+                    android:textSize="16dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Course"
+                    android:textStyle="bold"
+                    android:id="@+id/course_name"
+                    android:gravity="left"
+                    android:textColor="#000"/>
+
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_marginTop="4dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:visibility="gone"
+                    android:id="@+id/request_response_linear"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:background="@color/colorPrimary"
+                    android:padding="5dp"
+                    android:gravity="center">
+
+                    <TextView
+                        android:textStyle="bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/request_response"
+                        android:text="You are now friends"
+                        android:textColor="#fff"
+                        android:textAllCaps="true" />
+
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+</LinearLayout>

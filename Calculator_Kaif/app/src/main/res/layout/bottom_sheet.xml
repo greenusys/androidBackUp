@@ -1,0 +1,58 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/bottom_root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:layout_marginRight="5dp"
+        android:padding="5dp"
+        android:layout_gravity="right"
+        android:id="@+id/clear_history"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:text="Clear History"
+        android:background="@drawable/box"
+        android:textColor="@color/white"/>
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/history_rv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+    <LinearLayout
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/not_history_found">
+
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/no_data_anim" />
+
+    <TextView
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="No History Available"
+        style="@style/TextAppearance.AppCompat.Headline"
+        android:layout_gravity="center"
+        android:gravity="center"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

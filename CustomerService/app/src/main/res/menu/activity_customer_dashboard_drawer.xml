@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+tools:showIn="navigation_view">
+
+<group android:checkableBehavior="single">
+    <item
+        android:icon="@drawable/call_lock"
+        android:id="@+id/calllock_nav"
+        android:title="Call lock" />
+    <item
+        android:icon="@drawable/pay"
+        android:id="@+id/pay_nav"
+        android:title="Pay" />
+    <item
+        android:icon="@drawable/reminder"
+        android:id="@+id/reminder_nav"
+        android:title="Reminder" />
+    <item
+        android:icon="@drawable/video"
+        android:id="@+id/video_nav"
+        android:title="Video" />
+    <item
+        android:icon="@drawable/broucher"
+        android:id="@+id/broucher_nav"
+        android:title="Broucher" />
+</group>
+
+<item android:title="Communicate">
+    <menu>
+        <item
+            android:icon="@drawable/service_package"
+            android:id="@+id/nav_about"
+            android:title="Service Package" />
+        <item
+            android:icon="@drawable/share"
+            android:id="@+id/nav_share"
+            android:title="Share" />
+        <item
+            android:icon="@drawable/diploma"
+            android:id="@+id/qutaction"
+            android:title="Company Quotation" />
+        <item
+            android:icon="@drawable/privacy_policy"
+            android:id="@+id/pp"
+            android:title="Privacy Policy" />
+
+    </menu>
+</item>
+
+</menu>
+

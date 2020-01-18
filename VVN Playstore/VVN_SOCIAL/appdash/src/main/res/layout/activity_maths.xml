@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    android:id="@+id/ll1"
+    tools:context="com.greenusys.allen.vidyadashboard.Maths">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="166dp"
+            android:background="@drawable/bg_profile"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/ll_profile"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/iv_profile"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/maths_icon" />
+
+                <TextView
+                    android:id="@+id/tv_username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/iv_profile"
+                    android:paddingTop="10dp"
+                    android:text="Mathematics"
+                    android:textColor="#039BE5"
+                    android:textSize="30dp" />
+            </LinearLayout>
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/l">
+
+        <GridView
+            android:id="@+id/grid1"
+            android:layout_width="match_parent"
+            android:layout_height="459dp"
+
+            android:gravity="center"
+            android:horizontalSpacing="30dp"
+            android:numColumns="2"
+            android:paddingLeft="20dp"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="10dp" />
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

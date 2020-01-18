@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.digitalforgeco">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-3701953680756708~9110810285" />
+
+        <activity
+            android:name=".activity.Aboutsus"
+            android:parentActivityName=".activity.MainActivity"
+            android:theme="@style/AppTheme1" />
+        <activity android:name=".activity.Distance_Calculator_1"
+            />
+        <activity android:name=".activity.Percentage_Calculator_2" />
+        <activity android:name=".activity.Temperature_Calculator_3" />
+        <activity android:name=".activity.Weight_Calculator_4" />
+        <activity android:name=".activity.Length_Calculator_5" />
+        <activity android:name=".activity.Simple_Calculator_6" />
+        <activity android:name=".activity.BMI_Calculator_7" />
+        <activity android:name=".activity.Scientific_Calculator_8" />
+        <activity android:name=".activity.Volume_Calculator_9" />
+        <activity android:name=".activity.WelcomeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.MainActivity"
+            android:label="@string/title_activity_welcome"
+            android:theme="@style/Theme.Guillotine" />
+    </application>
+
+</manifest>

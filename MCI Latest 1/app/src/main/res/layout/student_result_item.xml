@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="16dp"
+    android:layout_margin="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#E0F7FA">
+
+    <TextView
+        android:id="@+id/test_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Test Name"
+        android:textStyle="bold"
+        android:textColor="#fb0000"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/max_marks_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Maximum Marks"
+        android:textStyle="bold"
+        android:textColor="#fb0000"
+        app:layout_constraintLeft_toLeftOf="@id/test_name"
+        app:layout_constraintTop_toBottomOf="@id/test_name"/>
+
+    <TextView
+        android:id="@+id/max_marks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        tools:text="100"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimary"
+        app:layout_constraintLeft_toRightOf="@id/max_marks_label"
+        app:layout_constraintTop_toTopOf="@id/max_marks_label"
+        />
+
+    <TextView
+        android:id="@+id/score_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Score"
+        android:textStyle="bold"
+        android:textColor="#fb0000"
+        android:layout_marginRight="16dp"
+        app:layout_constraintRight_toLeftOf="@id/score"
+        app:layout_constraintTop_toTopOf="@id/max_marks"/>
+
+    <TextView
+        android:id="@+id/score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="90"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimary"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/max_marks_label"
+        />
+
+</android.support.constraint.ConstraintLayout>

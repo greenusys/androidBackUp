@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:background="#ffffff"
+    tools:context="com.greenusys.allen.vidyadashboard.Forgot">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        app:srcCompat="@drawable/vidya"
+        android:layout_gravity="center_horizontal"
+        tools:layout_editor_absoluteX="172dp"
+        tools:layout_editor_absoluteY="38dp" />
+
+
+    <EditText
+        android:id="@+id/femail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:inputType="textPersonName"
+        android:padding="12dp"
+        android:background="@drawable/shape"
+        android:hint="Email" />
+
+    <Button
+        android:id="@+id/repass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="@color/colorPrimary"
+        android:layout_margin="20dp"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:text="RECOVER PASSWORD" />
+</LinearLayout>
+
+

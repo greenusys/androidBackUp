@@ -1,0 +1,68 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+    <LinearLayout
+        android:focusableInTouchMode="true"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="com.icosom.social.Fragment.RechargeFragment">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/pay_anim"
+            android:id="@+id/image"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp" />
+
+
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:drawablePadding="10dp"
+                android:background="@drawable/box"
+                android:layout_margin="8dp"
+                android:padding="8dp"
+                android:drawableLeft="@drawable/amounticon"
+                android:textColor="#80000000"
+                android:inputType="number"
+                android:id="@+id/etAmountAddMoneys"
+                android:hint="Amount"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+
+        </android.support.design.widget.TextInputLayout>
+
+        <TextView
+            android:id="@+id/tvSubmitAddMoneyRecharges"
+            android:layout_marginTop="16dp"
+            android:layout_margin="16dp"
+            android:textColor="#FFFFFFFF"
+            android:padding="8dp" android:textStyle="bold"
+            android:background="@drawable/button_round"
+            android:textAllCaps="true"
+            android:text="PAY"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_width="100dp"
+            android:layout_height="50dp" />
+
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>
+

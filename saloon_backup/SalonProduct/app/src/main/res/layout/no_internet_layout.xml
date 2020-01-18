@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center">
+
+    <LinearLayout
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="No Internet Found"
+            android:textColor="@color/dark"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:id="@+id/product_image"
+            android:layout_width="250dp"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            android:layout_height="200dp"
+            app:lottie_rawRes="@raw/internet_anim"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="Please Check Your Internet Connection"
+            android:textColor="@color/dark"
+            android:textSize="20dp" />
+
+        <TextView
+          android:id="@+id/retry_internet"
+            android:textStyle="bold"
+            android:padding="15dp"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="?attr/colorPrimary"
+            android:gravity="center"
+            android:text="Retry "
+            android:textColor="#fff"
+            android:textSize="25dp" />
+
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,90 @@
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical"
+    android:layout_height="wrap_content"
+    tools:context=".Activities.signup">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+
+
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Add A REVIEW"
+        android:textSize="32dp"
+        app:fontFamily="@font/bubbler_one" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Your email address will not be published. Required fields are marked *"
+        android:textSize="18dp"
+        app:fontFamily="@font/bubbler_one" />
+
+
+
+    <EditText
+        android:paddingLeft="5dp"
+        android:id="@+id/name"
+        android:background="@drawable/border"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint=" Your Name"/>
+
+    <EditText
+        android:paddingLeft="5dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/email"
+        android:background="@drawable/border"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint=" Your Email"/>
+    <EditText
+        android:paddingLeft="5dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/review"
+        android:background="@drawable/border"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:gravity="top|left"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:hint=" Your Name"/>
+
+    <TextView
+        android:layout_marginBottom="20dp"
+        android:id="@+id/txt_login"
+        android:layout_marginTop="40dp"
+        android:text="SUBMIT"
+        android:textColor="#F8F5F5"
+        android:background="@drawable/bor"
+        android:gravity="center"
+        android:textSize="24dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        app:fontFamily="@font/bubbler_one"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+
+</ScrollView>

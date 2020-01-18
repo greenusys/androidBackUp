@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/camouflage12"
+    android:orientation="vertical">
+
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <LinearLayout
+            android:layout_marginStart="17dp"
+            android:layout_marginEnd="17dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp"
+            android:layout_marginTop="20dp"
+            android:weightSum="2">
+
+            <LinearLayout
+                android:id="@+id/sample_paper"
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_round"
+                android:backgroundTint="#FFC515"
+                android:orientation="vertical">
+
+
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:text="Model                     Papers"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="25sp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginStart="15dp"
+                android:id="@+id/past_paper"
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_round"
+                android:backgroundTint="#5EBEFF"
+                android:orientation="vertical">
+
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+
+                    android:textStyle="bold"
+                    android:textSize="25sp"
+                    android:text="Past Year                     Papers"
+                    android:gravity="center"
+                    android:textColor="@color/colorWhite"
+                    />
+
+            </LinearLayout>
+
+
+
+
+
+
+        </LinearLayout>
+
+
+
+        <!-- Second Row-->
+        <LinearLayout
+            android:layout_marginStart="17dp"
+            android:layout_marginEnd="17dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+            android:weightSum="2"
+            >
+
+            <LinearLayout
+                android:id="@+id/eligibility"
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_round"
+                android:backgroundTint="#FF6666"
+                android:orientation="vertical">
+
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+
+                    android:text="Eligibility"
+                    android:gravity="center"
+                    android:textColor="@color/colorWhite"
+                    android:textStyle="bold"
+                    android:textSize="25sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/syllabus"
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_marginStart="13dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_round"
+                android:backgroundTint="#82D559 "
+                android:orientation="vertical">
+
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+
+                    android:text="Syllabus"
+                    android:gravity="center"
+                    android:textColor="@color/colorWhite"
+                    android:textStyle="bold"
+                    android:textSize="25sp" />
+
+            </LinearLayout>
+
+
+
+
+
+
+
+
+        </LinearLayout>
+
+        <!-- Second Row-->
+        <LinearLayout
+            android:layout_marginStart="17dp"
+            android:layout_marginEnd="17dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+            android:weightSum="2"
+            >
+
+            <LinearLayout
+                android:id="@+id/exam_pattern"
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_round"
+                android:backgroundTint="#FF3C3C"
+                android:orientation="vertical">
+
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+
+                    android:text="Exam      Pattern"
+                    android:gravity="center"
+                    android:textColor="@color/colorWhite"
+                    android:textStyle="bold"
+                    android:textSize="25sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/s"
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_marginStart="23dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                >
+
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textColor="@color/colorWhite"
+                    android:textStyle="bold"
+                    android:textSize="25sp" />
+
+            </LinearLayout>
+
+
+
+
+
+
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+</LinearLayout>

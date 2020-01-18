@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/chat_user_reply_background_color"
+            android:fontFamily="casual"
+            android:textAlignment="center"
+            android:text="Waves"
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+android:layout_marginLeft="20dp"
+            android:textSize="17dp"
+            android:text=" A wave is a distrubance or oscillation that travels through space and matter ,accompained by a transfer of energy \n\noscillation\n f=1/T\nf=frequency\nT=period\n\nv = f • λ\n v=velocity\nf=frequency\nλ=wavelength"
+            android:textColor="@color/cardview_dark_background" />
+
+
+
+
+
+    </LinearLayout>
+</ScrollView>

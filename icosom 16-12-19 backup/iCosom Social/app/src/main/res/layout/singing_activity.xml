@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context="com.icosom.social.Talent_Show_Package.Activity.Singing_And_Dancing_Activity">
+
+
+    <!--no data found layout-->
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/no_data_found_layout"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            layout="@layout/no_data_layout"/>
+
+    </LinearLayout>
+    <!--no data found layout-->
+
+
+
+
+    <!--title bar layout-->
+    <androidx.appcompat.widget.Toolbar
+        android:layout_marginTop="22dp"
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/colorPrimary"
+        app:popupTheme="@style/AppTheme.PopupOverlay">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:onClick="back_activity"
+                android:layout_marginTop="10dp"
+                android:id="@+id/back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/chat_back_arrow" />
+
+
+            <TextView
+                android:id="@+id/title_text"
+                android:layout_marginLeft="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Dancing"
+                android:gravity="center"
+                android:textAllCaps="true"
+                android:textSize="18sp"
+                android:textColor="#fff" />
+
+
+
+
+
+
+        </LinearLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+    <!--title bar  end layout-->
+
+
+    <FrameLayout
+        android:id="@+id/data_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar">
+
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:id="@+id/swipe_ref"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:nestedScrollingEnabled="true"
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+
+
+
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/singing_fab"
+            android:onClick="show_singing_alert_box"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:src="@drawable/add_icon"
+            android:layout_gravity="bottom|end"
+            app:elevation="6dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="50dp"
+            app:pressedTranslationZ="12dp"/>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/dancing_fab"
+            android:onClick="upload_dancing_or_comedy_video"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:src="@drawable/ic_video_library2"
+            android:layout_gravity="bottom|end"
+            app:elevation="6dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="50dp"
+            app:pressedTranslationZ="12dp"/>
+
+
+    </FrameLayout>
+
+
+</RelativeLayout>

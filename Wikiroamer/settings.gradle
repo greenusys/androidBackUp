@@ -1,0 +1,2 @@
+include ':app', ':menu_library'
+rootProject.name='Wikiroamer'

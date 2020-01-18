@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".activity.CustomerDashboard"
+    tools:showIn="@layout/app_bar_customer_dashboard">
+
+
+
+
+
+
+  <LinearLayout
+      android:orientation="vertical"
+      android:weightSum="2"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+
+
+    <!--First Part-->
+    <LinearLayout
+        android:layout_weight=".7"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+      <com.daimajia.slider.library.SliderLayout
+          android:id="@+id/slider"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          />
+    </LinearLayout>
+
+
+
+    <!--second Part-->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_height="0dp"
+        android:layout_weight="1.3"
+        android:layout_width="match_parent">
+
+
+
+
+
+      <LinearLayout
+          android:weightSum="3"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:orientation="vertical">
+
+
+      <!--  First horizontal layout-->
+
+        <LinearLayout
+            android:onClick="reminder"
+            android:layout_weight="1"
+            android:weightSum="3"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal">
+
+
+          <LinearLayout
+              android:onClick="call_locks"
+              android:layout_margin="5dp"
+              android:orientation="vertical"
+              android:weightSum="2"
+              android:layout_width="0dp"
+              android:layout_height="match_parent"
+              android:layout_weight="1"
+              android:background="@color/box_1">
+
+            <ImageView
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:src="@drawable/call_lock" />
+            <TextView
+                android:textColor="#fff"
+                android:textSize="16dp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="Call lock"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                />
+
+
+
+          </LinearLayout>
+
+          <LinearLayout
+              android:onClick="pay"
+              android:layout_margin="5dp"
+              android:orientation="vertical"
+              android:weightSum="2"
+              android:layout_width="0dp"
+              android:layout_height="match_parent"
+              android:layout_weight="1"
+              android:background="@color/box_2">
+            <ImageView
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:src="@drawable/pay" />
+            <TextView
+                android:textColor="#fff"
+                android:textSize="16dp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="Pay"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                />
+          </LinearLayout>
+
+          <LinearLayout
+              android:layout_margin="5dp"
+              android:orientation="vertical"
+              android:weightSum="2"
+              android:layout_width="0dp"
+              android:layout_height="match_parent"
+              android:layout_weight="1"
+              android:background="@color/box_3">
+            <ImageView
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:src="@drawable/reminder" />
+            <TextView
+                android:textColor="#fff"
+                android:textSize="16dp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="Reminder"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                />
+          </LinearLayout>
+
+
+        </LinearLayout>
+       <!-- end first horizontal layout-->
+
+
+        <!--  second horizontal layout-->
+
+        <LinearLayout
+
+            android:layout_weight="1"
+            android:weightSum="3"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal">
+
+
+          <LinearLayout
+              android:onClick="video"
+              android:layout_margin="5dp"
+              android:orientation="vertical"
+              android:weightSum="2"
+              android:layout_width="0dp"
+              android:layout_height="match_parent"
+              android:layout_weight="1"
+              android:background="@color/box_4">
+            <ImageView
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:src="@drawable/video" />
+            <TextView
+                android:textColor="#fff"
+                android:textSize="16dp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="Video"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                />
+          </LinearLayout>
+
+          <LinearLayout
+             android:onClick="brouncher"
+              android:layout_margin="5dp"
+              android:orientation="vertical"
+              android:weightSum="2"
+              android:layout_width="0dp"
+              android:layout_height="match_parent"
+              android:layout_weight="1"
+              android:background="@color/box_5">
+            <ImageView
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:src="@drawable/broucher" />
+            <TextView
+                android:textColor="#fff"
+                android:textSize="16dp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="Broucher"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                />
+          </LinearLayout>
+
+          <LinearLayout
+              android:onClick="service_package"
+              android:layout_margin="5dp"
+              android:orientation="vertical"
+              android:weightSum="2"
+              android:layout_width="0dp"
+              android:layout_height="match_parent"
+              android:layout_weight="1"
+              android:background="@color/box_6">
+            <ImageView
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:src="@drawable/service_package" />
+            <TextView
+                android:textColor="#fff"
+                android:textSize="16dp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="Service Package"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                />
+          </LinearLayout>
+
+
+        </LinearLayout>
+        <!-- end second horizontal layout-->
+
+
+
+        <!--  third horizontal layout-->
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:weightSum="3"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal">
+
+
+          <LinearLayout
+              android:onClick="company_quotation"
+              android:layout_margin="5dp"
+              android:orientation="vertical"
+              android:weightSum="2"
+              android:layout_width="0dp"
+              android:layout_height="match_parent"
+              android:layout_weight="1"
+              android:background="@color/box_7">
+            <ImageView
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:src="@drawable/diploma" />
+            <TextView
+                android:textColor="#fff"
+                android:textSize="16dp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="Company Quotation"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                />
+          </LinearLayout>
+
+          <LinearLayout
+              android:onClick="add_query"
+              android:layout_margin="5dp"
+              android:orientation="vertical"
+              android:weightSum="2"
+              android:layout_width="0dp"
+              android:layout_height="match_parent"
+              android:layout_weight="1"
+              android:background="@color/box_8">
+            <ImageView
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:src="@drawable/add_query" />
+            <TextView
+                android:textColor="#fff"
+                android:textSize="16dp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="Add Query"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                />
+          </LinearLayout>
+
+          <LinearLayout
+              android:onClick="view_query"
+              android:layout_margin="5dp"
+              android:orientation="vertical"
+              android:weightSum="2"
+              android:layout_width="0dp"
+              android:layout_height="match_parent"
+              android:layout_weight="1"
+              android:background="@color/box_9">
+            <ImageView
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:src="@drawable/view_query" />
+            <TextView
+                android:textColor="#fff"
+                android:textSize="16dp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="View Query"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                />
+          </LinearLayout>
+
+
+        </LinearLayout>
+        <!-- end third horizontal layout-->
+
+
+
+
+
+      </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+</LinearLayout>

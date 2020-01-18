@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+      <android.support.v7.widget.CardView
+          android:id="@+id/customer_card"
+          android:layout_marginLeft="10dp"
+          android:layout_marginRight="10dp"
+          android:layout_marginTop="20dp"
+          android:layout_marginBottom="10dp"
+          app:cardCornerRadius="10dp"
+          android:elevation="50dp"
+          cardUseCompatPadding="true"
+          hardwareAccelerated = "true"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          app:cardBackgroundColor="#ffffff">
+
+
+      <TextView
+          android:paddingBottom="20dp"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:id="@+id/name1"
+          android:layout_marginLeft="15dp"
+          android:text="Name"
+          android:textStyle="normal"
+          android:layout_marginRight="100dp"
+          android:gravity="top"
+          android:textAllCaps="true"
+          android:textAppearance="?android:textAppearanceLarge"
+          />
+      <TextView
+          android:layout_marginRight="10dp"
+          android:paddingBottom="20dp"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:id="@+id/name2"
+          android:text="Price"
+          android:textStyle="normal"
+          android:layout_gravity="top|right"
+          android:gravity="center"
+          android:textAllCaps="true"
+          android:textAppearance="?android:textAppearanceLarge" />
+
+      </android.support.v7.widget.CardView>
+
+</RelativeLayout>

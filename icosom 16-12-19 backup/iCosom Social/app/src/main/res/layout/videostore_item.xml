@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:visibility="visible"
+        android:layout_gravity="left"
+        android:gravity="left"
+        android:foregroundGravity="left"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:padding="0.5dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/lay_postMedia_video_store"
+        android:background="#ffffff">
+          <TextView
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:id="@+id/txt"
+              />
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_weight="2">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/frame_postA__video_store">
+
+                <ImageView
+                   android:src="@drawable/placeholder"
+                   android:layout_marginTop="4dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitXY"
+                    android:adjustViewBounds="true"
+                    android:id="@+id/videos" />
+                <ImageView
+                    android:id="@+id/iv_isVideoA"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_play_video" />
+                <ProgressBar
+                    android:layout_marginTop="4dp"
+                    android:visibility="gone"
+                    android:id="@+id/progress"
+                    style="?android:progressBarStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center" />
+            </FrameLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_marginTop="4dp"
+            >
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.4"
+                android:id="@+id/profile_img"
+                android:src="@drawable/placeholder"/>
+           <!-- <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.4"
+                android:src="@drawable/ic_home_profile"
+                android:id="@+id/profile_img"
+                />-->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1.7"
+                android:weightSum="2"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="name"
+                    android:id="@+id/usr_profile_name"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="time"
+                    android:id="@+id/use_post_time"
+                    />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

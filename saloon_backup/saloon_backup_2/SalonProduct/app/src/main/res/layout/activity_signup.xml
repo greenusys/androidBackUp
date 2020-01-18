@@ -1,0 +1,136 @@
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical"
+    android:weightSum="11"
+    android:layout_height="match_parent"
+    tools:context=".Activities.signup">
+
+
+    <Space
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp" />
+    <TextView
+        android:layout_weight="1"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:text="SIGN UP"
+        android:textSize="32dp"
+        app:fontFamily="@font/bubbler_one" />
+
+    <EditText
+        android:id="@+id/edt_name_reg"
+        android:layout_weight="1"
+        android:background="@drawable/border"
+        android:layout_marginBottom="7dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:hint=" Your Name"/>
+
+    <EditText
+        android:id="@+id/edt_email_reg"
+        android:layout_weight="1"
+        android:layout_marginBottom="7dp"
+        android:layout_marginLeft="40dp"
+        android:background="@drawable/border"
+        android:layout_marginRight="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:hint=" Email ID"/>
+
+    <EditText
+        android:id="@+id/edt_pass"
+        android:layout_marginBottom="7dp"
+        android:layout_weight="1"
+        android:background="@drawable/border"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:inputType="textPassword"
+        android:hint="Password"/>
+
+    <EditText
+        android:id="@+id/edt_reg_pass"
+        android:layout_weight="1"
+        android:layout_marginBottom="7dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:background="@drawable/border"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:inputType="textPassword"
+        android:hint="Confirm Password"/>
+
+    <EditText
+        android:id="@+id/edt_phone_regisr"
+        android:layout_weight="1"
+        android:background="@drawable/border"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="7dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:inputType="number"
+        android:hint="Phone No."/>
+
+    <EditText
+        android:id="@+id/edt_address_reg"
+        android:layout_weight="1"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:background="@drawable/border"
+        android:layout_marginBottom="7dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:hint=" Address"/>
+
+
+    <TextView
+        android:id="@+id/txt_login"
+        android:layout_marginTop="40dp"
+        android:layout_weight="1"
+        android:text="LOGIN"
+        android:textColor="#F8F5F5"
+        android:background="@drawable/bor"
+        android:gravity="center"
+        android:textSize="24dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        app:fontFamily="@font/bubbler_one"
+        android:layout_width="match_parent"
+        android:layout_height="0dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_marginTop="30dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/haveAcc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Already have an Account"
+            android:textAllCaps="false"
+            android:layout_gravity="right"
+            android:layout_margin="18dp"
+            android:background="@null"
+            android:textSize="16dp"
+            app:fontFamily="@font/bubbler_one"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            />
+    </LinearLayout>
+
+</LinearLayout>

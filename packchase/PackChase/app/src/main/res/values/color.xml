@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="selected_item_color">#560027</color>
+    <color name="guillotine_background">#560027</color>
+    <color name="guillotine_background_dark">#560027</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="black">#000</color>
+    <color name="white">#fff</color>
+    <color name="light_grey">#F3F3F3</color>
+    <color name="dark_grey">#D2D1D1</color>
+    <color name="green">#5FD163</color>
+    <color name="grey">#9E9E9E</color>
+
+    <color name="colorPrimary">#560027</color>
+    <color name="colorPrimaryDark">#560027</color>
+
+    <color name="box_1">#0691cc</color>
+    <color name="box_2">#d42447</color>
+    <color name="box_3">#ffaf02</color>
+    <color name="box_4">#FF5722</color>
+    <color name="box_5">#C5467F</color>
+    <color name="box_6">#7953bf</color>
+    <color name="box_7">#20d2bb</color>
+    <color name="box_8">#c873f4</color>
+    <color name="box_9">#0ac471</color>
+
+
+</resources>

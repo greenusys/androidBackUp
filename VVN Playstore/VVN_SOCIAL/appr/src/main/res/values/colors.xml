@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ff7309</color>
+    <color name="colorPrimaryDark">#ff7309</color>
+    <color name="colorAccent">#ff7309</color>
+    <color name="color_1">#ff7309</color>
+    <color name="color_2">#ff7309</color>
+    <color name="color_3">#ff7309</color>
+    <color name="color_4">#ff7309</color>
+    <color name="color_5">#ff7309</color>
+    <color name="color_6">#ff7309</color>
+    <color name="color_7">#ff7309</color>
+    <color name="color_8">#ff7309</color>
+    <color name="color_9">#ff7309</color>
+
+    <color name="color_11">#ff7309</color>
+    <color name="color_21">#ff7309</color>
+    <color name="color_31">#ff7309</color>
+    <color name="color_41">#ff7309</color>
+    <color name="color_51">#ff7309</color>
+    <color name="color_61">#ff7309</color>
+    <color name="color_71">#ff7309</color>
+    <color name="color_81">#ff7309</color>
+    <color name="color_91">#ff7309</color>
+</resources>

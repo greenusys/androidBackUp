@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#00e5ff</color>
+    <color name="colorPrimaryDark">#00b2cc</color>
+    <color name="colorAccent">#D81B60</color>
+
+
+    <color name="colorPrimarySplash">#00C853</color>
+    <color name="colorPrimaryDarkSplash">#00993F</color>
+    <color name="colorAccentSplash">#E65100</color>
+
+    <color name="guillotine_background">#00e5ff</color>
+    <color name="guillotine_background_dark">#00b2cc</color>
+    <color name="text">#111F6B</color>
+
+    <color name="black">#000</color>
+    <color name="white">#fff</color>
+</resources>

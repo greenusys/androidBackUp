@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.appunite:video-player-android:1.0.1@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-video-player-android-1.0.1.aar/9e02a8a21bc87e4e734b0a5bde8c995f/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-video-player-android-1.0.1.aar/9e02a8a21bc87e4e734b0a5bde8c995f/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

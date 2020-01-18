@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/chat_user_reply_background_color"
+            android:fontFamily="casual"
+            android:textAlignment="center"
+            android:text="Magnetism"
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="30dp" />
+
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="sans-serif"
+            android:text="Magnetism is a class of physical events that includes forces exerted by magnets on other magnets. It has its origin in electric currents and the fundamental magnetic moments of elementary particles. These give rise to a magnetic field that acts on other currents and moments. All materials are influenced to some extent by a magnetic field. The strongest effect is on permanent magnets, which have persistent magnetic moments caused by ferromagnetism. Substances that are negligibly affected by magnetic fields are known as non-magnetic substances. They include copper, aluminum, gases, and plastic. Pure oxygen exhibits magnetic properties when cooled to a liquid state.
+
+The magnetic state of a material depends on temperature and other variables such as pressure and the applied magnetic field and so, a material may exhibit more than one form of magnetism depending on its temperature, etc."
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="20dp" />
+
+
+
+
+        <TextView
+            
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/chat_user_reply_background_color"
+            android:fontFamily="casual"
+            android:textAlignment="center"
+            android:text="Sources Of Magnetism"
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="30dp" />
+          <TextView
+              android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="sans-serif"
+            android:text="There are two sources of magnetism namely;\nElectric current\nNuclear magnetic moments of atomic nuclei"
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="20dp" />
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/chat_user_reply_background_color"
+            android:fontFamily="casual"
+            android:textAlignment="center"
+            android:text="Types Of Magnetism"
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="30dp" />
+
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:fontFamily="casual"
+            android:textAlignment="center"
+            android:text="Diamagnetism"
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="30dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="sans-serif"
+            android:text="Diamagnetism appears in all materials, and is the tendency of a material to oppose an applied magnetic field, and therefore, to be repelled by a magnetic field. However, in a material with a tendency to enhance an external magnetic field, the paramagnetic behavior dominates. Thus, despite its universal occurrence, diamagnetic behavior is observed only in a purely diamagnetic material. In a diamagnetic material, there are no unpaired electrons, so the intrinsic electron magnetic moments cannot produce any bulk effect. In these cases, the magnetization arises from the electrons' orbital motions."
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="20dp" />
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:fontFamily="casual"
+            android:textAlignment="center"
+            android:text="Paramagnetism"
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="30dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="sans-serif"
+            android:text="In a paramagnetic material there are unpaired electrons, i.e. atomic or molecular orbitals with exactly one electron in them. While paired electrons are required by the Pauli Exclusion Principle to have their intrinsic ('spin') magnetic moments pointing in opposite directions, causing their magnetic fields to cancel out, an unpaired electron is free to align its magnetic moment in any direction. When an external magnetic field is applied, these magnetic moments will tend to align themselves in the same direction as the applied field, thus reinforcing it."
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="20dp" />
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:fontFamily="casual"
+            android:textAlignment="center"
+            android:text="Ferromagnetism"
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="30dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="sans-serif"
+            android:text="A ferromagnet, like a paramagnetic substance, has unpaired electrons. However, in addition to the electrons' intrinsic magnetic moment's tendency to be parallel to an applied field, there is also in these materials a tendency for these magnetic moments to orient parallel to each other to maintain a lowered-energy state. Thus, even when the applied field is removed, the electrons in the material maintain a parallel orientation. Some well-known ferromagnetic materials that exhibit easily detectable magnetic properties are nickel, iron, cobalt, gadolinium and their alloys."
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="20dp" />
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:fontFamily="casual"
+            android:textAlignment="center"
+            android:text="Electromagnet"
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="30dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="sans-serif"
+            android:text="An electromagnet is a type of magnet whose magnetism is produced by the flow of electric current. The magnetic field disappears when the current ceases.
+
+Electromagnets attract paper clips when current are applied creating a magnetic field. The electromagnet loses them when current and magnetic field are removed."
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="20dp" />
+
+
+
+    </LinearLayout>
+</ScrollView>

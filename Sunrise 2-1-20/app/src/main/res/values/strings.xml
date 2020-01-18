@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Suntime</string>
+    <string name="google_maps_key">AIzaSyC4FDT8J8lF8k-DyYRapn0SdboECO0owcg</string>
+    <string name="home">Home</string>
+    <string name="fvrt">Favourite Location</string>
+    <string name="history">History</string>
+    <string name="std_map">Standard Map Style</string>
+    <string name="Silver_map">Silver Map Style</string>
+    <string name="Retro_map">Retro Map Style</string>
+    <string name="Dark_map">Dark Map Style</string>
+    <string name="Night_map">Night Map Style</string>
+    <string name="Aubergine_map">Aubergine Map Style</string>
+    <string name="aboutus">Abouts Us</string>
+
+
+    <string-array name="kaif2">
+
+        <item>kaif</item>
+        <item>kaif</item>
+        <item>kaif</item>
+        <item>kaif</item>
+        <item>kaif</item>
+        <item>kaif</item>
+        <item>kaif</item>
+
+
+    </string-array>
+
+</resources>

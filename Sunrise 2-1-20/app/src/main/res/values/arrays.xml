@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <string-array name="country">
+        <item>Please Select Country</item>
+    </string-array>
+
+    <string-array name="state">
+        <item>Please Select State</item>
+    </string-array>
+
+
+    <string-array name="city">
+        <item>Please Select City</item>
+    </string-array>
+
+
+
+</resources>

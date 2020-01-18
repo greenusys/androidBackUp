@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.Checkout_Billing_Activity">
+
+    <!-- scroll layout  -->
+<ScrollView
+    android:nestedScrollingEnabled="false"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+
+
+    <!--main content layout-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!--name  layout-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/fullname_Layout"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:hint="Full Name">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/fullname_text"
+                    android:inputType="textPersonName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+        </LinearLayout>
+        <!--name end layout-->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/email_Layout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:hint="Email Address">
+
+            <com.google.android.material.textfield.TextInputEditText
+               android:id="@+id/email_text"
+                android:inputType="textEmailAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+           android:id="@+id/company_layout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:hint="Company Name (Optional)">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/company_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/address1_layout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_marginBottom="12dp"
+            android:hint="House Number and Street Name">
+
+            <com.google.android.material.textfield.TextInputEditText
+               android:id="@+id/address1_text"
+                android:inputType="textPostalAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/address2_layout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:hint="Apartment,Suit,Unit etc (optional)">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/address2_text"
+                android:inputType="textPostalAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+           android:id="@+id/city_layout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:hint="Town/City">
+
+            <com.google.android.material.textfield.TextInputEditText
+              android:id="@+id/city_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Spinner
+            android:entries="@array/state"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/box2"
+            style="@style/Widget.AppCompat.Spinner.DropDown"
+            android:id="@+id/state_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:dropDownWidth="match_parent" />
+        <com.google.android.material.textfield.TextInputLayout
+          android:id="@+id/pincode_layout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:hint="PostCode/Zip">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/pincode_text"
+                android:inputType="number"
+                android:maxLength="6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+          android:id="@+id/phone_layout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:hint="Phone">
+
+            <com.google.android.material.textfield.TextInputEditText
+               android:id="@+id/phone_text"
+                android:inputType="phone"
+                android:maxLength="10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <!--    bottom layout-->
+        <RelativeLayout
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true">
+
+            <TextView
+                android:id="@+id/procedd_text"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:background="?attr/colorPrimary"
+                android:gravity="center"
+                android:text="PROCEED TO PAY 19,990 Rs"
+                android:textColor="#fff"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+        <!--  bottom end layout-->
+
+
+
+    </LinearLayout>
+    <!--main content end layout-->
+
+
+</ScrollView>
+   <!-- scroll layout end -->
+
+
+
+
+
+
+
+</RelativeLayout>

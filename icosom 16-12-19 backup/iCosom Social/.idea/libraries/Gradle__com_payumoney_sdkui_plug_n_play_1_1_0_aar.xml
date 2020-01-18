@@ -1,0 +1,17 @@
+<component name="libraryTable">
+  <library name="Gradle: com.payumoney.sdkui:plug-n-play:1.1.0@aar">
+    <ANNOTATIONS>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-plug-n-play-1.1.0.aar/0b2af758f651f2dd16b04bb274aa8c2e/annotations.zip!/" />
+    </ANNOTATIONS>
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-plug-n-play-1.1.0.aar/0b2af758f651f2dd16b04bb274aa8c2e/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-plug-n-play-1.1.0.aar/0b2af758f651f2dd16b04bb274aa8c2e/res" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.payumoney.sdkui/plug-n-play/1.1.0/5199225adb97729b6a47ac0c91c801ca433b27d4/plug-n-play-1.1.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.payumoney.sdkui/plug-n-play/1.1.0/64cfe8c85c338f300b6885e84471e53b6d4e0b91/plug-n-play-1.1.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

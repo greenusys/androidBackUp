@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical">
+    <TableRow
+        android:id="@+id/tableRow1"
+
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:baselineAligned="true"
+
+        android:background="#8adec7">
+        <TextView
+            android:id="@+id/TextView0"
+            android:text="Name"
+            android:background="@drawable/border"
+            android:layout_weight="1"
+            android:textColor="#000000"
+            android:padding="20dip" android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/TextView01"
+            android:gravity="center"
+            android:background="@drawable/border"
+            android:padding="20dip"
+            android:text="Symbol"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/TextView00"
+            android:background="@drawable/border"
+            android:text="value"
+            android:layout_weight="1"
+            android:textColor="#000000"
+            android:padding="20dip" android:gravity="center"/>
+    </TableRow>
+    <TableRow
+    android:layout_width="match_parent"
+        android:background="@drawable/border"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal">
+
+    <TextView
+        android:layout_weight="1"
+        android:gravity="center"
+
+        android:padding="20dip"
+        android:text="Speed of light"
+        android:textColor="#000000" />
+
+    <TextView
+        android:layout_weight="1"
+        android:gravity="center"
+
+        android:padding="20dip"
+        android:text="c"
+        android:textColor="#000000" />
+
+    <TextView
+        android:layout_weight="1"
+        android:gravity="center"
+
+        android:padding="20dip"
+        android:text="2.9979*10\u2078 m/s"
+        android:textColor="#000000" />
+</TableRow>
+    <TableRow
+        android:layout_width="match_parent"
+        android:background="@drawable/border"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_weight="1"
+            android:gravity="center"
+
+            android:padding="20dip"
+            android:text="Gravitation"
+            android:textColor="#000000" />
+
+        <TextView
+            android:layout_weight="1"
+            android:gravity="center"
+
+            android:padding="20dip"
+            android:text="G"
+            android:textColor="#000000" />
+
+        <TextView
+            android:layout_weight="1"
+            android:gravity="center"
+
+            android:padding="20dip"
+            android:text="6.67*10^-11 m^3kg^-1 s^-2"
+            android:textColor="#000000" />
+    </TableRow>
+    <TableRow
+        android:layout_width="match_parent"
+        android:background="@drawable/border"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_weight="1"
+            android:gravity="center"
+
+            android:padding="20dip"
+            android:text="Planck Constant"
+            android:textColor="#000000" />
+
+        <TextView
+            android:layout_weight="1"
+            android:gravity="center"
+
+            android:padding="20dip"
+            android:text="h"
+            android:textColor="#000000" />
+
+        <TextView
+            android:layout_weight="1"
+            android:gravity="center"
+
+            android:padding="20dip"
+            android:text="6.62*10^-34 Js"
+            android:textColor="#000000" />
+    </TableRow>
+    <TableRow
+        android:layout_width="match_parent"
+        android:background="@drawable/border"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_weight="1"
+            android:gravity="center"
+
+            android:padding="20dip"
+            android:text="Avogadro's number"
+            android:textColor="#000000" />
+
+        <TextView
+            android:layout_weight="1"
+            android:gravity="center"
+
+            android:padding="20dip"
+            android:text="Na"
+            android:textColor="#000000" />
+
+        <TextView
+            android:layout_weight="1"
+            android:gravity="center"
+
+            android:padding="20dip"
+            android:text="6.02*10^-23 mol^-1"
+            android:textColor="#000000" />
+    </TableRow>
+    <TableRow
+        android:layout_width="match_parent"
+        android:background="@drawable/border"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_weight="1"
+            android:gravity="center"
+
+            android:padding="20dip"
+            android:text="Charge of electron"
+            android:textColor="#000000" />
+
+        <TextView
+            android:layout_weight="1"
+            android:gravity="center"
+
+            android:padding="20dip"
+            android:text="e"
+            android:textColor="#000000" />
+
+        <TextView
+            android:layout_weight="1"
+            android:gravity="center"
+
+            android:padding="20dip"
+            android:text="1.60*10^-19 C"
+            android:textColor="#000000" />
+    </TableRow>
+    <TableRow
+        android:layout_width="match_parent"
+        android:background="@drawable/border"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_weight="1"
+            android:gravity="center"
+
+            android:padding="20dip"
+            android:text="Atomic Mass Unit"
+            android:textColor="#000000" />
+
+        <TextView
+            android:layout_weight="1"
+            android:gravity="center"
+
+            android:padding="20dip"
+            android:text="u"
+            android:textColor="#000000" />
+
+        <TextView
+            android:layout_weight="1"
+            android:gravity="center"
+
+            android:padding="20dip"
+            android:text="1.66*10^-27 kg"
+            android:textColor="#000000" />
+    </TableRow>
+
+
+
+
+
+
+
+</TableLayout>
+</ScrollView>

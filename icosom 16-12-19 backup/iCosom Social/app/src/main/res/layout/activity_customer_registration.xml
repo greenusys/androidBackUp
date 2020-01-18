@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/blackbackgr"
+    android:layout_height="match_parent">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.3"
+        android:src="@drawable/icosom_bg"/>
+    <TextView
+        android:textStyle="bold"
+        android:letterSpacing="0.02"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20sp"
+        android:textAllCaps="true"
+        android:text="icosom"
+        android:layout_width="match_parent"
+        android:layout_height="30dp" />
+
+
+    <TextView
+        android:textStyle="bold"
+        android:layout_marginLeft="32dp"
+        android:gravity="center|top"
+        android:layout_marginTop="60dp"
+        android:textColor="#80000000"
+        android:textSize="16sp"
+        android:text="wallet"
+        android:layout_gravity="center|top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:focusableInTouchMode="true"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="com.icosom.social.Fragment.RechargeFragment">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+
+                android:layout_margin="8dp"
+                android:padding="8dp"
+                android:textColor="#80000000"
+                android:id="@+id/customerName"
+                android:hint="Customer Name"
+                android:inputType="text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+
+                android:layout_margin="8dp"
+                android:padding="8dp"
+                android:textColor="#80000000"
+                android:id="@+id/customerPincode"
+                android:hint="Customer Pincode"
+                android:maxLength="6"
+                android:inputType="number"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+
+                android:layout_margin="8dp"
+                android:padding="8dp"
+                android:textColor="#80000000"
+                android:id="@+id/customerNumber"
+                android:hint="Phone"
+                android:maxLength="13"
+                android:inputType="phone"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:background="@drawable/shape_rectangle_blue_color"
+            android:id="@+id/customerRegistration"
+            android:layout_marginTop="16dp"
+            android:layout_margin="16dp"
+            android:textColor="#FFFFFFFF"
+            android:padding="10dp"
+            android:textStyle="bold"
+            android:textAllCaps="true"
+            android:text="customer Registration"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp" />
+        <ProgressBar
+            android:id="@+id/transfer4"
+            style="?android:progressBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:indeterminate="true"
+            android:visibility="gone"
+            android:indeterminateTint="#000"
+            android:indeterminateTintMode="src_atop" />
+
+    </LinearLayout>
+
+
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+

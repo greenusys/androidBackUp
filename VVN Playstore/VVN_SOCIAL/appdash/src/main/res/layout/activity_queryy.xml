@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:paddingTop="15dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@android:dimen/app_icon_size"
+            android:src="@drawable/vidya"
+            />
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/call"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="@color/call_now"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            app:cardCornerRadius="30dp"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="15dp"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:paddingRight="10dp"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/call1"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="For any query, Call us"
+                    android:textSize="22sp"
+                    android:textColor="#fff"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:layout_gravity="center"/>
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <EditText
+            android:id="@+id/feed_back"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Write you feedback and submit."
+            android:layout_marginTop="25dp"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:textSize="23sp"
+        android:text="submit"
+        android:textColor="#fff"
+        android:background="@color/submit_button"/>
+
+
+
+</RelativeLayout>

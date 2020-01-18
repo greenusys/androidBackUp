@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "493312193442",
+    "firebase_url": "https://vvn-dap-991d1.firebaseio.com",
+    "project_id": "vvn-dap-991d1",
+    "storage_bucket": "vvn-dap-991d1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:493312193442:android:9a43356ae52aa202",
+        "android_client_info": {
+          "package_name": "com.greenusys.vvndap"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "493312193442-amsrjo95dj4bh9oog8jiuncv2t7n36fk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBuy2PI6l3bxpWZzQ3wxA2J5mysiCbuklI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "493312193442-amsrjo95dj4bh9oog8jiuncv2t7n36fk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

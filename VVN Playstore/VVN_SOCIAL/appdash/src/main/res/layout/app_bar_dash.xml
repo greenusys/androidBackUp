@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/toolbr1"
+    android:background="@color/colorPrimary"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:theme="@style/ThemeOverlay"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:id="@+id/back_arrow"
+            android:src="@drawable/icon2"
+            android:paddingRight="10dp"
+
+            />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:id="@+id/imagevw"
+        android:paddingRight="15dp"
+        android:src="@drawable/vidya"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/tool"
+        android:text="Title"
+        android:layout_marginLeft="10sp"
+        android:gravity="center_vertical"
+        android:textSize="20sp"/>
+    </LinearLayout>
+
+</android.support.v7.widget.Toolbar>

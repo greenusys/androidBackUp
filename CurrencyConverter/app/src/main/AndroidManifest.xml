@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.currencyconverter">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".Network_Package.AppController"
+        android:allowBackup="true"
+        android:icon="@drawable/cur_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/cur_logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".activity.AboutUs"
+            android:theme="@style/AppTheme1"
+            android:parentActivityName=".activity.MainActivity"
+            ></activity>
+        <activity android:name=".activity.Show_Country_List" />
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-3701953680756708~4219761473"/>
+        <activity android:name=".activity.MainActivity" />
+        <activity android:name=".activity.Splash_Screen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

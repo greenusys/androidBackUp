@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context="com.greenusys.allen.vidyadashboard.AllenChat"
+    android:background="@drawable/background">
+    <include
+        android:id="@+id/appbarlayout"
+        layout="@layout/app_bar_dash"></include>
+    <android.support.v7.widget.RecyclerView
+        android:layout_above="@+id/llChat"
+        android:layout_below="@id/appbarlayout"
+        android:paddingBottom="10dp"
+        android:id="@+id/rvChat"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <LinearLayout
+        android:id="@+id/llChat"
+        android:paddingBottom="2dp"
+        android:background="@android:color/transparent"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:gravity="center"
+            android:textColorHint="#4000"
+            android:background="@drawable/shape_message"
+            android:hint="Enter Text Here"
+            android:layout_weight="1"
+            android:id="@+id/etChatInput"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:src="@drawable/ic_send_white_18dp"
+            android:id="@+id/btnChatSend"
+            android:layout_weight="5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+    </LinearLayout>
+</RelativeLayout>
+

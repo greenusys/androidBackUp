@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/chat_user_reply_background_color"
+        android:fontFamily="casual"
+        android:textAlignment="center"
+        android:text="State Of Matter"
+        android:textColor="@color/cardview_dark_background"
+        android:textSize="30dp" />
+
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:fontFamily="sans-serif"
+        android:textSize="20dp"
+        android:text="Matter in the solid state has a definite volume and shape, with essential particles within the matter -atoms, molecules or ions very close together and fixed into definite position. Matter in the liquid state has a definite volume, with a changeable shape. It easily settles in to fit the shape of its container. Its particles are still close together but move about freely. Matter in the gaseous state does not have a definite shape or volume. It has both variable volume and shape, and adapts to fit its container. Its particles are not close together. They are as well not fixed in place. Matter in the plasma state exhibits variable volume and shape, but like neutral atoms, it possesses a considerable number of ions and electrons, both of which can travel around freely. Plasma is the most widespread form of observable matter in the world."
+        android:textColor="@color/cardview_dark_background" />
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/chat_user_reply_background_color"
+        android:fontFamily="casual"
+        android:textAlignment="center"
+        android:text="Kinetic Theory of Matter"
+        android:textColor="@color/cardview_dark_background"
+        android:textSize="30dp" />
+
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:fontFamily="sans-serif"
+        android:textSize="20dp"
+        android:text="The Kinetic Theory of Matter states that matter is made up of a large number of small particles - individual atoms or molecules that are in continuous motion. This theory is as well known as the Kinetic Molecular Theory of Matter and the Kinetic Theory."
+        android:textColor="@color/cardview_dark_background" />
+
+
+</LinearLayout>
+</ScrollView>

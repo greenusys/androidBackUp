@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    android:id="@+id/ll1"
+    tools:context="com.greenusys.allen.vidyadashboard.Biology">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+
+        <RelativeLayout
+            android:background="@drawable/bg_profile"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="166dp">
+
+            <LinearLayout
+                android:gravity="center"
+                android:id="@+id/ll_profile"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true">
+                <ImageView
+                    android:src="@drawable/ic_bio"
+                    android:id="@+id/iv_profile"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp" />
+
+                <TextView
+                    android:textColor="#039BE5"
+                    android:textSize="30dp"
+                    android:paddingTop="10dp"
+                    android:layout_below="@+id/iv_profile"
+                    android:id="@+id/tv_username"
+                    android:text="Biology"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/l">
+
+        <GridView
+            android:id="@+id/grid1"
+            android:layout_width="match_parent"
+            android:layout_height="459dp"
+
+            android:gravity="center"
+            android:horizontalSpacing="30dp"
+            android:numColumns="2"
+            android:paddingLeft="20dp"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="10dp" />
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

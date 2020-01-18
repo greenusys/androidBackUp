@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="16dp"
+    android:layout_margin="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#E0F7FA">
+
+    <TextView
+        android:id="@+id/time_slot_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="8:00 AM - 9:00 AM"
+        android:textStyle="bold"
+        android:textColor="#fb0000"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/lecture_by"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:textStyle="bold"
+        android:textColor="@color/colorAccent"
+        tools:text="Science by Iron Man"
+        app:layout_constraintLeft_toRightOf="@id/time_slot_tv"
+        />
+
+</android.support.constraint.ConstraintLayout>

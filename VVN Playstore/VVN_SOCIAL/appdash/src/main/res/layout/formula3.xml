@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/chat_user_reply_background_color"
+            android:fontFamily="casual"
+android:textAlignment="center"
+            android:text="Mechanics"
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+android:layout_marginLeft="20dp"
+            android:textSize="17dp"
+            android:text="Mechanics is the branch of physics  used to describe the motion of macroscopic objects"
+            android:textColor="@color/cardview_dark_background" />
+        <TextView
+            android:id="@+id/textView92"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/chat_user_reply_background_color"
+            android:fontFamily="casual"
+            android:textAlignment="center"
+            android:text="Displacement"
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="20dp" />
+
+
+        <TextView
+            android:id="@+id/textViewg3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:textSize="17dp"
+            android:text="The distance traveled in a specific direction .In Kinematics it is represented with(s)
+\ns=vt \t\t\t\t\t s=displacemnet(m)\n\t\t\t\t\t\t\t\t\t\t\t v=velocity(m/s)\n\t\t\t\t\t\t\t\t\t\t\t\tt=time(s)"
+            android:textColor="@color/cardview_dark_background" />
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/chat_user_reply_background_color"
+            android:fontFamily="casual"
+            android:textAlignment="center"
+            android:text="velocity"
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="20dp" />
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:textSize="17dp"
+            android:text="The velocity is a speed measured in a specific direction .the unit of velocity is meter per second
+\nv=s/t \t\t\t\t\t s=displacemnet(m)\n\t\t\t\t\t\t\t\t\t\t\t v=velocity(m/s)\n\t\t\t\t\t\t\t\t\t\t\t\tt=time(s)"
+            android:textColor="@color/cardview_dark_background" />
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/chat_user_reply_background_color"
+            android:fontFamily="casual"
+            android:textAlignment="center"
+            android:text="Acceleration"
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="20dp" />
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:textSize="17dp"
+            android:text="The acceleration is rate of change of velocity with time .the unit of  is meter per second square
+\na=v/t \t\t\t\t\t a=accleraion(m/s\u2072)\n\t\t\t\t\t\t\t\t\t\t\t v=velocity(m/s)\n\t\t\t\t\t\t\t\t\t\t\t\tt=time(s)"
+            android:textColor="@color/cardview_dark_background" />
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/chat_user_reply_background_color"
+            android:fontFamily="casual"
+            android:textAlignment="center"
+            android:text="Dispalcement-Time Graph"
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="20dp" />
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:textSize="17dp"
+            android:text="The velocity of an object can also be deduced from a displacement-time graph"
+            android:textColor="@color/cardview_dark_background" />
+        <ImageView
+
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/v4" />
+    </LinearLayout>
+</ScrollView>

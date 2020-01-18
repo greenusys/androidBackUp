@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/chat_user_reply_background_color"
+            android:fontFamily="casual"
+            android:textAlignment="center"
+            android:text="Scalar and Vector"
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="30dp" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="sans-serif"
+            android:text="In physics and mathematics, the words scalar and vectors are commonly used to describe some quantities. Many science students have heard these words many times in the course of their studies but still most might not completely understand its meaning and what they emphasize.\n\n
+Mathematical quantities are used in different fields to describe certain phenomena. When it comes to moving objects or in mechanics, there are two types of quantities used to describe this object. They are known as scalar and vector."
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="20dp" />
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/chat_user_reply_background_color"
+            android:fontFamily="casual"
+            android:textAlignment="center"
+            android:text="Scalars"
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="30dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="sans-serif"
+            android:text="Scalars are mathematical quantities used to describe objects of one dimensional quantity. In a simple term, they are quantities that are described in numerical terms alone. Scalar quantities have only magnitude."
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="20dp" />
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/chat_user_reply_background_color"
+            android:fontFamily="casual"
+            android:textAlignment="center"
+            android:text="Example of Scalars Quantity"
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="30dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="sans-serif"
+            android:text="Temperature\nTime\nSpeed\nMass"
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="20dp"></TextView>
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/chat_user_reply_background_color"
+            android:fontFamily="casual"
+            android:textAlignment="center"
+            android:text="Vector"
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="30dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="sans-serif"
+            android:text="Unlike scalar quantities, vector quantities are quantities that can be described by magnitude and direction. This implies that vector quantities are multi-dimensional quantities."
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="20dp"></TextView>
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/chat_user_reply_background_color"
+            android:fontFamily="casual"
+            android:textAlignment="center"
+            android:text="Example of Vector Quantity"
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="30dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="sans-serif"
+            android:text="Velocity\nAcceleration\nForce\n"
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="20dp"></TextView>
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/chat_user_reply_background_color"
+            android:fontFamily="casual"
+            android:textAlignment="center"
+            android:text="Vector Representation"
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="30dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="sans-serif"
+            android:text="Vector representation is a way to represent and fully visualize how to manipulate vectors in physics. There are different ways in which vectors can be represented in physics. The simple and commonly used is the graphical representation of vectors.\n\nWhen a vector is represented graphically, its magnitude is represented by the length of an arrow and its direction is represented by the direction of the arrow.The direction of a vector is often expressed as a counter-clockwise angle of rotation of that vector from due east. The graphical representations of vectors use the concept of tip and tail. The tip has an arrow which indicates the direction of the vector.\n\n
+            The diagrams below show different representation of vectors
+
+"
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="20dp"></TextView>
+        <ImageView
+
+
+            android:layout_marginLeft="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/r2" />
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/chat_user_reply_background_color"
+            android:fontFamily="casual"
+            android:textAlignment="center"
+            android:text="Vector Addition"
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="30dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="sans-serif"
+            android:text="Vector addition involves the summation of two or more vectors to get the resultant vector. The addition of vectors is one of the many operations that can be performed with vectors. To understand the in-depth of vector addition, let us move back to the Newton’s first law of motion which stated that an object at rest tends to stay at rest and an object in motion tends to stay in motion with the same speed and in the same direction unless acted upon by an unbalanced force."
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="20dp"></TextView>
+        <ImageView
+
+
+            android:layout_marginLeft="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/v1" />
+
+
+
+
+    </LinearLayout>
+</ScrollView>

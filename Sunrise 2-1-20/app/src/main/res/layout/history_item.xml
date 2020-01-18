@@ -1,0 +1,132 @@
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_layout"
+    android:layout_margin="10dp"
+    android:layout_height="240dp"
+    app:cardCornerRadius="20dp"
+    android:elevation="50dp"
+    app:cardBackgroundColor="@color/light_grey"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_margin="10dp"
+        android:layout_height="240dp"
+        android:orientation="vertical">
+
+
+    <com.example.sunrise.widget.CanaroTextView
+        android:minLines="1"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        style="@style/TextView.GuillotineItem"
+        android:gravity="center"
+        android:textSize="25dp"
+        android:text="Sunrise and sunset in " />
+
+   <com.example.sunrise.widget.CanaroTextView
+       android:minLines="1"
+       android:id="@+id/address"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        style="@style/TextView.GuillotineItem"
+        android:gravity="center"
+       android:textSize="25dp"
+        android:text="Dehradun(India)" />
+
+    <View
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorAccent"/>
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <LinearLayout
+
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+
+            <ImageView
+                android:layout_gravity="center"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/sunrise"/>
+
+            <com.example.sunrise.widget.CanaroTextView
+                android:minLines="1"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                style="@style/TextView.GuillotineItem"
+                android:gravity="center"
+                android:text="Sunrise time:" />
+
+            <com.example.sunrise.widget.CanaroTextView
+                android:minLines="1"
+                android:paddingBottom="20dp"
+                android:id="@+id/sunrise_time"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                style="@style/TextView.GuillotineItem"
+                android:gravity="center"
+                android:text="time" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginLeft="10dp"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_gravity="center"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/sunset"/>
+
+            <com.example.sunrise.widget.CanaroTextView
+                android:layout_marginTop="10dp"
+                android:minLines="1"
+                android:layout_width="match_parent"
+                style="@style/TextView.GuillotineItem"
+                android:gravity="center"
+                android:text="Sunset time:" />
+
+            <com.example.sunrise.widget.CanaroTextView
+                android:paddingBottom="20dp"
+                android:minLines="1"
+                android:id="@+id/sunset_time"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                style="@style/TextView.GuillotineItem"
+                android:gravity="center"
+                android:text="time" />
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+</androidx.cardview.widget.CardView>

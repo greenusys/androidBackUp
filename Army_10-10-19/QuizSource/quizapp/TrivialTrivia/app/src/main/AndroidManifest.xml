@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.avinashdavid.trivialtrivia">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:name=".AppController"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme2"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".Check_Eligibility"
+            android:parentActivityName=".Dashboard"></activity>
+        <activity
+            android:name=".Notification_package.AnswerKey"
+            android:parentActivityName=".Dashboard" />
+        <activity
+            android:name=".UI.ActivityWelcomePage"
+            android:screenOrientation="portrait" />
+
+        <provider
+            android:name=".data.QuizProvider"
+            android:authorities="com.avinashdavid.trivialtrivia.data"
+            android:enabled="true"
+            android:exported="false" />
+
+        <activity
+            android:name=".UI.ActivityQuiz"
+            android:noHistory="true"
+            android:parentActivityName=".UI.ActivityWelcomePage"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Launcher" />
+        <activity
+            android:name=".UI.ActivityStatistics"
+            android:parentActivityName=".UI.ActivityWelcomePage"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UI.ActivityPostQuiz"
+            android:parentActivityName=".UI.ActivityWelcomePage"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Launcher" />
+
+        <service android:name=".services.InsertRecordsService" />
+
+        <activity
+            android:name=".UI.ActivityInstructions"
+            android:parentActivityName=".Dashboard"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Launcher" />
+        <activity
+            android:name=".UI.ActivityAcknowledgments"
+            android:parentActivityName=".UI.ActivityWelcomePage"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Launcher" />
+        <activity android:name=".MainActivity" />
+        <activity
+            android:name=".soldier_category"
+            android:theme="@style/AppTheme2" />
+        <activity
+            android:name=".Soldier_GD_Package.Soldier_GD"
+            android:parentActivityName=".Dashboard"
+            android:theme="@style/AppTheme2" />
+        <activity
+            android:name=".Soldier_Clerk.Clerk"
+            android:parentActivityName=".Dashboard"
+            android:theme="@style/AppTheme2" />
+        <activity
+            android:name=".Soldier_Tech_Package.Soldier_Tech"
+            android:parentActivityName=".Dashboard"
+            android:theme="@style/AppTheme2" />
+        <activity
+            android:name=".Soldier_Nursing_Package.Soldier_Nursing"
+            android:parentActivityName=".Dashboard"
+            android:theme="@style/AppTheme2" />
+        <activity
+            android:name=".Soldier_GD_Package.Soldier_Past_Paper"
+            android:parentActivityName=".Soldier_GD_Package.Soldier_GD" />
+        <activity android:name=".Soldier_GD_Package.Soldier_Eligibility" />
+        <activity
+            android:name=".Soldier_GD_Package.Soldier_Sample_Paper"
+            android:parentActivityName=".Soldier_GD_Package.Soldier_GD" />
+        <activity
+            android:name=".Soldier_GD_Package.Soldier_syllabus_link"
+            android:parentActivityName=".Soldier_GD_Package.Soldier_GD" />
+        <activity
+            android:name=".Soldier_GD_Package.Soldier_Exam_Pattern"
+            android:parentActivityName=".Soldier_GD_Package.Soldier_GD" />
+        <activity
+            android:name=".Soldier_Clerk.Clerk_Past_Paper"
+            android:parentActivityName=".Soldier_Clerk.Clerk" />
+        <activity android:name=".Soldier_Clerk.Clerk_Eligibility" />
+        <activity
+            android:name=".Soldier_Clerk.Clerk_syllabus_link"
+            android:parentActivityName=".Soldier_Clerk.Clerk" />
+        <activity
+            android:name=".Soldier_Clerk.Clerk_Exam_Pattern"
+            android:parentActivityName=".Soldier_Clerk.Clerk" />
+        <activity
+            android:name=".Soldier_Clerk.Clerk_Sample_Paper"
+            android:parentActivityName=".Soldier_Clerk.Clerk" />
+        <activity
+            android:name=".Soldier_Tech_Package.Soldier_Tech_Sample_Paper"
+            android:parentActivityName=".Soldier_Tech_Package.Soldier_Tech" />
+        <activity
+            android:name=".Soldier_Tech_Package.Soldier_Tech_Past_Paper"
+            android:parentActivityName=".Soldier_Tech_Package.Soldier_Tech" />
+        <activity
+            android:name=".Soldier_Tech_Package.Soldier_Tech_Eligibility"
+            android:parentActivityName=".Soldier_Tech_Package.Soldier_Tech" />
+        <activity
+            android:name=".Soldier_Tech_Package.Soldier_Tech_syllabus_link"
+            android:parentActivityName=".Soldier_Tech_Package.Soldier_Tech" />
+        <activity
+            android:name=".Soldier_Tech_Package.Soldier_Tech_Exam_Pattern"
+            android:parentActivityName=".Soldier_Tech_Package.Soldier_Tech" />
+        <activity
+            android:name=".Soldier_Nursing_Package.Soldier_Nursing_Sample_Paper"
+            android:parentActivityName=".Soldier_Nursing_Package.Soldier_Nursing" />
+        <activity
+            android:name=".Soldier_Nursing_Package.Soldier_Nursing_Past_Paper"
+            android:parentActivityName=".Soldier_Nursing_Package.Soldier_Nursing" />
+        <activity
+            android:name=".Soldier_Nursing_Package.Soldier_Nursing_Eligibility"
+            android:parentActivityName=".Soldier_Nursing_Package.Soldier_Nursing" />
+        <activity
+            android:name=".Soldier_Nursing_Package.Soldier_Nursing_Exam_Pattern"
+            android:parentActivityName=".Soldier_Nursing_Package.Soldier_Nursing" />
+        <activity
+            android:name=".Soldier_Nursing_Package.Soldier_Nursing_syllabus_link"
+            android:parentActivityName=".Soldier_Nursing_Package.Soldier_Nursing" />
+        <activity
+            android:name=".Soldier_Tradesman.Tradesman"
+            android:parentActivityName=".Dashboard" />
+        <activity
+            android:name=".Soldier_Tradesman.Tradesman_Eligibility_Data"
+            android:parentActivityName=".Soldier_Tradesman.Tradesman" />
+        <activity
+            android:name=".Soldier_Tradesman.Tradesman_Tech_Eligibility"
+            android:parentActivityName=".Soldier_Tradesman.Tradesman" />
+        <activity
+            android:name=".Soldier_Tradesman.Tradesman_Tech_Past_Paper"
+            android:parentActivityName=".Soldier_Tradesman.Tradesman" />
+        <activity
+            android:name=".Soldier_Tradesman.Tradesman_Tech_Exam_Pattern"
+            android:parentActivityName=".Soldier_Tradesman.Tradesman" />
+        <activity
+            android:name=".Soldier_Tradesman.Tradesman_Tech_Sample_Paper"
+            android:parentActivityName=".Soldier_Tradesman.Tradesman" />
+        <activity
+            android:name=".Soldier_Tradesman.Tradesman_Tech_syllabus_link"
+            android:parentActivityName=".Soldier_Tradesman.Tradesman" />
+        <activity
+            android:name=".Education_Havildar.Education_Havildar"
+            android:parentActivityName=".Dashboard" />
+        <activity
+            android:name=".Education_Havildar.Havildar_Eligibility_Data"
+            android:parentActivityName=".Education_Havildar.Education_Havildar" />
+        <activity
+            android:name=".Education_Havildar.Havildar_Tech_Eligibility"
+            android:parentActivityName=".Education_Havildar.Education_Havildar" />
+        <activity
+            android:name=".Education_Havildar.Havildar_Tech_Past_Paper"
+            android:parentActivityName=".Education_Havildar.Education_Havildar" />
+        <activity
+            android:name=".Education_Havildar.Havildar_Tech_Exam_Pattern"
+            android:parentActivityName=".Education_Havildar.Education_Havildar" />
+        <activity
+            android:name=".Education_Havildar.Havildar_Tech_Sample_Paper"
+            android:parentActivityName=".Education_Havildar.Education_Havildar" />
+        <activity
+            android:name=".Education_Havildar.Havildar_Tech_syllabus_link"
+            android:parentActivityName=".Education_Havildar.Education_Havildar" />
+        <activity android:name=".Payment_Gateway" />
+        <activity android:name=".all_quiz_list" />
+        <activity android:name=".Current_Affair_List" />
+        <activity android:name=".home_page" />
+        <activity
+            android:name=".fragments.IconTextTabsActivity"
+            android:label="Home" />
+        <activity android:name=".Login_Register_Package.Login" />
+        <activity android:name=".Login_Register_Package.Forget_Password" />
+        <activity android:name=".Login_Register_Package.OTP_Verficiation" />
+        <activity android:name=".Login_Register_Package.Registration" />
+        <activity
+            android:name=".Dashboard"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Notification_package.All_Rally"
+            android:parentActivityName=".Dashboard" />
+        <activity
+            android:name=".Notification_package.Latest_Notification"
+            android:parentActivityName=".Dashboard" />
+        <activity
+            android:name=".Notification_package.Admit_Card"
+            android:parentActivityName=".Dashboard" />
+        <activity android:name=".Notification_package.More_Notification" />
+        <activity
+            android:name=".Notification_package.Result"
+            android:parentActivityName=".Dashboard" />
+        <activity android:name=".Current_Affair" />
+        <activity
+            android:name=".Current_Affair_Hindi_English"
+            android:parentActivityName=".Dashboard" />
+        <activity
+            android:name=".Soldier_GD_Package.Soldier_Eligibility_Data"
+            android:parentActivityName=".Soldier_GD_Package.Soldier_GD" />
+        <activity
+            android:name=".Soldier_Clerk.Clerk_Eligibility_Data"
+            android:parentActivityName=".Soldier_Clerk.Clerk" />
+        <activity
+            android:name="Soldier_Nursing_Package.Soldier_Nursing_Eligibility"
+            android:parentActivityName=".Soldier_Nursing_Package.Soldier_Nursing" />
+        <activity
+            android:name=".Soldier_Nursing_Package.Nursing_Eligibility_Data"
+            android:parentActivityName=".Soldier_Nursing_Package.Soldier_Nursing" />
+        <activity
+            android:name=".Soldier_Tech_Package.Tech_Eligibility_Data"
+            android:parentActivityName=".Soldier_Tech_Package.Soldier_Tech" />
+        <activity
+            android:name=".Notification_package.Check_Rally"
+            android:parentActivityName=".Dashboard" />
+        <activity android:name=".All_Quiz_List_test" />
+        <activity
+            android:name=".Current_Affair_Description"
+            android:parentActivityName=".Current_Affair_Hindi_English" />
+        <activity
+            android:name=".Check_Your_Eligibility"
+            android:parentActivityName=".Dashboard" />
+        <activity android:name=".Quiz_Category" />
+        <activity android:name=".StartQuiz" />
+        <activity android:name=".kaif_test" />
+        <activity android:name=".Admin_Panel" />
+        <activity
+            android:name=".Notification_package.More_Details"
+            android:parentActivityName=".Dashboard" />
+        <activity
+            android:name=".all_quiz_category"
+            android:parentActivityName=".Dashboard" />
+        <activity android:name=".Quiz_Instruction" />
+        <activity android:name=".test" />
+        <activity
+            android:name=".Quiz_Subject_List"
+            android:parentActivityName=".all_quiz_category" />
+        <activity android:name=".WebView_Activity" />
+    </application>
+
+</manifest>

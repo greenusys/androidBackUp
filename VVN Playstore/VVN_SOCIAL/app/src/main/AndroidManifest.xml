@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.g116.vvn_social">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:name=".Network_Package.AppController"
+        android:allowBackup="true"
+        android:icon="@drawable/logo_new"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logo_new"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Home_Activities.Activity_Feed" />
+        <activity
+            android:name=".Home_Activities.MainActivity"
+            android:label="@string/title_activity_navigation__drawer"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".User_Profile_Dashboard_Activity.User_Profile_Dashboard"
+            android:parentActivityName=".Home_Activities.MainActivity" />
+        <activity android:name=".Home_Activities.SearchActivity" />
+        <activity android:name=".Home_Activities.AddFeedActivity" />
+        <activity android:name=".Login_Registration_API.Registration" />
+        <activity android:name=".Login_Registration_API.LoginActivity" />
+        <activity android:name=".User_Profile_Dashboard_Activity.Display_Photos.Show_All_Photos" />
+        <activity android:name=".Home_Activities.ShowSubMediaActivity" />
+        <activity android:name=".Home_Activities.CommentActivity" />
+        <activity android:name=".Login_Registration_API.Login_Type_Activity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".User_Profile_Dashboard_Activity.Show_All_Friends_List" />
+        <activity android:name=".Home_Activities.ChatActivity" />
+        <activity
+            android:name=".User_Profile_Dashboard_Activity.Friend_Profile_Dashboard"
+            android:parentActivityName=".Home_Activities.MainActivity" />
+        <activity android:name=".User_Profile_Dashboard_Activity.Edit_Profile_Activity" />
+        <activity
+            android:name=".User_Profile_Dashboard_Activity.Update_Password"
+            android:parentActivityName=".Home_Activities.MainActivity" />
+        <activity android:name=".User_Profile_Dashboard_Activity.SinglePostActivity" />
+        <activity android:name="com.greenusys.vvn_social.Life_Cycle_Method">
+        </activity>
+
+
+
+        <!--vvn dash start-->
+        <activity
+            android:name="com.greenusys.allen.vidyadashboard.MainActivity_Dash"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity android:name="com.greenusys.allen.vidyadashboard.MessageListActivity" />
+        <activity
+            android:name="com.greenusys.allen.vidyadashboard.AllenChat"
+            android:parentActivityName="com.greenusys.allen.vidyadashboard.MessageListActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name="com.greenusys.allen.vidyadashboard.Click" />
+        <activity android:name="com.greenusys.allen.vidyadashboard.ChooseVideo" />
+        <activity android:name="com.greenusys.allen.vidyadashboard.Doc" />
+        <activity android:name="com.greenusys.allen.vidyadashboard.Main2Activity" />
+        <activity android:name="com.greenusys.allen.vidyadashboard.Doc_Next" />
+        <activity android:name="com.greenusys.allen.vidyadashboard.Pdf" />
+        <activity
+            android:name="com.greenusys.allen.vidyadashboard.Main3Activity"
+            android:screenOrientation="landscape" />
+        <activity android:name="com.greenusys.allen.vidyadashboard.Queryy" />
+        <activity android:name="com.greenusys.allen.vidyadashboard.Profile" />
+        <activity android:name="com.greenusys.allen.vidyadashboard.Quizfinal" />
+        <activity android:name="com.greenusys.allen.vidyadashboard.ServerList" />
+        <activity android:name="com.greenusys.allen.vidyadashboard.Physics" />
+        <activity android:name="com.greenusys.allen.vidyadashboard.Physicstutorial" />
+        <activity android:name="com.greenusys.allen.vidyadashboard.Physicsformula" />
+        <activity android:name="com.greenusys.allen.vidyadashboard.PhysDici" />
+        <activity android:name="com.greenusys.allen.vidyadashboard.PhysicsQues" />
+        <activity android:name="com.greenusys.allen.vidyadashboard.Whiteboard" />
+        <activity android:name="com.greenusys.allen.vidyadashboard.Chemistry" />
+        <activity android:name="com.greenusys.allen.vidyadashboard.Chemistrytut" />
+        <activity android:name="com.greenusys.allen.vidyadashboard.ChemistryQues" />
+        <activity android:name="com.greenusys.allen.vidyadashboard.Chemistryformula" />
+        <activity android:name="com.greenusys.allen.vidyadashboard.Chemdici" />
+        <activity android:name="com.greenusys.allen.vidyadashboard.Maths" />
+        <activity android:name="com.greenusys.allen.vidyadashboard.Mathsformulas" />
+        <activity android:name="com.greenusys.allen.vidyadashboard.Mathsques" />
+        <activity android:name="com.greenusys.allen.vidyadashboard.Mathsdicii" />
+        <activity android:name="com.greenusys.allen.vidyadashboard.Biology" />
+        <activity android:name="com.greenusys.allen.vidyadashboard.Bioformula" />
+        <activity android:name="com.greenusys.allen.vidyadashboard.Bioques" />
+        <activity android:name="com.greenusys.allen.vidyadashboard.Biodici" />
+        <activity android:name="com.greenusys.allen.vidyadashboard.Terms" />
+        <activity android:name="com.greenusys.allen.vidyadashboard.Privacy" />
+        <activity android:name="com.greenusys.allen.vidyadashboard.Abttt"></activity>
+
+        <activity android:name="com.greenusys.allen.vidyadashboard.WhiteBoard_Dash">
+           <!-- <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>-->
+        </activity>
+
+        <!--vvn dash end-->
+    </application>
+
+</manifest>

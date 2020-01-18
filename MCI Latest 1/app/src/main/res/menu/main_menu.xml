@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:title="Logout"
+        android:id="@+id/logut_menu_item"
+        android:icon="@drawable/logout_variant"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:title="Profile"
+        android:id="@+id/main_menu_profile"
+        android:icon="@drawable/account"
+        app:showAsAction="ifRoom"/>
+
+
+
+</menu>

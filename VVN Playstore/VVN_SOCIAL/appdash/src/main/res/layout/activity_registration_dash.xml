@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context="com.greenusys.allen.vidyadashboard.Registration_Dash">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        app:srcCompat="@drawable/vidya"
+        android:layout_gravity="center_horizontal"
+        tools:layout_editor_absoluteX="172dp"
+        tools:layout_editor_absoluteY="38dp" />
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/fname"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:ems="10"
+            android:background="@drawable/shape"
+            android:inputType="textPersonName"
+            android:hint=" First Name"
+            android:padding="5dp"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/lname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:inputType="textPersonName"
+        android:padding="12dp"
+        android:background="@drawable/shape"
+        android:hint="Last Name"/>
+
+    <EditText
+        android:id="@+id/remail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:padding="12dp"
+        android:background="@drawable/shape"
+        android:hint="Email"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/rpass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10" android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:padding="12dp"
+        android:background="@drawable/shape"
+        android:hint="Password"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/rpass2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10" android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:padding="12dp"
+        android:background="@drawable/shape"
+        android:hint="Confirm Password"
+        android:inputType="textPassword" />
+    <Button
+        android:id="@+id/upload"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:background="@color/colorPrimary"
+        android:text="upload image" />
+    <Button
+        android:id="@+id/upreg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_margin="20dp"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:background="@color/colorPrimary"
+        android:text="SIGN UP" />
+
+
+</LinearLayout>

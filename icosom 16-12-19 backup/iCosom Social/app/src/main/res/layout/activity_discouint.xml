@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="@drawable/blackbackgr"
+    tools:context="com.icosom.social.Discouint">
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_margin="20dp"
+        android:weightSum="1"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:textSize="25dp"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="IcoSom"
+
+            android:textStyle="bold"
+            />
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:weightSum="2"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            android:weightSum="6"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:textSize="18dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="User Name"/>
+
+            <TextView
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:textSize="18dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="User Id"/>
+            <TextView
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:textSize="18dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Friend Id"/>
+
+            <TextView
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:textSize="18dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Amount"/>
+            <TextView
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:textSize="18dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Voucher"/>
+
+            <TextView
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:textSize="18dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Discount"/>
+
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            android:weightSum="6"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:id="@+id/user_name"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:textSize="18dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="User Name"/>
+
+            <TextView
+                android:id="@+id/user_id"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:textSize="18dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="User Name"/>
+            <TextView
+                android:id="@+id/frnd_id"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:textSize="18dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="User Name"/>
+
+            <TextView
+                android:id="@+id/amount"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:textSize="18dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="User Name"/>
+            <TextView
+                android:id="@+id/voucher"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:textSize="18dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="User Name"/>
+
+            <TextView
+                android:id="@+id/discount"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:textSize="18dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="User Name"/>
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+
+
+    <RelativeLayout
+
+        android:layout_weight="1"
+        android:layout_margin="10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <Button
+            android:layout_alignParentBottom="true"
+            android:id="@+id/pay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Comfirm Pay"
+            android:layout_margin="10dp"
+            android:textColor="#ffffff"
+            android:background="@color/colorPrimary"/>
+
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

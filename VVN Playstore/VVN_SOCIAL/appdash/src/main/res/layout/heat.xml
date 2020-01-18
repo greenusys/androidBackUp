@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/chat_user_reply_background_color"
+            android:fontFamily="casual"
+            android:textAlignment="center"
+            android:text="Heat Energy and Thermodynamics"
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="30dp" />
+
+    
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="sans-serif"
+            android:text="Remember that objects are made up of matter and matter consists of atoms and particles. Particles that move around in an object possess kinetic energy. Increase in temperature increases the kinetic energy of a particle."
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="20dp" />
+
+        <ImageView
+
+            android:id="@+id/imageView4"
+            android:layout_marginLeft="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/v13" />
+
+        <TextView
+           
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="sans-serif"
+            android:text="Lets think of a real life situation that demonstrates energy transfer in form of heat. Imagine if we place a cup of hot tea on top of a table. Lets also assume that the temperature of the tea is 90 degrees Celsius. At that temperature, it is impossible for someone to attempt to drink the tea because it can burn your mouth.\n\nBut what happens if the hot cup of tea is left on the table for a long time? Yes I know you guess right. The cup of tea will lose some heat energy which will in return lower the temperature to equal the temperature of its surrounding.
+
+This simple example shows that energy is transfer from the tea which is at a higher temperature to the surrounding which is at a lower temperature. "
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="20dp" />
+
+        <ImageView
+
+
+            android:layout_marginLeft="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/v15" />
+        <ImageView
+
+
+            android:layout_marginLeft="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/v16" />
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/chat_user_reply_background_color"
+            android:fontFamily="casual"
+            android:textAlignment="center"
+            android:text="Temperature"
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="30dp" />
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="sans-serif"
+            android:text="Temperature is the measure of the average kinetic energy of the particles in a sample of matter, expressed in terms of units or degrees designated on a standard scale. It is important to note that the higher the temperature of an object the higher the tendency of that object to transfer heat and via-visa.
+
+Temperature of an object can be measured with an instrument called a thermometer. There are three types of thermometers – Celsius thermometer, kelvin thermometer and Fahrenheit thermometer. Each of the thermometers can be used to measure temperature even though they all have different scales.
+
+One of the confusing aspects of heat and temperature is that quite often most students usually interchanged the meaning of heat and temperature as the same. Understanding the difference between heat and temperature is very important in physics.
+
+￼
+One outstanding difference between heat and temperature is that heat is a form of energy while temperature is not.
+
+Secondly, temperature can be measured with a device called thermometer while heat cannot be measured directly with any kind of device."
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="20dp" />
+
+    </LinearLayout>
+</ScrollView>

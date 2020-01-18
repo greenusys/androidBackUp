@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/chat_user_reply_background_color"
+            android:fontFamily="casual"
+            android:textAlignment="center"
+            android:text="Momentum"
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+android:layout_marginLeft="20dp"
+            android:textSize="17dp"
+            android:text="Momentum can be defined as “mass in motion.”\n\np=mv
+\np=momentum(kgm/s)\nm=mass(kg)\nv=velocity(m/s)"
+            android:textColor="@color/cardview_dark_background" />
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/chat_user_reply_background_color"
+            android:fontFamily="casual"
+            android:textAlignment="center"
+            android:text="Conservation of momentum"
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="20dp" />
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:textSize="17dp"
+            android:text="When objects colllide,the total momentum before the colllison is same as the total momentum after the collision provided that no external forces act on the system.
+\nm1u1+m2+u2=m1v1+m2v2\n m1=mass of first object(kg)\n m2=mass of second object(kg)\n u1=inital velocity  of first object(kg)\nu2=inital velocity  of second object(kg)\nv1=final velocity  of first object(kg)\nv2=final velocity  of second object(kg)\n"
+            android:textColor="@color/cardview_dark_background" />
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/chat_user_reply_background_color"
+            android:fontFamily="casual"
+            android:textAlignment="center"
+            android:text="Impluse"
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="20dp" />
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:textSize="17dp"
+            android:text="Impluse is the change in linear momentum of body
+\nJ=Ft \t\t\t\t\t J=impluse(Ns)\n\t\t\t\t\t\t\t\t\t\t\t F=force \n\t\t\t\t\t\t\t\t\t\t\t t=time(s)
+\nImpluse is also equal to-\nJ=mv-mu\nJ=impluse(Ns)\nm=mass(kg)\nv=final velocity(m/s)\nu=inital velocity(m/s)"
+            android:textColor="@color/cardview_dark_background" />
+
+
+
+    </LinearLayout>
+</ScrollView>

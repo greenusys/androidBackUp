@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.greenusys.customerservice.activity.Customer_Single_call">
+
+<android.support.v7.widget.CardView
+    android:layout_marginTop="20dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="400dp"
+    app:cardElevation="20dp"
+    app:cardCornerRadius="10dp"
+    >
+
+
+
+    <LinearLayout
+     android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/s_id"
+            android:textAllCaps="true"
+            android:textSize="18dp"
+            android:textColor="#000"
+            android:text="query id : "/>
+        <TextView
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/s_query"
+            android:textAllCaps="true"
+
+            android:textColor="#000"
+            android:textSize="18dp"
+            android:text="query id : "/>
+        <TextView
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/s_q_date"
+            android:textColor="#000"
+            android:textAllCaps="true"
+            android:textSize="18dp"
+            android:text="query id : "/>
+        <TextView
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/s_eng_name"
+            android:textSize="18dp"
+            android:textColor="#000"
+            android:textAllCaps="true"
+            android:text="query id : "/>
+        <TextView
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/s_eng_phone"
+            android:textSize="18dp"
+            android:textColor="#000"
+            android:textAllCaps="true"
+            android:layout_marginBottom="40dp"
+            android:text="query id : "/>
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>
+
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+   <Button
+       android:layout_alignParentBottom="true"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:id="@+id/generate_qr"
+       android:text="QR CODE"
+       android:textSize="18sp"
+       android:textAllCaps="true"
+       android:textColor="#fff"
+       android:textStyle="bold"
+       android:background="@color/box_1" />
+
+    </RelativeLayout>
+
+</LinearLayout>

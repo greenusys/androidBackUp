@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/blackbackgr">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:id="@+id/iv_cover"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#80000000"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="@drawable/logo345"
+                android:layout_marginTop="50dp"
+                android:id="@+id/iv_profile" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="iCosom"
+                android:id="@+id/txt_name"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:letterSpacing="0.08" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="35dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Feeds"
+                    android:id="@+id/txt_feeds"
+                    android:layout_marginTop="30dp"
+                    android:padding="15dp"
+                    android:textSize="16sp"
+                    android:textColor="#fff"
+                    android:letterSpacing="0.02"
+                    android:drawablePadding="20dp"
+                    android:drawableLeft="@drawable/ic_feeds"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Friend Requests"
+                    android:id="@+id/txt_friendRequest"
+                    android:padding="15dp"
+                    android:textSize="16sp"
+                    android:textColor="#fff"
+                    android:letterSpacing="0.02"
+                    android:drawablePadding="20dp"
+                    android:drawableLeft="@drawable/ic_friend_request"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Notification"
+                    android:id="@+id/txt_notify"
+                    android:padding="15dp"
+                    android:textSize="16sp"
+                    android:textColor="#fff"
+                    android:letterSpacing="0.02"
+                    android:drawablePadding="20dp"
+                    android:drawableLeft="@drawable/ic_notify"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#fff"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="35dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="iCosom Messenger"
+                    android:id="@+id/txt_messenger"
+                    android:padding="15dp"
+                    android:textSize="16sp"
+                    android:textColor="#fff"
+                    android:letterSpacing="0.02"
+                    android:drawablePadding="20dp"
+                    android:drawableLeft="@drawable/ic_messenger"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="iCosom Store"
+                    android:id="@+id/txt_store"
+                    android:padding="15dp"
+                    android:textSize="16sp"
+                    android:textColor="#fff"
+                    android:letterSpacing="0.02"
+                    android:drawablePadding="20dp"
+                    android:drawableLeft="@drawable/ic_store"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#fff"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="35dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Privacy Policy"
+                    android:id="@+id/txt_privacyPolicy"
+                    android:padding="15dp"
+                    android:textSize="16sp"
+                    android:textColor="#fff"
+                    android:letterSpacing="0.02" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Terms Of Use"
+                    android:padding="15dp"
+                    android:textSize="16sp"
+                    android:textColor="#fff"
+                    android:letterSpacing="0.02" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="About Us"
+                    android:padding="15dp"
+                    android:textSize="16sp"
+                    android:textColor="#fff"
+                    android:letterSpacing="0.02" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#fff"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="35dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txt_signOut"
+                    android:text="Sign Out"
+                    android:padding="15dp"
+                    android:textSize="16sp"
+                    android:textColor="#fff"
+                    android:letterSpacing="0.02"
+                    android:drawablePadding="20dp"
+                    android:drawableLeft="@drawable/ic_sign_out"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

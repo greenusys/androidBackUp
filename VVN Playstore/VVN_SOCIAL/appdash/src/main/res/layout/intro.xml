@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/chat_user_reply_background_color"
+        android:fontFamily="casual"
+        android:textAlignment="center"
+        android:text="Physics as a Science"
+        android:textColor="@color/cardview_dark_background"
+        android:textSize="30dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:fontFamily="sans-serif"
+        android:textSize="20dp"
+        android:text="Physics is the natural science that involves the study of matter and its motion and behavior through space and time, along with related concepts such as energy and force. One of the most fundamental scientific disciplines, the main goal of physics     is to understand how the universe behaves.\n
+
+                   Physics is a fundamental science. it is essentail  for all sciences and vital for  modern technology. Physics deal with the concepts of space,time and motion,conservation,fields, waves and quanta.\n \n
+
+Now let's take a look at the importance of physics and why we study Physics"
+        android:textColor="@color/cardview_dark_background" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/pp1" />
+    <TextView
+
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:fontFamily="sans-serif"
+        android:text="A statement adopted by IUPAP, March 1999 was\n
+
+         Physics - the study of matter, energy and their interactions - is an international enterprise, which plays a key role in the future progress of humankind. The support of physics education and research in all countries is important because\n\n
+
+1->Physics is an exciting intellectual adventure that inspires young people and expands the frontiers of our knowledge about Nature \n
+2->Physics generates fundamental knowledge needed for the future technological advances that will continue to drive the economic engines of the world \n
+3->Physics contributes to the technological infrastructure and provides trained personnel needed to take advantage of scientific advances and discoveries \n
+4->Physics is an important element in the education of chemists, engineers and computer scientists, as well as practitioners of the other physical and biomedical sciences \n
+5->Physics extends and enhances our understanding of other disciplines, such as the earth, agricultural, chemical, biological, and environmental sciences, plus astrophysics and cosmology - subjects of substantial importance to all peoples of the world  \n
+6->Physics improves our quality of life by providing the basic understanding necessary for developing new instrumentation and techniques for medical applications, such as computer tomography, magnetic resonance imaging, positron emission tomography, ultrasonic imaging, and laser surgery"
+        android:textColor="@color/cardview_dark_background"
+        android:textSize="20dp" />
+
+
+
+</LinearLayout>
+</ScrollView>

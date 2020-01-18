@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.logIn">
+ <LinearLayout
+     android:layout_width="match_parent"
+     android:layout_height="match_parent"
+     android:weightSum="4"
+     android:layout_margin="4dp"
+     android:background="@drawable/bg"
+     android:orientation="vertical">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_margin="8dp"
+        android:background="@drawable/salonlogo"
+        >
+    </ImageView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_weight="3"
+        android:layout_height="0dp"
+        android:layout_margin="20dp"
+        android:orientation="vertical"
+        android:padding="30dp"
+        android:weightSum="8">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_marginBottom="20dp"
+            android:text="LOG IN"
+            android:textColor="#090101"
+            android:textSize="32dp"
+            app:fontFamily="@font/bubbler_one" />
+
+        <EditText
+            android:id="@+id/name3"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:fontFamily="sans-serif-condensed"
+            android:layout_marginBottom="7dp"
+            android:layout_weight="1"
+            android:background="@drawable/border"
+            android:hint=" Email"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/pass2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:fontFamily="sans-serif-condensed"
+            android:layout_weight="1"
+            android:background="@drawable/border"
+            android:hint=" Password"
+            android:inputType="textPassword" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/bor"
+            android:fontFamily="sans-serif-condensed"
+            android:textColor="#F8F5F5"
+            android:text="Log in"
+            android:id="@+id/bt_sal_login"
+            android:textSize="20dp" />
+
+        <LinearLayout
+            android:layout_marginTop="22dp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:weightSum="2"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/create"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:fontFamily="sans-serif-condensed"
+                android:text="Create Account"
+                android:textAllCaps="false"
+                android:textSize="16dp" />
+            <Button
+                android:id="@+id/forget"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:fontFamily="sans-serif-condensed"
+                android:text="forget Password"
+                android:textAllCaps="false"
+                android:textSize="16dp" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>
+</LinearLayout>

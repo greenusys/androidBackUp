@@ -1,0 +1,274 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/chat_user_reply_background_color"
+        android:fontFamily="casual"
+        android:textAlignment="center"
+        android:text="Structure of the atom"
+        android:textColor="@color/cardview_dark_background"
+        android:textSize="30dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:fontFamily="sans-serif"
+        android:textSize="20dp"
+        android:text="Matter is anything that has mass and occupies space. Atoms are fundamental building blocks of matter that cannot be further divided by any chemical means.\nWhat are elements?\nElements are constituents of matter. There are 92 natural elements. Elements like hydrogen, carbon, nitrogen and oxygen are elements that make up the majority of living things. Other groups of element that exist in living things are: magnesium, calcium, phosphorus, sodium, potassium.
+        \n\tThe word atom is a derivative of the Greek word atom which means undividable. The Greeks came to a conclusion that matter could be further divided into particles that are too tiny to be seen with the naked eye. These tiny indivisible particles of matter were referred to as atoms.
+\n
+An atom is made up of three types of particles:\n
+
+•	Protons\n
+•	Neutrons, and\n
+•	Electron.
+
+"
+        android:textColor="@color/cardview_dark_background" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/r3" />
+
+    <TextView
+        
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:fontFamily="sans-serif"
+        android:textSize="20dp"
+        android:text="The nucleus of an atom is made up of protons and neutrons. The electron of an atom resolves round the nucleus of an atom in an orbit known as shells.\nThe atomic mass of an element is greatly determined by the number of protons and neutrons in its nucleus. For instance, in a mass number of 150; 149 lbs which equivalent to 15 oz is protons and neutrons while only 1 oz. is the electron’s mass. The mass of an electron is extremely small - 9.108 X 10-28 grams."
+        android:textColor="@color/cardview_dark_background" />
+ <TextView
+   
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/chat_user_reply_background_color"
+        android:fontFamily="casual"
+        android:textAlignment="center"
+        android:text="Atomic Symbols and Isotopes"
+        android:textColor="@color/cardview_dark_background"
+        android:textSize="30dp" />
+ <TextView
+        
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:fontFamily="sans-serif"
+        android:textSize="20dp"
+        android:text="The atom of every element is composed of electrons, protons and neutrons. Atoms of the same element possess the same number of protons and electrons but the number of neutrons can vary. When the neutrons vary such elements are referred to as isotopes\nThis notation is known as the atomic symbol. The atomic symbol is usually denoted with three different letters:\n
+
+1. The X: This is used to represent the element.\n2. The A: This is a symbol that represents the atomic number. This is the number of protons situated on the left side of letter A as a subscript.\n3. The Z: This is used to denote the mass no. The mass number is equal to the number of protons and neutrons in the isotope usually placed on top of letter Z as a left superscript.\nRelative atomic mass (Ar) of an element is the ratio of the average mass of atoms of that element to 1/12 of the mass of carbon-12 isotope.
+"
+        android:textColor="@color/cardview_dark_background" />
+    
+ <TextView
+   
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/chat_user_reply_background_color"
+        android:fontFamily="casual"
+        android:textAlignment="center"
+        android:text="IUPAC’s deﬁnition of Relative atomic mass:"
+        android:textColor="@color/cardview_dark_background"
+        android:textSize="30dp" />
+ <TextView
+        
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:fontFamily="sans-serif"
+        android:textSize="20dp"
+        android:text="An atomic weight or relative atomic mass of an element is the ratio of the standard mass per atom of the element to 1/12 of the mass of an atom of 12C."
+        android:textColor="@color/cardview_dark_background" />
+ <TextView
+   
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/chat_user_reply_background_color"
+        android:fontFamily="casual"
+        android:textAlignment="center"
+        android:text="Relative atomic mass scale"
+        android:textColor="@color/cardview_dark_background"
+        android:textSize="30dp" />
+
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:orientation="vertical">
+    <TableRow
+     
+
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:baselineAligned="true"
+>
+        <TextView
+         
+            android:text="carbon atom"
+            android:background="@drawable/border"
+            android:layout_weight="1"
+            android:textColor="#000000"
+            android:padding="20dip"
+            android:gravity="center"/>
+
+        <TextView
+
+            android:gravity="center"
+            android:background="@drawable/border"
+            android:padding="20dip"
+            android:text="magnesium atom"
+            android:textColor="#000000" />
+
+        <TextView
+           
+            android:background="@drawable/border"
+            android:text="Hydrogen atom"
+            android:layout_weight="1"
+            android:textColor="#000000"
+            android:padding="20dip"/>
+    </TableRow>
+ <TableRow
+     
+
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:baselineAligned="true"
+>
+        <TextView
+          
+            android:text="mass=12"
+            android:background="@drawable/border"
+            android:layout_weight="1"
+            android:textColor="#000000"
+            android:padding="20dip" />
+
+        <TextView
+        
+            android:gravity="center"
+            android:background="@drawable/border"
+            android:padding="20dip"
+            android:text="mass=2*carbon atom"
+            android:textColor="#000000" />
+
+        <TextView
+         
+            android:background="@drawable/border"
+            android:text="mass=1/12*carbon atom"
+            android:layout_weight="1"
+            android:textColor="#000000"
+            android:padding="20dip"/>
+    </TableRow>
+</TableLayout>
+ <TextView
+        
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:fontFamily="sans-serif"
+        android:textSize="20dp"
+        android:text="The magnesium atom has double the atomic mass of the carbon atom, so a magnesium atom has a relative mass of 24."
+        android:textColor="@color/cardview_dark_background" />
+ <TextView
+   
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/chat_user_reply_background_color"
+        android:fontFamily="casual"
+        android:textAlignment="center"
+        android:text="Relative molecular mass"
+        android:textColor="@color/cardview_dark_background"
+        android:textSize="30dp" />
+
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical">
+    <TableRow
+     
+
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:baselineAligned="true"
+>
+        <TextView
+         
+            android:text="Hydrogen atom"
+            android:background="@drawable/border"
+            android:layout_weight="1"
+            android:textColor="#000000"
+            android:padding="20dip" />
+
+        <TextView
+          
+            android:gravity="center"
+            android:background="@drawable/border"
+            android:padding="20dip"
+            android:text="oxygen atom"
+            android:textColor="#000000" />
+
+        <TextView
+         
+            android:background="@drawable/border"
+            android:text="water molecule"
+            android:layout_weight="1"
+            android:textColor="#000000"
+            android:padding="20dip" />
+    </TableRow>
+ <TableRow
+     
+
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:baselineAligned="true"
+>
+        <TextView
+         
+            android:text="mass=1"
+            android:background="@drawable/border"
+            android:layout_weight="1"
+            android:textColor="#000000"
+            android:padding="20dip" />
+
+        <TextView
+         
+            android:gravity="center"
+            android:background="@drawable/border"
+            android:padding="20dip"
+            android:text="mass=16"
+            android:textColor="#000000" />
+
+        <TextView
+          
+            android:background="@drawable/border"
+            android:text="mass=(2*1)+16=18"
+            android:layout_weight="1"
+            android:textColor="#000000"
+            android:padding="20dip" />
+    </TableRow>
+</TableLayout>
+
+</LinearLayout>
+</ScrollView>

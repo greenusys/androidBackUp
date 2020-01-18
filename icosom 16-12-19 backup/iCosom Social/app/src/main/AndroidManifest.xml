@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.icosom.social">
+
+    <uses-permission
+        android:name="android.permission.RECEIVE_SMS"
+        tools:node="remove" />
+
+    <permission
+        android:name="com.iicosom.social.permission.C2D_MESSAGE"
+        tools:node="remove" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <application
+        android:name=".utility.AppController"
+        android:allowBackup="true"
+        android:hardwareAccelerated="false"
+        android:icon="@drawable/logointe"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar"
+        tools:replace="android:allowBackup,android:icon,android:label,android:theme">
+
+        <!--http://icosom.com/redirect_kaif.php-->
+        <activity android:name=".Talent_Show_Package.Activity.Talent_Show_Single_Post">
+            <intent-filter android:label="Share post to the friends">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="https"
+                    android:host="www.icosom.com"
+                    android:pathPrefix="/redirect.php" />
+            </intent-filter>
+
+
+        </activity>
+        <activity android:name=".Talent_Show_Package.Activity.Play_Audio_Activity" />
+        <activity android:name=".Talent_Show_Package.Activity.General_knowledge" />
+        <activity android:name=".Talent_Show_Package.Activity.GK_Add_Image" />
+        <activity android:name=".Talent_Show_Package.Activity.Talent_Add_Voice" />
+        <activity android:name=".Talent_Show_Package.Activity.Talent_Add_Video" />
+        <activity android:name=".Test_boommenu" />
+        <activity android:name=".Talent_Show_Package.Activity.Singing_And_Dancing_Activity" />
+        <activity android:name=".activity.Comment_Reply_Activity" />
+        <activity
+            android:name=".Talent_Show_Package.Activity.Talent_Plan"
+            android:parentActivityName=".activity.MainActivity"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".Icosom_Chat_Package.activity.Notification.Not_kaif" />
+        <activity
+            android:name=".activity.Show_Liked_Disliked_User"
+            android:theme="@style/AppTheme" />
+
+        <service android:name=".Notification_Package.MyFirebaseInstanceIdService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".Notification_Package.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/logointe" />
+
+        <activity
+            android:name=".activity.SplashActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.ProfileActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.HowToActivity" />
+        <activity android:name=".CustomDialogActivity" />
+        <activity android:name=".activity.LoginActivity" />
+        <activity android:name=".activity.DashboardRecharge" />
+        <activity android:name=".activity.CheckBalance" />
+        <activity android:name=".activity.SendMoney" />
+        <activity android:name=".PayU.PayUMainActivity" />
+        <activity
+            android:name=".activity.MainActivity"
+            android:configChanges="orientation|screenSize"
+            android:windowSoftInputMode="adjustPan|adjustResize" />
+        <activity android:name=".activity.SetUpProfileActivity" />
+        <activity android:name=".activity.ProfilePictureUploadActivity" />
+        <activity
+            android:name=".activity.ProfileDescriptionUpdateActivity"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity android:name=".activity.ProfileDetailsUpdateActivity" />
+        <activity android:name=".activity.RememberPasswordActivity" />
+        <activity
+            android:name=".activity.AddFeedActivity"
+            android:windowSoftInputMode="adjustNothing" />
+        <activity android:name=".activity.TagFriendsActivity" />
+        <activity android:name=".activity.ProfileCoverUpdateActivity" />
+        <activity android:name=".activity.ShowSubMediaActivity" />
+        <activity android:name=".activity.EditProfileActivity" />
+        <activity android:name=".activity.EditAdvanceProfileActivity" />
+        <activity android:name=".activity.ForgotPassword" />
+        <activity android:name=".activity.SinglePostActivity" />
+        <activity android:name=".activity.CommentActivity" />
+        <activity android:name=".activity.SearchActivity" />
+        <activity android:name=".activity.WebActivity" />
+        <activity
+            android:name=".activity.ShowAllTagPeopleActivity"
+            android:theme="@style/AppTheme.NoActionBarNoStatusBar" />
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="fabaabc4273e4e67d52a5410e9b2fa7a59088976" />
+
+        <activity
+            android:name=".activity.PassbookRecharge"
+            android:label="@string/title_activity_passbook_recharge"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".activity.ForgetPasswordStep2" />
+        <activity android:name=".activity.ForgetPasswordStep3" />
+
+        <receiver android:name=".broadcast.UninstallIntentReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.QUERY_PACKAGE_RESTART" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+
+        <activity android:name=".CustomerRegistration" />
+        <activity android:name=".AddBeneficiary" />
+        <activity android:name=".BeneficiaryVerify" />
+        <activity android:name=".TransferMoney" />
+        <activity android:name=".Talent_List" />
+        <activity
+            android:name=".Talent_Show_Package.Activity.Talent"
+            android:parentActivityName=".activity.MainActivity"
+            android:theme="@style/AppTheme">
+
+            <!--
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            -->
+        </activity>
+        <activity
+            android:name=".activity.Detail_Comp"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".Test.Main" />
+        <activity android:name=".activity.WalletPin" />
+        <activity android:name=".activity.CreatePin" />
+        <activity android:name=".activity.ForgetPin" />
+        <activity android:name=".activity.Wallet_otp" />
+        <activity
+            android:name=".MainActivityW"
+            android:label="@string/title_activity_main_w"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.atom.mobilepaymentsdk.PayActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity android:name=".Atom" />
+        <activity android:name=".Net" />
+        <activity android:name=".Card" />
+        <activity android:name=".PrivacySetting" />
+        <activity android:name=".QRcode" />
+        <activity android:name=".activity.Dash_fragement" />
+        <activity android:name=".activity.ListOfPlan" />
+        <activity android:name=".activity.Report" /> <!-- <activity android:name=".Confirm" /> -->
+        <activity android:name=".Electricity" />
+        <activity android:name=".DthRecharge" />
+        <activity android:name=".WaterBill" />
+        <activity android:name=".DataCardRecharge" />
+        <activity android:name=".ScannedBarcode" />
+        <activity android:name=".activity.QrPayment" />
+        <activity android:name=".activity.PlanListRecharge" />
+        <activity android:name=".activity.VerifyKyc" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <activity android:name=".activity.Kyc_alert" />
+        <activity android:name=".Discouint" />
+        <activity android:name=".Pay_Friend_Activity">
+
+            <!--
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            -->
+        </activity>
+        <activity android:name=".testactivityforicosom" />
+        <activity android:name=".KYC_Registration" />
+        <activity android:name=".Pay_Comfirmation_Activity" /> <!-- used for to move edittextbox when user click on edittextbox -->
+        <activity
+            android:name=".activity.ChatActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateVisible|adjustPan" />
+        <activity android:name=".activity.Videostore" />
+        <activity android:name=".activity.LoanActivity" />
+        <activity
+            android:name=".Icosom_Chat_Package.activity.Chat_Activity.Chat_Main_Activity"
+            android:theme="@style/MyMaterialTheme" />
+        <activity
+            android:name=".Icosom_Chat_Package.activity.Chat_Activity.ChatActivity"
+            android:theme="@style/MyMaterialTheme" />
+
+        <service android:name=".Icosom_Chat_Package.activity.Notification.MyService" />
+    </application>
+
+</manifest>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/home"
+            android:icon="@drawable/aa"
+            android:title="Home" />
+        <item
+            android:id="@+id/whiteboard"
+            android:icon="@drawable/aa"
+            android:title="Whiteboard" />
+
+        <item
+            android:id="@+id/abt"
+            android:icon="@drawable/abt"
+            android:title="About us" />
+        <item
+            android:id="@+id/quiz"
+            android:icon="@drawable/quiz"
+            android:title="Quizzy" />
+        <item
+            android:id="@+id/chat"
+            android:icon="@drawable/chat"
+            android:title="Chat" />
+
+        <item
+            android:id="@+id/rewards"
+            android:icon="@drawable/rew"
+            android:title="Rewards" />
+        <item
+            android:id="@+id/up"
+            android:icon="@drawable/up"
+            android:title="Upcoming Session" />
+        <item
+            android:id="@+id/course"
+            android:icon="@drawable/w2"
+            android:title="Course Completed" />
+
+        <!--<item-->
+            <!--android:id="@+id/whiteboard"-->
+            <!--android:icon="@drawable/white"-->
+            <!--android:title="Whiteboard" />-->
+        <item
+            android:id="@+id/video"
+            android:icon="@drawable/video1"
+            android:title="Videos" />
+        <item
+            android:id="@+id/doc"
+            android:icon="@drawable/doc1"
+            android:title="All Documents" />
+        <item
+            android:id="@+id/privacy"
+            android:icon="@drawable/privacy"
+            android:title="Privacy Policy" />
+
+
+
+
+    </group>
+
+    <item android:title="Commuicate">
+        <menu>
+            <item
+                android:id="@+id/visit"
+                android:icon="@drawable/hh"
+                android:title="Visit-us" />
+            <item
+                android:id="@+id/query"
+                android:icon="@drawable/call"
+                android:title="Query?Call Us" />
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/refer"
+                android:title="Refer to a Friend" />
+            <item
+                android:id="@+id/info"
+                android:icon="@drawable/info"
+                android:title="Terms and condition" />
+        </menu>
+    </item>
+
+</menu>

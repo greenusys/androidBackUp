@@ -1,0 +1,152 @@
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/qback"
+    android:orientation="vertical"
+    android:weightSum="11"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_weight="3"
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:text="Sign Up"
+        android:textSize="70dp"
+        android:textColor="#F8FBFD" />
+    <Space
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp" />
+
+    <EditText
+        android:id="@+id/edt_name_reg"
+        android:drawableLeft="@drawable/name"
+        android:layout_weight="1"
+        android:textColor="#F8FBFD"
+        android:gravity="center"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:textColorHint="#F8FBFD"
+        android:hint=" Your Name"/>
+
+    <EditText
+        android:id="@+id/edt_email_reg"
+        android:drawableLeft="@drawable/envelope"
+        android:layout_weight="1"
+        android:textColor="#F8FBFD"
+        android:gravity="center"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:textColorHint="#F8FBFD"
+        android:hint=" Email ID"/>
+
+    <EditText
+        android:id="@+id/edt_pass"
+        android:drawableLeft="@drawable/password2"
+        android:layout_weight="1"
+        android:textColor="#F8FBFD"
+        android:gravity="center"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:inputType="textPassword"
+        android:textColorHint="#F8FBFD"
+        android:hint="Password"/>
+
+    <EditText
+
+        android:id="@+id/edt_confirm_pass_reg"
+        android:drawableLeft="@drawable/login"
+        android:layout_weight="1"
+        android:textColor="#F8FBFD"
+        android:gravity="center"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:inputType="textPassword"
+        android:textColorHint="#F8FBFD"
+        android:hint="Confirm Password"/>
+
+    <EditText
+        android:id="@+id/edt_phone_regisr"
+        android:drawableLeft="@drawable/phone"
+        android:layout_weight="1"
+        android:textColor="#F8FBFD"
+        android:gravity="center"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:inputType="number"
+        android:textColorHint="#F8FBFD"
+        android:hint="Phone No."/>
+
+    <EditText
+        android:id="@+id/edt_address_reg"
+        android:drawableLeft="@drawable/address"
+        android:layout_weight="1"
+        android:textColor="#F8FBFD"
+        android:gravity="center"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:textColorHint="#F8FBFD"
+        android:hint=" Address"/>
+
+
+    <TextView
+        android:id="@+id/buttonReg"
+        android:layout_marginTop="40dp"
+        android:layout_weight="1"
+        android:textColor="#039BE5"
+        android:text="SIGN UP"
+        android:background="@drawable/bg2"
+        android:gravity="center"
+        android:textSize="24dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+
+        android:layout_width="match_parent"
+        android:layout_height="0dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_marginTop="30dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:onClick="sign_in"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Already have an Account ?"
+            android:textAllCaps="false"
+            android:layout_gravity="right"
+            android:layout_margin="18dp"
+            android:background="@null"
+
+            android:textSize="18dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:textColor="#F8FBFD"
+            />
+    </LinearLayout>
+
+</LinearLayout>

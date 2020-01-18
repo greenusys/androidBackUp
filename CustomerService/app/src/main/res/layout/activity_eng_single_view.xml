@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.greenusys.customerservice.activity.Customer_Single_call">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:alpha="0.1"
+        android:scaleType="fitXY"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="10dp"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ce_id"
+            android:textSize="18dp"
+            android:textAllCaps="true"
+            android:textColor="#000"
+            android:layout_weight="1"
+            android:text="query id : "/>
+        <TextView
+            android:layout_width="match_parent"
+            android:textAllCaps="true"
+            android:layout_height="wrap_content"
+            android:id="@+id/ce_query"
+            android:layout_weight="1"
+            android:textColor="#000"
+            android:textSize="18dp"
+            android:text="query  : "/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ce_q_date"
+            android:textAllCaps="true"
+            android:textColor="#000"
+            android:layout_weight="1"
+            android:textSize="18dp"
+            android:text="date : "/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ce_u_name"
+            android:textAllCaps="true"
+            android:textSize="18dp"
+            android:textColor="#000"
+            android:layout_weight="1"
+            android:text="name : "/>
+        <TextView
+            android:layout_width="match_parent"
+            android:textAllCaps="true"
+            android:layout_height="wrap_content"
+            android:id="@+id/ce_mob"
+            android:layout_weight="1"
+            android:textColor="#000"
+            android:textSize="18dp"
+            android:text="mobile : "/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ce_address"
+            android:textSize="18dp"
+            android:textAllCaps="true"
+            android:textColor="#000"
+            android:layout_marginBottom="40dp"
+            android:layout_weight="1"
+            android:text="address : "/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:orientation="horizontal">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:id="@+id/start_service"
+        android:text="Start"
+        android:layout_weight="1"
+        android:layout_margin="5dp"
+        android:textSize="18sp"
+        android:textColor="#fff"
+        android:background="@color/green"
+     />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:id="@+id/end_service"
+            android:layout_margin="5dp"
+            android:text="END"
+            android:layout_weight="1"
+            android:textSize="18sp"
+            android:textColor="#fff"
+            android:background="@color/red"
+            />
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

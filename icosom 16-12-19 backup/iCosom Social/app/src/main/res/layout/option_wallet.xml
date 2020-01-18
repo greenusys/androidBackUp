@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/pay_option"
+            android:background="@drawable/rectangle_shape"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/dimen_10dp"
+            android:paddingRight="@dimen/dimen_10dp"
+            android:paddingBottom="1dp"
+            android:paddingTop="15dp">
+
+            <ImageView
+
+                android:layout_width="40dp"
+                android:layout_gravity="center"
+                android:layout_height="40dp"
+                android:tint="@color/colorPrimary"
+                android:src="@drawable/ic_pay" />
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:text="PAY TO FRIEND"
+                android:textColor="#3F4257"
+                android:textSize="14sp" />
+
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/transfer_option"
+            android:background="@drawable/rectangle_shape"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/dimen_10dp"
+            android:paddingRight="@dimen/dimen_10dp"
+            android:paddingBottom="1dp"
+            android:paddingTop="15dp">
+
+            <ImageView
+
+                android:layout_width="40dp"
+                android:layout_gravity="center"
+                android:layout_height="40dp"
+                android:tint="@color/colorPrimary"
+                android:src="@drawable/mtransfer" />
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:text="TRANSFER"
+                android:textColor="#3F4257"
+                android:textSize="14sp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/pass_option"
+            android:background="@drawable/rectangle_shape"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/dimen_10dp"
+            android:paddingRight="@dimen/dimen_10dp"
+            android:paddingBottom="0dp"
+            android:paddingTop="10dp">
+
+            <ImageView
+
+                android:layout_width="40dp"
+                android:layout_gravity="center"
+                android:layout_height="40dp"
+                android:tint="@color/colorPrimary"
+                android:src="@drawable/pasbook" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:text="PASS BOOK"
+                android:textColor="#3F4257"
+                android:textSize="14sp" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/wallet_option"
+            android:background="@drawable/rectangle_shape"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <ImageView
+
+                android:layout_width="40dp"
+                android:layout_gravity="center"
+                android:layout_height="40dp"
+                android:tint="@color/colorPrimary"
+                android:src="@drawable/qr_sam" />
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:text="Scan Barcode"
+                android:textColor="#3F4257"
+                android:textSize="14sp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/mob_rec_option"
+            android:background="@drawable/rectangle_shape"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <ImageView
+
+                android:layout_width="40dp"
+                android:layout_gravity="center"
+                android:layout_height="40dp"
+                android:tint="@color/colorPrimary"
+                android:src="@drawable/mobile" />
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:text="RECHARGE"
+                android:textColor="#3F4257"
+                android:textSize="14sp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/data_card_option"
+            android:background="@drawable/rectangle_shape"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <ImageView
+
+                android:layout_width="40dp"
+                android:layout_gravity="center"
+                android:layout_height="40dp"
+                android:tint="@color/colorPrimary"
+                android:src="@drawable/dc" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:text="DATA CARD"
+                android:textColor="#3F4257"
+                android:textSize="14sp" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/dth_option"
+            android:background="@drawable/rectangle_shape"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <ImageView
+
+                android:layout_width="40dp"
+                android:layout_gravity="center"
+                android:layout_height="40dp"
+                android:tint="@color/colorPrimary"
+                android:src="@drawable/dths" />
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:text="DTH "
+                android:textColor="#3F4257"
+                android:textSize="14sp" />
+
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/elec_optiopn"
+            android:background="@drawable/rectangle_shape"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <ImageView
+
+                android:layout_width="40dp"
+                android:layout_gravity="center"
+                android:layout_height="40dp"
+                android:tint="@color/colorPrimary"
+                android:src="@drawable/elec" />
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:text="ELECTRICITY "
+                android:textColor="#3F4257"
+                android:textSize="14sp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/water_option"
+            android:background="@drawable/rectangle_shape"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <ImageView
+
+                android:layout_width="40dp"
+                android:layout_gravity="center"
+                android:layout_height="40dp"
+                android:tint="@color/colorPrimary"
+                android:src="@drawable/waterbillnews" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:text="WATER BILL"
+                android:textColor="#3F4257"
+                android:textSize="14sp" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>
